@@ -168,7 +168,7 @@ img.center {
     cursor: pointer;
 }
 .button3:hover {
-  background-color: DarkSlateGray;
+  background-color: #4a4a4a;
 }
 .button4 {
     background-color: SlateGray;
@@ -187,7 +187,7 @@ img.center {
     cursor: pointer;
 }
 .button4:hover {
-  background-color: #4a4a4a;
+  background-color: DarkSlateGray;
 }
 .button5 {
     background-color: Coral;

@@ -110,6 +110,9 @@ img.center {
     margin: -2px auto;
     cursor: pointer;
 }
+.button:hover {
+  background-color: black;
+}
 .small_button, .small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;
@@ -160,76 +163,6 @@ div.text-wrapper {
     line-height: 36pt;
     color: #dddddd;
     display: inline-block;
-}
-div.reform {
-    background-color: #0c5199;
-    text-align: left;
-    border-right-style: solid;
-}
-div.preserve {
-    background-color: #42c2f5;
-    text-align: right;
-    border-left-style: solid;
-}
-div.stateown {
-    background-color: #174f8a;
-    text-align: left;
-    border-right-style: solid;
-}
-div.market {
-    background-color: #c7c406;
-    text-align: right;
-    border-left-style: solid;
-}
-div.central {
-    background-color: #9403fc;
-    text-align: right;
-    border-left-style: solid;
-}
-div.decentral {
-    background-color: #1fa3c4;
-    text-align: left;
-    border-right-style: solid;
-}
-div.world {
-    background-color: #90bcd6;
-    text-align: right;
-    border-left-style: solid;
-}
-div.nation {
-    background-color: #7F3300;
-    text-align: left;
-    border-right-style: solid;
-}
-div.religious {
-    background-color: #d48817;
-    text-align: left;
-    border-right-style: solid;
-}
-div.secular {
-    background-color: #d1ccae;
-    text-align: right;
-    border-left-style: solid;
-}
-div.economy {
-    background-color: #389cd1;
-    text-align: left;
-    border-right-style: solid;
-}
-div.nature {
-    background-color: #c4b631;
-    text-align: right;
-    border-left-style: solid;
-}
-div.race {
-    background-color: #27577A;
-    text-align: left;
-    border-right-style: solid;
-}
-div.equality {
-    background-color: #C4A717;
-    text-align: right;
-    border-left-style: solid;
 }
 span.weight-300 {
     font-weight: 300;

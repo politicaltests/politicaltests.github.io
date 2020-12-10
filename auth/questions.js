@@ -108,6 +108,19 @@ questions = [
   
     { "question": "I prefer rehabilitation over punishment.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+    
+//[4] Prevention
+    { "question": "A person is innocent until proven guilty.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "A person can only be punished if he is rightfully proven to have broken the law.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "I somewhat agree with the Non-Aggression Principle.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "I prefer rehabilitation over punishment.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
 
 // [8] Disunity
     { "question": "Authoritarian Socialists and Authoritarian Capitalists are too different to work toghether.", "effect":{

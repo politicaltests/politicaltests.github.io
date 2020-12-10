@@ -5,16 +5,15 @@ const rowList = [
         ] // transform the list into objects containing:
           // axisName, y, height (from above), value (from URL)
         .map(ary) {
-            const question = ary[0];
-            return {
-                olig: ary[1],
-                civil: ary[2],
-                elit: ary[3],
-                preve: ary[4],
-                diver: ary[5],
-                ruleund: ary[6],
-                bestsuit: ary[7],
-                disun: ary[8]
+            const “question” = ary[0];
+                var olig = ary[1]
+                var civil = ary[2]
+                var elit = ary[3]
+                var preve = ary[4]
+                var diver = ary[5]
+                var ruleund = ary[6]
+                var bestsuit = ary[7]
+                var disun = ary[8]
 
             };
         });

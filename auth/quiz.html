@@ -1,200 +1,132 @@
 <head>
-    <meta charset="utf-8">
-    <title>AuthValues Quiz</title>
-
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-    <link href='style.css' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="x-icon" href="icon.png">
-    <link rel="shortcut icon" type="x-icon" href="icon.png">
-   
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4164VB57K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-V4164VB57K');
-    </script>
-    
-    <script type="application/javascript" src="questions.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>AuthValues Quiz</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6511426299019766",
+    enable_page_level_ads: true
+  });
+</script>
 </head>
-
 <body>
-
-
+<script type="application/javascript"
+        src="questions.js">
+</script>
 <h1>AuthValues</h1>
 <hr>
-
 <h2 style="text-align:center;" id="question-number">Loading...</h2>
 <p class="question" id="question-text"></p>
 <button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
 <button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
-<button class="button" onclick="next_question( 0.3)" style="background-color: #66CDAA;">Partially Agree</button> <br>
-<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral</button> <br>
-<button class="button" onclick="next_question(-0.3)" style="background-color: #F5B7B1;">Partially Disagree</button> <br>
+<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
 <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
 <button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
-<hr>
-<button class="button" onclick="next_question(null)" style="background-color: #a9a9a9;">Skip Question</button> <br>
 <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
 <button class="small_button_off" id="back_button_off">Back</button><br>
 
-<!-- Test JS -->
+<!-- Website visit statistics - no personal information is collected! -->
+<script type="text/javascript">
+var sc_project=11325211;
+var sc_invisible=1;
+var sc_security="fd9f0659";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
+stats"></a></div></noscript>
+
+<!-- JavaScript for the test itself -->
 <script>
-
-    // variables
-    var answers = new Object();     // Store user's answers
-    var qn = 0; // Current question order
-
-
-    // Populate questionsObject
-
-    var questionsObject = new Object();     // Question objects with ID keys
-    questions.forEach(populateQO);
-
-    function populateQO(value) {
-      questionsObject[value['id']] = value
-    }
-
-
-    // Populate & shuffle questionsOrder
-
-    var questionsOrder = Object.keys(questionsObject); //Array of shuffled question IDs
-    shuffleArray(questionsOrder);
-
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-    }
-
-    // Question initialization
-
+    var max_olig, max_civil, max_elit, max_preve, max_diver, max_ruleund, max_bestsuit, max_disun; // Max possible scores
+    max_olig = max_civil = max_elit = max_preve = max_diver = max_ruleund = max_bestsuit = max_disun = 0;
+    var olig, civil, elit, preve, diver, ruleund, bestsuit, disun; // User's scores
+    olig = civil = elit = preve = diver = ruleund = bestsuit = disun = 0;
+    var qn = 0; // Question number
+    var prev_answer = null;
     init_question();
-
+    for (var i = 0; i < questions.length; i++) {
+        max_olig += Math.abs(questions[i].effect.olig)
+        max_civil += Math.abs(questions[i].effect.civil)
+        max_elit += Math.abs(questions[i].effect.elit)
+        max_preve += Math.abs(questions[i].effect.preve)
+        max_diver += Math.abs(questions[i].effect.diver)
+        max_ruleund += Math.abs(questions[i].effect.ruleund)
+        max_bestsuit += Math.abs(questions[i].effect.bestsuit)
+        max_disun += Math.abs(questions[i].effect.disun)
+    }
     function init_question() {
-        $("#question-text").html(questionsObject[questionsOrder[qn]].question);
-        $("#question-number").html("Question "+(qn + 1)+" of "+(questionsOrder.length));
-
-
-
-        if (jQuery.isEmptyObject(answers)) {
-            $('#back_button').hide()
-            $('#back_button_off').show()
+        document.getElementById("question-text").innerHTML = questions[qn].question;
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
+        if (prev_answer == null) {
+            document.getElementById("back_button").style.display = 'none';
+            document.getElementById("back_button_off").style.display = 'block';
         } else {
-            $('#back_button').show()
-            $('#back_button_off').hide()
+            document.getElementById("back_button").style.display = 'block';
+            document.getElementById("back_button_off").style.display = 'none';
         }
+
     }
 
-
-    // Next question
-
-    function next_question(answer) {
-        if (qn === questionsOrder.length) {
-            return;
-        }
-
-        answers[questionsOrder[qn]] = answer;
+    function next_question(mult) {
+        olig += mult*questions[qn].effect.olig
+        civil += mult*questions[qn].effect.civil
+        elit += mult*questions[qn].effect.elit
+        preve += mult*questions[qn].effect.preve
+        diver += mult*questions[qn].effect.diver
+        ruleund += mult*questions[qn].effect.ruleund
+        bestsuit += mult*questions[qn].effect.bestsuit
+        disun += mult*questions[qn].effect.disun
+        
         qn++;
-
-        if (qn < questionsOrder.length) {
+        prev_answer = mult;
+        if (qn < questions.length) {
             init_question();
         } else {
             results();
         }
     }
-
-
-    // Previous question
-
     function prev_question() {
-        if (jQuery.isEmptyObject(answers)) {
-            $('#back_button').hide()
-            $('#back_button_off').show()
+        if (prev_answer == null) {
             return;
         }
         qn--;
-
-        delete answers[questionsOrder[qn]];
-
+        olig -= prev_answer * questions[qn].effect.olig;
+        civil -= prev_answer * questions[qn].effect.civil;
+        elit -= prev_answer * questions[qn].effect.elit;
+        preve -= prev_answer * questions[qn].effect.preve;
+        diver -= prev_answer * questions[qn].effect.diver;
+        ruleund -= prev_answer * questions[qn].effect.ruleund;
+        bestsuit -= prev_answer * questions[qn].effect.bestsuit;
+        disun -= prev_answer * questions[qn].effect.disun;
+        
+        prev_answer = null;
         init_question();
+
     }
-
-
-    // RESULTS
-
+    function calc_score(score,max) {
+        return (100*(max+score)/(2*max)).toFixed(1)
+    }
     function results() {
-
-        window.sessionStorage.answers = JSON.stringify(answers);
-
-
-        // Calculate final results
-        pct = percentageCalculation();
-        window.sessionStorage.percentages = JSON.stringify(pct);
-
-        // prepare arguments
-        var args = '?';
-        for (const i in Object.keys(pct)) {
-            effectName = Object.keys(pct)[i]
-            args += `${effectName}=${pct[effectName]}`
-
-            var cycle = parseInt(i)
-            if (cycle+1 !== Object.keys(pct).length) {
-                args += '&'
-            }
-        }
-
-        location.href = `feedback.html` + args
-
+        location.href = `results.html`
+            + `?olig=${calc_score(olig,max_olig)}`
+            + `&civil=${calc_score(civil,max_civil)}`
+            + `&elit=${calc_score(elit,max_elit)}`
+            + `&preve=${calc_score(preve,max_preve)}`
+            + `&diver=${calc_score(olig,max_diver)}`
+            + `&ruleund=${calc_score(civil,max_ruleund)}`
+            + `&bestsuit=${calc_score(elit,max_bestsuit)}`
+            + `&disun=${calc_score(preve,max_disun)}`
     }
-
-
-    // Calculate percentage
-
-    function percentageCalculation() {
-        // calc max
-        var max = new Object(); // Max possible scores
-        var score = new Object(); // User scores
-        var pct = new Object(); // Percentages
-
-        // prepare
-        for (const id in answers) {
-            for (const effectName in questionsObject[id].effects) {
-                max[effectName] = 0
-                score[effectName] = 0
-            }
-        }
-
-        // get max & scores
-        for (const id in answers) {
-            // dismiss "don't know"
-            if (answers[id] !== null) {
-                for (const effectName in questionsObject[id].effects) {
-                    max[effectName] += Math.abs(questionsObject[id].effects[effectName]);
-                    score[effectName] += answers[id]*questionsObject[id].effects[effectName];
-                }
-            }
-        }
-
-        // calc percentage
-
-        for (const i in Object.keys(max)) {
-            effectName = Object.keys(max)[i]
-
-            if (max[effectName] > 0) {
-                pct[effectName] = (100*(max[effectName]+score[effectName])/(2*max[effectName])).toFixed(1)
-            } else {
-                pct[effectName] = 50
-            }
-        }
-
-        return pct;
-    }
-
 </script>
 </body>

@@ -1,6 +1,8 @@
 const rowList = [
            // axisName,	y, 		height
             [ "test",	1, 1, 1, 1, 1, 1, 1, 1 ],
+            [ "efe",	1, 1, 1, 1, 1, 1, 1, 1 ],
+
 
         ] // transform the list into objects containing:
           // axisName, y, height (from above), value (from URL)

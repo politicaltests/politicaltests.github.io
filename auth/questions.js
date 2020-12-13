@@ -116,12 +116,61 @@ questions = [
     { "question": "A person can only be punished if he is rightfully proven to have broken the law.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "I somewhat agree with the Non-Aggression Principle.", "effect":{
+    { "question": "Waiting for a person to commit a crime is immoral.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+    
+//[5] Uniform
+    { "question": "A nation should share a common culture and way of life.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": -10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "I prefer rehabilitation over punishment.", "effect":{
-    "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
-
+    { "question": "Religion and Political Belief should be mandated.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": -10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "People who do not follow the state religion (if one exists) should be punished.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": -10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "I support a theocracy of some degree.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": -10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+//[5] Diverse
+    { "question": "Diversity is important and good.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "I believe in the seperation of church and state.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "I believe in the freedom of religion and the freedom of thought.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "A government that mandates a way of life is evil.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+  
+//[6] Rule-Over
+    { "question": "The government is inherently above the people.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "The government is a leader for the nation, not a servant.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "Most things should be under government control.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "The government should be larger than it is now.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
+  
+//[6] Rule-Under
+    { "question": "The government should serve for the people.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "If certain people or certain groups influence the government, it's not necessarily a negative thing.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "The government exists to protect the people.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+  
+    { "question": "The leader(s) of a nation should be equal to an ordinary citizen.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+    
 // [8] Disunity
     { "question": "Authoritarian Socialists and Authoritarian Capitalists are too different to work toghether.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 10 }}

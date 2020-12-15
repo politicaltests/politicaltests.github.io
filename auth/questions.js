@@ -175,29 +175,45 @@ questions = [
     { "question": "A good ruler deserves to let his realtives suceed him in leadership.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": -10, "disun": 0 }},
   
-    { "question": "The government is a leader for the nation, not a servant.", "effect":{
+    { "question": "A hereditary monarchy is better for a nation than a democracy or technocracy.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": -10, "disun": 0 }},
   
-    { "question": "Most things should be under government control.", "effect":{
+    { "question": "A powerful hereditary monarchy is not as bad as most people think.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": -10, "disun": 0 }},
   
-    { "question": "The government should be larger than it is now.", "effect":{
+    { "question": "Leaders usually share similar ideological beliefs with their sons or daughters.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": -10, "disun": 0 }},
   
-//[6] Rule-Under
-    { "question": "The government should serve for the people.", "effect":{
-    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+//[7] Best-Suited
+    { "question": "The most suitable or most intellegent should rule.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 10, "disun": 0 }},
   
-    { "question": "If certain people or certain groups influence the government, it's not necessarily a negative thing.", "effect":{
-    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+    { "question": "A hereditary monarchy is an outdated form of government.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 10, "disun": 0 }},
   
-    { "question": "The government exists to protect the people.", "effect":{
-    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+    { "question": "I agree with the principles of Noocracy.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 10, "disun": 0 }},
   
-    { "question": "The leader(s) of a nation should be equal to an ordinary citizen.", "effect":{
-    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+    { "question": "Even the poor should have a chance to become a leader of the nation.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 10, "disun": 0 }},
+    
+//[7] Hereditary
+    { "question": "Authoritarians should work toghether for a common goal.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": -10 }},
+  
+    { "question": "Governmental issues are more significant than economic and cultural issues.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": -10 }},
+  
+    { "question": "An ideal society can only be achieved through working toghether with different people.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": -10 }},
     
 // [8] Disunity
+    { "question": "People with opposite economic beliefs from me are often incorrect.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 10 }},
+  
+    { "question": "I prefer Left-Unity/Right-Unity over Auth-Unity.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 10 }},
+    
     { "question": "Authoritarian Socialists and Authoritarian Capitalists are too different to work toghether.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 10 }}
     

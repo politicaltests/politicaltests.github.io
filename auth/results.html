@@ -89,7 +89,7 @@
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
 <img src="" id="banner">
-<button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
+<button class="button" onclick="location.href='auth.html';" style="background-color: #2196f3;">Back</button> <br>
 
 <script>
     function getQueryVariable(variable)
@@ -113,10 +113,14 @@
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    oligArray = ["Bureacracy","Oligarchy","Aristocracy","Anocracy","Despotism","Autocracy","Totalitarian Autocracy"]
+    civilArray = ["Extreme Civil Focus","Civil Focus","Moderate Civil Focus","Balanced","Moderate Economic Focus","Economic Focus","Extreme Economic Focus"]
+    elitArray = ["Plutocracy","Elitsm","Statism","Neutral","Majoritarianism","Populism","Democracy"]
+    preveArray = ["Surveillance","Prevention","Moderation","Neutral","Discouragement","Deterrence","Anti-Surveillance"]
+    diverArray = ["Multiculturalism","Polyculturalism","Diverse","Neutral","Assimilationism","Uniform","Theocracy"]
+    ruleundArray = ["Social Contract","Rule-Under","Egalitarianism","Neutral","Staitsm","Rule-Over","Government Supreriority"]
+    bestsuitArray = ["Technocracy","Noocracy","Meritocracy","Neutral","Semi-Hereditary","Hereditary","Extremely Herditary"]
+    disunArray = ["Anti-Unity","Disunity","Limited Unity","Neutral","Cooperation","Unity","Strong Cooperation"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else

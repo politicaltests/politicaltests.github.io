@@ -134,14 +134,23 @@
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
-    peace     = getQueryVariable("d")
-    liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
-    might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    oligarchy  = getQueryVariable("olig")
+    civilvalue     = getQueryVariable("civil")
+    elitism   = getQueryVariable("elit")
+    prevention  = getQueryVariable("preve")
+    diversity  = getQueryVariable("diver")
+    ruleunder     = getQueryVariable("ruleund")
+    bestsuited   = getQueryVariable("bestsuit")
+    disunity  = getQueryVariable("disun")
+	
+    autocracy    = (100 - oligarchy).toFixed(1)
+    economic     = (100 - civilvalue).toFixed(1)
+    populism = (100 - elitism ).toFixed(1)
+    deterrence = (100 - prevention).toFixed(1)
+    uniform    = (100 - diversity).toFixed(1)
+    ruleover     = (100 - ruleunder   ).toFixed(1)
+    hereditary = (100 - bestsuited ).toFixed(1)
+    authunity = (100 - disunity).toFixed(1)
 
     setBarValue("equality", equality)
     setBarValue("wealth", wealth)

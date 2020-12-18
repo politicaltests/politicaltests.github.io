@@ -225,7 +225,7 @@
   <!-- Script for screenshot -->
   <script type='text/javascript'>
   function screenshot(){
-    html2canvas(document.body).then(function(canvas) {
+   html2canvas(document.getElementById('container')).then(function(canvas) {
     document.body.appendChild(canvas);
    });
   }

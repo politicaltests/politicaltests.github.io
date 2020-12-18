@@ -190,12 +190,12 @@ div.oligarchy {
 div.economic {
     background-color: #DD7E6B;
     text-align: right;
-    border-right-style: solid;
+    border-left-style: solid;
 }
 div.civilvalue {
     background-color: #45818D;
     text-align: left;
-    border-left-style: solid;
+    border-right-style: solid;
 }
 div.populism {
     background-color: #F6B26A;
@@ -220,12 +220,12 @@ div.prevention {
 div.uniform {
     background-color: #A64D78;
     text-align: right;
-    border-right-style: solid;
+    border-left-style: solid;
 }
 div.diverse {
     background-color: #C1D6A7;
     text-align: left;
-    border-left-style: solid;
+    border-right-style: solid;
 }
 div.ruleover {
     background-color: #B45E06;

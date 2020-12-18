@@ -98,10 +98,10 @@
 <hr/>
 	
 <button class="button" onclick="location.href='https://politicaltests.github.io/auth.html';" style="background-color: #2196f3;">Back</button> <br>
-<input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();' style="background-color: #06a800;"><br/>
+<input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick="screenshot()" style="background-color: #06a800;"><br/>
 
   <!-- Script for screenshot -->
-  <script type='text/javascript'>
+  <script>
   function screenshot(){
    html2canvas(document.getElementById('container')).then(function(canvas) {
     document.body.appendChild(canvas);

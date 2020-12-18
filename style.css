@@ -20,9 +20,7 @@ p {
     line-height: 1;
     margin: 4pt;
 }
-body.__i18n-ko p {
-    line-height: 140%
-}
+
 p.value-description {
     text-indent: -16pt;
     margin-left: 20pt;
@@ -272,86 +270,3 @@ canvas {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* AUTH */
-div.oligarchy {
-    background-color: #807A91;
-    text-align: left;
-    border-right-style: solid;
-}
-div.autocracy {
-    background-color: #0C5393;
-    text-align: right;
-    border-left-style: solid;
-}
-div.economic {
-    background-color: #DD7E6B;
-    text-align: right;
-    border-right-style: solid;
-}
-div.civilvalue {
-    background-color: #45818D;
-    text-align: left;
-    border-left-style: solid;
-}
-div.populism {
-    background-color: #F6B26A;
-    text-align: right;
-    border-left-style: solid;
-}
-div.elitism {
-    background-color: #FFD866;
-    text-align: left;
-    border-right-style: solid;
-}
-div.deterrence {
-    background-color: #6AA74F;
-    text-align: right;
-    border-left-style: solid;
-}
-div.prevention {
-    background-color: #E06666;
-    text-align: left;
-    border-right-style: solid;
-}
-div.uniform {
-    background-color: #A64D78;
-    text-align: right;
-    border-right-style: solid;
-}
-div.diverse {
-    background-color: #C1D6A7;
-    text-align: left;
-    border-left-style: solid;
-}
-div.ruleover {
-    background-color: #B45E06;
-    text-align: right;
-    border-left-style: solid;
-}
-div.ruleunder {
-    background-color: #E6B8AF;
-    text-align: left;
-    border-right-style: solid;
-}
-div.hereditary {
-    background-color: #BF9001;
-    text-align: right;
-    border-left-style: solid;
-}
-div.bestsuited {
-    background-color: #76A5AE;
-    text-align: left;
-    border-right-style: solid;
-}
-div.hereditary {
-    background-color: #E99999;
-    text-align: right;
-    border-left-style: solid;
-}
-div.disunity {
-    background-color: #A4C2F4;
-    text-align: left;
-    border-right-style: solid;
-}
-

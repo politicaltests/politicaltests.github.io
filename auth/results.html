@@ -119,7 +119,7 @@
         }
     }
 
-    oligArray = ["Bureacracy","Oligarchy","Aristocracy","Anocracy","Despotism","Autocracy","Totalitarian Autocracy"]
+    oligArray = ["Bureaucracy","Oligarchy","Aristocracy","Anocracy","Despotism","Autocracy","Totalitarian Autocracy"]
     civilArray = ["Extreme Civil Focus","Civil Focus","Moderate Civil Focus","Balanced","Moderate Economic Focus","Economic Focus","Extreme Economic Focus"]
     elitArray = ["Plutocracy","Elitsm","Statism","Neutral","Majoritarianism","Populism","Democracy"]
     preveArray = ["Surveillance","Prevention","Moderation","Neutral","Discouragement","Deterrence","Anti-Surveillance"]
@@ -193,10 +193,10 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.civil - civilvalue), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.elit - elitism), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.preve - prevention), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.diver - diverse), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.ruleund - ruleunder), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.bestsuit - bestsuited), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.disun - disunity), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.diver - diverse), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.ruleund - ruleunder), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.bestsuit - bestsuited), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.disun - disunity), 2)
 	    
         if (dist < ideodist) {
             ideology = ideologies[i].name

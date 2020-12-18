@@ -20,7 +20,7 @@
 
 <h1>Results</h1>
 
-<div class="container" id='container'>
+<div id="container">
 
 <h2>Power Balance: <span class="weight-300" id="olig-label"></span></h2>
 <div class="axis">
@@ -102,7 +102,7 @@
 
   <!-- Script for screenshot -->
   <script>
-  function screenshot(){
+  function screenshot() {
    html2canvas(document.getElementById('container')).then(function(canvas) {
     document.body.appendChild(canvas);
    });

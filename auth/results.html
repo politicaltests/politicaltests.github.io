@@ -90,10 +90,11 @@
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
-<img src="" id="banner">
+
 <button class="button" onclick="location.href='https://politicaltests.github.io/auth.html';" style="background-color: #2196f3;">Back</button> <br>
 
 <script>
+	
     function getQueryVariable(variable)
     {
            var query = window.location.search.substring(1)
@@ -120,7 +121,7 @@
     elitArray = ["Plutocracy","Elitsm","Statism","Neutral","Majoritarianism","Populism","Democracy"]
     preveArray = ["Surveillance","Prevention","Moderation","Neutral","Discouragement","Deterrence","Anti-Surveillance"]
     diverArray = ["Multiculturalism","Polyculturalism","Diverse","Neutral","Assimilationism","Uniform","Theocracy"]
-    ruleundArray = ["Social Contract","Rule-Under","Egalitarianism","Neutral","Staitsm","Rule-Over","Government Supreriority"]
+    ruleundArray = ["Social Contract","Rule-Under","Egalitarianism","Neutral","Statism","Rule-Over","Government Supreriority"]
     bestsuitArray = ["Technocracy","Noocracy","Meritocracy","Neutral","Semi-Hereditary","Hereditary","Extremely Herditary"]
     disunArray = ["Anti-Unity","Disunity","Limited Unity","Neutral","Cooperation","Unity","Strong Cooperation"]
 
@@ -215,6 +216,7 @@
         }
     }
 
+/*
     window.onload = function() {
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
@@ -289,6 +291,6 @@
         ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
 
         document.getElementById("banner").src = c.toDataURL();
-    }
+    } */
     </script>
 </body>

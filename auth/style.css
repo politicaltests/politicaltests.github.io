@@ -272,15 +272,15 @@ canvas {
 }
 
 /* AUTH */
-div.oligarchy {
-    background-color: #807A91;
-    text-align: left;
-    border-right-style: solid;
-}
 div.autocracy {
     background-color: #0C5393;
     text-align: right;
     border-left-style: solid;
+}
+div.oligarchy {
+    background-color: #807A91;
+    text-align: left;
+    border-right-style: solid;
 }
 div.economic {
     background-color: #DD7E6B;

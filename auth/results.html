@@ -84,7 +84,10 @@
     <img id="img-authunity" src="auth/value_images/authunity.png" height="128pt"/>
 </div>
 
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+  <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="ideologyLink()" style="color: #2222DD;text-decoration: underline"></span></h2>
+  <h3><span class="weight-300" id="ideodesc-label"></span></h3><br>
+  <h3><b> Next Matches: <span class="weight-300" id="nextmatch-label"></span> </b></h3> <hr> 
+	
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
@@ -152,34 +155,58 @@
     hereditary = (100 - bestsuited ).toFixed(1)
     authunity = (100 - disunity).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
-    setBarValue("peace", peace)
-    setBarValue("might", might)
-    setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("oligarchy", oligarchy)
+    setBarValue("autocracy", autocracy)
+    setBarValue("economic", economic)
+    setBarValue("civilvalue", civilvalue)
+    setBarValue("elitism", elitism)
+    setBarValue("populism", populism)
+    setBarValue("prevention", prevention)
+    setBarValue("deterrence", deterrence)
+    setBarValue("diversity", diversity)
+    setBarValue("uniform", uniform)
+    setBarValue("ruleunder", ruleunder)
+    setBarValue("ruleover", ruleover)
+    setBarValue("bestsuited", bestsuited)
+    setBarValue("hereditary", hereditary)
+    setBarValue("disunity", disunity)
+    setBarValue("authunity", authunity)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+    document.getElementById("olig-label").innerHTML = setLabel(oligarchy, oligArray)
+    document.getElementById("civil-label").innerHTML = setLabel(civilvalue, civilArray)
+    document.getElementById("elit-label").innerHTML = setLabel(elitism, elitArray)
+    document.getElementById("preve-label").innerHTML = setLabel(prevention, preveArray)
+    document.getElementById("diver-label").innerHTML = setLabel(diversity, diverArray)
+    document.getElementById("ruleund-label").innerHTML = setLabel(ruleunder, ruleundArray)
+    document.getElementById("bestsuit-label").innerHTML = setLabel(bestsuited, bestsuitArray)
+    document.getElementById("disun-label").innerHTML = setLabel(disunity, disunArray)
 
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+	    
+        dist += Math.pow(Math.abs(ideologies[i].stats.olig - oligarchy), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.civil - civilvalue), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.elit - elitism), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.preve - prevention), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.diver - diverse), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.ruleund - ruleunder), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.bestsuit - bestsuited), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.disun - disunity), 2)
+	    
         if (dist < ideodist) {
             ideology = ideologies[i].name
+	    ideolink = ideologies[i].link
+            ideodesc = ideologies[i].desc
+            nextmatch = ideologies[i].next
             ideodist = dist
         }
     }
+	
     document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideodesc-label").innerHTML = ideodesc
+    document.getElementById("nextmatch-label").innerHTML = nextmatch	
 
     function createImage(src, x, y, w, h) {
         img = new Image ()

@@ -2,10 +2,14 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='/auth/style.css' rel='stylesheet' type='text/css'>
 <title>AuthValues Results</title>
+	
+  <script src= 
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"> 
+  </script> 
+	
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
-<script type="text/javascript" src="html2canvas.js"></script>
 <script>
   version = "Beta 1.0" 
 </script>
@@ -20,7 +24,7 @@
 
 <h1>Results</h1>
 
-<div id="container">
+<div id="photo">
 
 <h2>Power Balance: <span class="weight-300" id="olig-label"></span></h2>
 <div class="axis">
@@ -96,18 +100,33 @@
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
+<input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick="takeshot()" style="background-color: #06a800;"><br/>
+
+</div>
 	
 <button class="button" onclick="location.href='https://politicaltests.github.io/auth.html';" style="background-color: #2196f3;">Back</button> <br>
-<input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick="screenshot()" style="background-color: #06a800;"><br/>
 
   <!-- Script for screenshot -->
-  <script>
-  function screenshot() {
-   html2canvas(document.getElementById('container')).then(function(canvas) {
-    document.body.appendChild(canvas);
-   });
-  }
-  </script>
+  <script type="text/javascript"> 
+  
+        // Define the function  
+        // to screenshot the div 
+        function takeshot() { 
+            let div = 
+                document.getElementById('photo'); 
+  
+            // Use the html2canvas 
+            // function to take a screenshot 
+            // and append it 
+            // to the output div 
+            html2canvas(div).then( 
+                function (canvas) { 
+                    document 
+                    .getElementById('output') 
+                    .appendChild(canvas); 
+                }) 
+        } 
+    </script> 
 	
 <script>
 	

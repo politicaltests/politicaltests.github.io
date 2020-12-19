@@ -109,6 +109,9 @@ questions = [
     { "question": "I prefer rehabilitation over punishment.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
     
+    { "question": "The possibility of crime should be lowered by the fear or getting punished.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": -10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+    
 //[4] Prevention
     { "question": "If a person is acting very suspiciously, it's safer to punish or re-educate that person.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},

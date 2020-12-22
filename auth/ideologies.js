@@ -43,11 +43,30 @@ ideologies = [
 "next": "Authoritarian Socialism, Marxism-Leninism, Leninism",
 "stats": { "olig": 40, "civil": 10, "elit": 50, "preve": 50, "diver": 50, "ruleund": 40, "bestsuit": 50, "disun": 70 }},
   
-{ "name": "National Bolshevism (Nazbol)",
+{ "name": "National Bolshevism",
 "link": "https://en.wikipedia.org/wiki/National_Bolshevism",
 "desc": "National Bolshevism is a political movement and a political ideology that combines elements of fascism and Bolshevism. Being described as 'Culturally Far-Right and Economically Far-Left', it supports a socialist economy alongside with an authoritarian and ultranationalist government.",
 "next": "National Socialism, Marxism-Leninism, Leninism, Stalinism",
-"stats": { "olig": 30, "civil": 20, "elit": 40, "preve": 50, "diver": 10, "ruleund": 30, "bestsuit": 50, "disun": 10 }},
+"stats": { "olig": 10, "civil": 20, "elit": 40, "preve": 50, "diver": 10, "ruleund": 30, "bestsuit": 50, "disun": 10 }},
+  
+//AuthCenter
+{ "name": "National Socialism",
+"link": "https://en.wikipedia.org/wiki/Nazism",
+"desc": "National Socialism is a form of fascism, which rejects liberal democracy and the parliamentary system. It is ultrnationalist, and supports a racial hierarchy alongside a very strong state.",
+"next": "Fascism, National Bolshevism",
+"stats": { "olig": 0, "civil": 50, "elit": 60, "preve": 70, "diver": 0, "ruleund": 30, "bestsuit": 50, "disun": 80 }},
+  
+{ "name": "Fascism",
+"link": "https://en.wikipedia.org/wiki/Fascism",
+"desc": "Fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, strong regimentation of society and of the economy which came to prominence in early 20th-century Europe.",
+"next": "National Socialism, National Bolshevism",
+"stats": { "olig": 0, "civil": 50, "elit": 60, "preve": 70, "diver": 10, "ruleund": 30, "bestsuit": 50, "disun": 80 }},
+  
+{ "name": "State Capitalism",
+"link": "https://en.wikipedia.org/wiki/State_capitalism",
+"desc": "State capitalism is an economic system in which the state undertakes business and commercial economic activity, and where the means of production are organized and managed as state-owned enterprises.",
+"next": "Dengism, Distributism, Authoritarian Capitalism",
+"stats": { "olig": 50, "civil": 40, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
   
 { "name": "TBD",
 "link": "https://en.wikipedia.org/wiki/TBD_(disambiguation)",

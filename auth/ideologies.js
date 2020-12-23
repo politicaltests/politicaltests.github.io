@@ -66,7 +66,23 @@ ideologies = [
 "link": "https://en.wikipedia.org/wiki/State_capitalism",
 "desc": "State capitalism is an economic system in which the state undertakes business and commercial economic activity, and where the means of production are organized and managed as state-owned enterprises.",
 "next": "Dengism, Distributism, Authoritarian Capitalism",
-"stats": { "olig": 50, "civil": 40, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
+"stats": { "olig": 40, "civil": 35, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
+  
+{ "name": "Dengism",
+"link": "https://en.wikipedia.org/wiki/Deng_Xiaoping_Theory",
+"desc": "Dengism is the series of political and economic ideologies first developed by Chinese leader Deng Xiaoping. It seeks to adapt Marxism-Leninism into the modern world, and supports some degree of Capitalism. It advocates for an economy of state-owned enterprises which is heavily regulated.",
+"next": "State Capitalism, Distributism, Authoritarian Capitalism",
+"stats": { "olig": 30, "civil": 25, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
+  
+{ "name": "Distributism",
+"link": "https://en.wikipedia.org/wiki/Distributism",
+"desc": "Distributism is an economic theory asserting that the world's productive assets should be widely owned rather than concentrated, and advocates for economic mechanisms such as cooperatives and member-owned mutual organizations, as well as small businesses and large-scale competition law reform such as antitrust regulations.",
+"next": "Paternalistic Conservatism, State Capitalism, Dengism",
+"stats": { "olig": 70, "civil": 45, "elit": 40, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 30 }},
+
+  
+//AuthRight
+  
   
 { "name": "TBD",
 "link": "https://en.wikipedia.org/wiki/TBD_(disambiguation)",

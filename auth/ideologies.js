@@ -66,13 +66,13 @@ ideologies = [
 "link": "https://en.wikipedia.org/wiki/State_capitalism",
 "desc": "State capitalism is an economic system in which the state undertakes business and commercial economic activity, and where the means of production are organized and managed as state-owned enterprises.",
 "next": "Dengism, Distributism, Authoritarian Capitalism",
-"stats": { "olig": 40, "civil": 35, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
+"stats": { "olig": 40, "civil": 40, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
   
 { "name": "Dengism",
 "link": "https://en.wikipedia.org/wiki/Deng_Xiaoping_Theory",
 "desc": "Dengism is the series of political and economic ideologies first developed by Chinese leader Deng Xiaoping. It seeks to adapt Marxism-Leninism into the modern world, and supports some degree of Capitalism. It advocates for an economy of state-owned enterprises which is heavily regulated.",
 "next": "State Capitalism, Distributism, Authoritarian Capitalism",
-"stats": { "olig": 30, "civil": 25, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
+"stats": { "olig": 30, "civil": 35, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
   
 { "name": "Distributism",
 "link": "https://en.wikipedia.org/wiki/Distributism",
@@ -82,7 +82,11 @@ ideologies = [
 
   
 //AuthRight
-  
+{ "name": "Authoritarian Capitalism",
+"link": "https://en.wikipedia.org/wiki/Authoritarian_capitalism",
+"desc": "Authoritarian Capitalism  is an economic system in which a capitalist market economy exists alongside an authoritarian government. Related to and overlapping with state capitalism, a system in which the state undertakes commercial activity, authoritarian capitalism combines private property and the functioning of market forces with repression of dissent, restrictions on freedom of speech and either a lack of elections or an electoral system with a single dominant political party.",
+"next": "State Capitalism, Distributism, Absolute Monarchism",
+"stats": { "olig": 30, "civil": 80, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 50 }},
   
 { "name": "TBD",
 "link": "https://en.wikipedia.org/wiki/TBD_(disambiguation)",

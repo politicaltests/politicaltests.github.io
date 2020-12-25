@@ -4,7 +4,10 @@ questions = [
     { "question": "It's best if a single person has unlimited power over government.", "effect":{
     "olig": -10, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
 
-    { "question": "An oligarchy or democracy is ineffecient and slow.", "effect":{
+    { "question": "A democracy is ineffecient and slow.", "effect":{
+    "olig": -10, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+    
+    { "question": "Oligarchies are ineffecient.", "effect":{
     "olig": -10, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
     
     { "question": "The revolutions within the Age of Revolution was generally disastrous towards the world as a whole.", "effect":{

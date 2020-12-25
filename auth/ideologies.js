@@ -66,13 +66,13 @@ ideologies = [
 "link": "https://en.wikipedia.org/wiki/State_capitalism",
 "desc": "State capitalism is an economic system in which the state undertakes business and commercial economic activity, and where the means of production are organized and managed as state-owned enterprises.",
 "next": "Dengism, Distributism, Authoritarian Capitalism",
-"stats": { "olig": 40, "civil": 40, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
+"stats": { "olig": 30, "civil": 40, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
   
 { "name": "Dengism",
 "link": "https://en.wikipedia.org/wiki/Deng_Xiaoping_Theory",
 "desc": "Dengism is the series of political and economic ideologies first developed by Chinese leader Deng Xiaoping. It seeks to adapt Marxism-Leninism into the modern world, and supports some degree of Capitalism. It advocates for an economy of state-owned enterprises which is heavily regulated.",
 "next": "State Capitalism, Distributism, Authoritarian Capitalism",
-"stats": { "olig": 30, "civil": 35, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
+"stats": { "olig": 20, "civil": 35, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 40 }},
   
 { "name": "Distributism",
 "link": "https://en.wikipedia.org/wiki/Distributism",
@@ -87,6 +87,30 @@ ideologies = [
 "desc": "Authoritarian Capitalism  is an economic system in which a capitalist market economy exists alongside an authoritarian government. Related to and overlapping with state capitalism, a system in which the state undertakes commercial activity, authoritarian capitalism combines private property and the functioning of market forces with repression of dissent, restrictions on freedom of speech and either a lack of elections or an electoral system with a single dominant political party.",
 "next": "State Capitalism, Distributism, Absolute Monarchism",
 "stats": { "olig": 30, "civil": 80, "elit": 60, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 50 }},
+  
+{ "name": "Absolute Monarchism",
+"link": "https://en.wikipedia.org/wiki/Absolute_monarchy",
+"desc": "Absolute Monarchism is a form of monarchy in which the monarch holds supreme autocratic authority, principally not being restricted by written laws, legislature, or customs. These are often hereditary monarchies. In contrast, in constitutional monarchies, the head of state's authority derives from or is legally bound or restricted by a constitution or legislature.",
+"next": "Authoritarian Capitalism, Elective Monarchism, Constitutional Monarchism",
+"stats": { "olig": 10, "civil": 65, "elit": 70, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 10, "disun": 50 }},
+  
+{ "name": "Elective Monarchism",
+"link": "https://en.wikipedia.org/wiki/Elective_monarchy",
+"desc": "An elective monarchy is a monarchy ruled by an elected monarch, in contrast to a hereditary monarchy in which the office is automatically passed down as a family inheritance. The manner of election, the nature of candidate qualifications, and the electors vary from case to case.",
+"next": "Absolute Capitalism, Constitutional Monarchism, Authoritarian Capitalism",
+"stats": { "olig": 30, "civil": 60, "elit": 70, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 50 }},
+  
+{ "name": "Constitutional Monarchism",
+"link": "https://en.wikipedia.org/wiki/Elective_monarchy",
+"desc": "A constitutional monarchy is a form of monarchy in which the sovereign exercises authority in accordance with a written or unwritten constitution. Constitutional monarchy differs from absolute monarchy (in which a monarch holds absolute power) for which constitutional monarchs are bound to exercise their powers and authorities within the limits prescribed within an established legal framework.",
+"next": "Constitutional Capitalism, Conservatism, Elective Monarchism",
+"stats": { "olig": 60, "civil": 60, "elit": 40, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 40, "disun": 50 }},
+  
+{ "name": "Conservatism",
+"link": "https://en.wikipedia.org/wiki/Conservatism",
+"desc": "Conservatism is a political and social philosophy promoting traditional social institutions in the context of culture and civilization. The central tenets of conservatism includes the preservation of tradition, as well as a support for property rights, bureaucracy, and limited government.",
+"next": "Neoconservatism, Fiscal Conservatism, Paternalistic Conservatism",
+"stats": { "olig": 70, "civil": 60, "elit": 40, "preve": 50, "diver": 40, "ruleund": 50, "bestsuit": 60, "disun": 50 }},
   
 { "name": "TBD",
 "link": "https://en.wikipedia.org/wiki/TBD_(disambiguation)",

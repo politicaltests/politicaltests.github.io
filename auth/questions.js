@@ -152,29 +152,29 @@ questions = [
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
 //[6] Rule-Over
-    { "question": "The government is inherently above the people.", "effect":{
+    { "question": "The church and state should not be seperated.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "The government is a leader for the nation, not a servant.", "effect":{
+    { "question": "Without religion, a society is nothing..", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "Most things should be under government control.", "effect":{
+    { "question": "I support a Theocracy.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "The government should be larger than it is now.", "effect":{
+    { "question": "Religion and Government are interconnected.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
 //[6] Rule-Under
-    { "question": "The government should serve for the people.", "effect":{
+    { "question": "All religions are false.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "If certain people or certain groups influence the government, it's not necessarily a negative thing.", "effect":{
+    { "question": "State Atheism is good.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "The government exists to protect the people.", "effect":{
+    { "question": "Atheism should be mandated.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "The leader(s) of a nation should be equal to an ordinary citizen.", "effect":{
+    { "question": "I support Anti-Theism.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
     
 //[7] Hereditary

@@ -79,7 +79,12 @@ ideologies = [
 "desc": "Distributism is an economic theory asserting that the world's productive assets should be widely owned rather than concentrated, and advocates for economic mechanisms such as cooperatives and member-owned mutual organizations, as well as small businesses and large-scale competition law reform such as antitrust regulations.",
 "next": "Paternalistic Conservatism, State Capitalism, Dengism",
 "stats": { "olig": 70, "civil": 45, "elit": 40, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 30 }},
-
+  
+{ "name": "Technocracy",
+"link": "https://en.wikipedia.org/wiki/Technocracy",
+"desc": "Technocracy is a system of governance in which a decision-maker or makers are elected by the population or appointed on the basis of their expertise in a given area of responsibility, particularly with regard to scientific or technical knowledge.",
+"next": "Paternalistic Conservatism, State Capitalism, Distributism,",
+"stats": { "olig": 50, "civil": 50, "elit": 60, "preve": 30, "diver": 50, "ruleund": 50, "bestsuit": 90, "disun": 30 }},
   
 //AuthRight
 { "name": "Authoritarian Capitalism",
@@ -112,10 +117,28 @@ ideologies = [
 "next": "Neoconservatism, Fiscal Conservatism, Paternalistic Conservatism",
 "stats": { "olig": 70, "civil": 60, "elit": 40, "preve": 50, "diver": 40, "ruleund": 50, "bestsuit": 60, "disun": 50 }},
   
-{ "name": "TBD",
-"link": "https://en.wikipedia.org/wiki/TBD_(disambiguation)",
-"desc": "TBD is an abbreviation often meaning in ordinary writing 'to be discussed', 'to be done', 'to be defined', 'to be decided', 'to be determined', 'to be declared', etc. ",
-"next": "Idk",
-"stats": { "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 50, "bestsuit": 50, "disun": 50 }}
+{ "name": "Neoconservatism",
+"link": "https://en.wikipedia.org/wiki/Conservatism",
+"desc": "Neoconservatism is a political movement born in the United States during the 1960s among liberal hawks who became disenchanted with the increasingly pacifist foreign policy of the Democratic Party. They generally support the preservation of tradition, as well as a more aggresive foreign policy.",
+"next": "Conservatism, Constitutional Monarchism, Paternalistic Conservatism",
+"stats": { "olig": 40, "civil": 60, "elit": 60, "preve": 50, "diver": 20, "ruleund": 50, "bestsuit": 60, "disun": 50 }},
+  
+{ "name": "Paternalistic Conservatism",
+"link": "https://en.wikipedia.org/wiki/Conservatism",
+"desc": "Paternalistic conservatism is a strand of conservatism which reflects the belief that societies exist and develop organically and that members within them have obligations towards each other. There is particular emphasis on the paternalistic obligation of those who are privileged and wealthy to the poorer parts of society. ",
+"next": "Conservatism, Fiscal Conservatism, Technocracy",
+"stats": { "olig": 70, "civil": 40, "elit": 40, "preve": 50, "diver": 40, "ruleund": 50, "bestsuit": 60, "disun": 50 }},
+  
+{ "name": "Fiscal Conservatism",
+"link": "https://en.wikipedia.org/wiki/Fiscal_conservatism",
+"desc": "Fiscal conservatism is a political and economic philosophy regarding fiscal policy and fiscal responsibility advocating low taxes, reduced government spending and minimal government debt. Deregulation, free trade, privatization and tax cuts are its defining qualities. Fiscal conservatism follows the same philosophical outlook of classical liberalism and economic liberalism.",
+"next": "Conservatism, Paternalistic Conservatism, Neoconservatism",
+"stats": { "olig": 90, "civil": 70, "elit": 40, "preve": 50, "diver": 40, "ruleund": 50, "bestsuit": 60, "disun": 50 }},
+  
+{ "name": "Right-Wing Populism",
+"link": "https://en.wikipedia.org/wiki/Conservatism",
+"desc": "Right-Wing Populism is a political ideology which combines right-wing politics and populist rhetoric and themes. The rhetoric often consists of anti-elitist sentiments, opposition to the Establishment, and speaking to the "common people". Both right-wing populism and left-wing populism object to the perceived control of liberal democracies by elites; however, populism of the left also objects to the power of large corporations and their allies, while populism of the right normally supports strong controls on immigration.",
+"next": "Neoconservatism, Conservatism, Fiscal Conservatism",
+"stats": { "olig": 45, "civil": 60, "elit": 20, "preve": 50, "diver": 40, "ruleund": 60, "bestsuit": 60, "disun": 50 }},
        
 ];

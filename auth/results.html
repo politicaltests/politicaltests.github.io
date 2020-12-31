@@ -3,9 +3,7 @@
 <link href='/auth/style.css' rel='stylesheet' type='text/css'>
 <title>AuthValues Results</title>
 	
-<script src= 
-"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"> 
-  </script> 
+<script src='html2canvas.js'></script>
 	
 <link rel="icon" type="x-icon" href="/icons/authvalues.png">
 <link rel="shortcut icon" type="x-icon" href="/icons/authvalues.png">
@@ -84,9 +82,6 @@
     <div class="bar bestsuited" id="bar-bestsuited"><div class="text-wrapper" id="bestsuited"></div></div>
     <div class="bar hereditary" id="bar-hereditary"><div class="text-wrapper" id="hereditary"></div></div>
     <img id="img-hereditary" src="/auth/value_images/hereditary.png" height="128pt"/>
-</div> <button onclick="takeshot()"> 
-            Take Screenshot 
-        </button> 
 
 <h2>Cooperation: <span class="weight-300" id="disun-label"></span></h2>
 <div class="axis">
@@ -109,7 +104,7 @@
 <!-- <input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick="takeshot()" style="background-color: #06a800;"><br/> -->
 
 </div>
-<button onclick="takeshot()"> Take Screenshot </button> <br>
+<button onclick="takeshot()" class="button"> Take Screenshot </button> <br>
 <button class="button" onclick="location.href='https://politicaltests.github.io/auth.html';" style="background-color: #2196f3;">Back</button> <br>
 
   <!-- Script for screenshot -->

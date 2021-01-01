@@ -110,15 +110,8 @@
   <script type="text/javascript"> 
   
         function simpleview() { 
-        location.href = `simpleview.html`
-            + `?olig=${calc_score(olig,max_olig)}`
-            + `&civil=${calc_score(civil,max_civil)}`
-            + `&elit=${calc_score(elit,max_elit)}`
-            + `&preve=${calc_score(preve,max_preve)}`
-            + `&diver=${calc_score(diver,max_diver)}`
-            + `&ruleund=${calc_score(ruleund,max_ruleund)}`
-            + `&bestsuit=${calc_score(bestsuit,max_bestsuit)}`
-            + `&disun=${calc_score(disun,max_disun)}`
+        var url = window.location.toString();
+	window.location = url.replace(/results/, 'simpleview');
 	}
 
     oligArray = ["Bureaucracy","Oligarchy","Aristocracy","Anocracy","Despotism","Autocracy","Totalitarian Autocracy"]

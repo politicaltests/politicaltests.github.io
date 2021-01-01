@@ -104,11 +104,29 @@
 <p>You can send these results by copying and pasting the URL at the top of the page or screenshotting this page. Think your scores were wrong? Want to help us calibrate the test? Send the results along with your political ideology to me at 123rand0m0dnar321@tutanota.com, or send us any comments, questions, or criticism. </p>
 <hr/>
 
-<!-- <input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick="takeshot()" style="background-color: #06a800;"><br/> --> 	
+<input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick="takeshot()" style="background-color: #06a800;"><br/> 	
 <button class="button" onclick="location.href='https://politicaltests.github.io/auth.html';" style="background-color: #2196f3;">Back</button> <br>
 
   <!-- Script for screenshot -->
-  <script> 
+  <script type="text/javascript"> 
+  
+        // Define the function  
+        // to screenshot the div 
+        function takeshot() { 
+            let div = 
+                document.getElementById('photo'); 
+  
+            // Use the html2canvas 
+            // function to take a screenshot 
+            // and append it 
+            // to the output div 
+            html2canvas(div).then( 
+                function (canvas) { 
+                    document 
+                    .getElementById('output') 
+                    .appendChild(canvas); 
+                }) 
+        } 
 	
     function getQueryVariable(variable)
     {

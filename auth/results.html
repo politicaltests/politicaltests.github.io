@@ -104,50 +104,22 @@
 <p>You can send these results by copying and pasting the URL at the top of the page or screenshotting this page. Think your scores were wrong? Want to help us calibrate the test? Send the results along with your political ideology to me at 123rand0m0dnar321@tutanota.com, or send us any comments, questions, or criticism. </p>
 <hr/>
 
-<input class="button" type='button' id='but_screenshot' value='Take screenshot' onclick="takeshot()" style="background-color: #06a800;"><br/> 	
+<input class="button" type='button' onclick="simpleview()" style="background-color: #06a800;"><br/> 	
 <button class="button" onclick="location.href='https://politicaltests.github.io/auth.html';" style="background-color: #2196f3;">Back</button> <br>
 
-  <!-- Script for screenshot -->
   <script type="text/javascript"> 
   
-        // Define the function  
-        // to screenshot the div 
-        function takeshot() { 
-            let div = 
-                document.getElementById('photo'); 
-  
-            // Use the html2canvas 
-            // function to take a screenshot 
-            // and append it 
-            // to the output div 
-            html2canvas(div).then( 
-                function (canvas) { 
-                    document 
-                    .getElementById('output') 
-                    .appendChild(canvas); 
-                }) 
-        } 
-	
-    function getQueryVariable(variable)
-    {
-           var query = window.location.search.substring(1)
-           var vars = query.split("&")
-           for (var i=0;i<vars.length;i++) {
-                   var pair = vars[i].split("=")
-                   if(pair[0] == variable) {return pair[1]}
-           }
-           return(NaN);
-    }
-
-    function setBarValue(name, value) {
-        innerel = document.getElementById(name)
-        outerel = document.getElementById("bar-" + name)
-        outerel.style.width = (value + "%")
-        innerel.innerHTML = (value + "%")
-        if (innerel.offsetWidth + 20 > outerel.offsetWidth) {
-            innerel.style.visibility = "hidden"
-        }
-    }
+        function simpleview() { 
+        location.href = `simpleview.html`
+            + `?olig=${calc_score(olig,max_olig)}`
+            + `&civil=${calc_score(civil,max_civil)}`
+            + `&elit=${calc_score(elit,max_elit)}`
+            + `&preve=${calc_score(preve,max_preve)}`
+            + `&diver=${calc_score(diver,max_diver)}`
+            + `&ruleund=${calc_score(ruleund,max_ruleund)}`
+            + `&bestsuit=${calc_score(bestsuit,max_bestsuit)}`
+            + `&disun=${calc_score(disun,max_disun)}`
+	}
 
     oligArray = ["Bureaucracy","Oligarchy","Aristocracy","Anocracy","Despotism","Autocracy","Totalitarian Autocracy"]
     civilArray = ["Extreme Civil Focus","Civil Focus","Moderate Civil Focus","Balanced","Moderate Economic Focus","Economic Focus","Extreme Economic Focus"]

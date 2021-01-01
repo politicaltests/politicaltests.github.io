@@ -96,7 +96,7 @@ ideologies = [
 { "name": "Absolute Monarchism",
 "link": "https://en.wikipedia.org/wiki/Absolute_monarchy",
 "desc": "Absolute Monarchism is a form of monarchy in which the monarch holds supreme autocratic authority, principally not being restricted by written laws, legislature, or customs. These are often hereditary monarchies. In contrast, in constitutional monarchies, the head of state's authority derives from or is legally bound or restricted by a constitution or legislature.",
-"next": "Authoritarian Capitalism, Elective Monarchism, Constitutional Monarchism",
+"next": "Authoritarian Capitalism, Elective Monarchism, State Capitalism",
 "stats": { "olig": 10, "civil": 65, "elit": 70, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 10, "disun": 50 }},
   
 { "name": "Elective Monarchism",
@@ -106,7 +106,7 @@ ideologies = [
 "stats": { "olig": 30, "civil": 60, "elit": 70, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 50, "disun": 50 }},
   
 { "name": "Constitutional Monarchism",
-"link": "https://en.wikipedia.org/wiki/Elective_monarchy",
+"link": "https://en.wikipedia.org/wiki/Constitutional_monarchy
 "desc": "A constitutional monarchy is a form of monarchy in which the sovereign exercises authority in accordance with a written or unwritten constitution. Constitutional monarchy differs from absolute monarchy (in which a monarch holds absolute power) for which constitutional monarchs are bound to exercise their powers and authorities within the limits prescribed within an established legal framework.",
 "next": "Constitutional Capitalism, Conservatism, Elective Monarchism",
 "stats": { "olig": 60, "civil": 60, "elit": 40, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 40, "disun": 50 }},

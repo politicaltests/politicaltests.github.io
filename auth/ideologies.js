@@ -137,7 +137,7 @@ ideologies = [
   
 { "name": "Right-Wing Populism",
 "link": "https://en.wikipedia.org/wiki/Conservatism",
-"desc": "Right-Wing Populism is a political ideology which combines right-wing politics and populist rhetoric and themes. The rhetoric often consists of anti-elitist sentiments, opposition to the Establishment, and speaking to the "common people". Both right-wing populism and left-wing populism object to the perceived control of liberal democracies by elites; however, populism of the left also objects to the power of large corporations and their allies, while populism of the right normally supports strong controls on immigration.",
+"desc": "Right-Wing Populism is a political ideology which combines right-wing politics and populist rhetoric and themes. The rhetoric often consists of anti-elitist sentiments, opposition to the Establishment, and speaking to the 'common people'. Both right-wing populism and left-wing populism object to the perceived control of liberal democracies by elites; however, populism of the left also objects to the power of large corporations and their allies, while populism of the right normally supports strong controls on immigration.",
 "next": "Neoconservatism, Conservatism, Fiscal Conservatism",
 "stats": { "olig": 45, "civil": 60, "elit": 20, "preve": 50, "diver": 40, "ruleund": 60, "bestsuit": 60, "disun": 50 }}
        

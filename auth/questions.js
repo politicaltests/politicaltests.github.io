@@ -163,20 +163,20 @@ questions = [
     { "question": "A government that mandates a way of life is evil.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-//[6] Rule-Over
+//[6] Theocracy (Rule-Over)
     { "question": "The church and state should not be seperated.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
     { "question": "Without religion, a society is nothing..", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "I support a Theocracy.", "effect":{
+    { "question": "The Enlightenment was a mistake.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
     { "question": "Religion and Government are interconnected.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
   
-//[6] Rule-Under
+//[6] Irreligion (Rule-Under)
     { "question": "All religions are false.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
   
@@ -184,6 +184,9 @@ questions = [
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
   
     { "question": "Atheism should be mandated.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+    
+    { "question": "I agree with the religious policies of regimes like the USSR.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
   
     { "question": "I support Anti-Theism.", "effect":{

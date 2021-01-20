@@ -35,33 +35,33 @@ questions = [
     { "question": "Checks-and-balances or Bureacracy are needed for a good government.", "effect":{
     "olig": 10, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
- //[2] Economic
+ //[2] Socialism (Economic)
     { "question": "Corporations are inherently evil.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "We need more intervention in terms of the economy.", "effect":{
+    { "question": "Socialism is fairer for everyone than the current economic system.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
     { "question": "Socialism or Communism is better than Capitalism.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "Most of the problems we face today can be solved with economic regulation.", "effect":{
+    { "question": "Most of the problems we face today is caused by Capitalism.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "The current military budget of my country is too high.", "effect":{
+    { "question": "A communist utopia is possible.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
- //[2] Civil
-    { "question": "Law and Order makes society function properly.", "effect":{
+ //[2] Capitalism (Civil)
+    { "question": "Communism or Socialism never worked, and never will work.", "effect":{
     "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "Without a reliable police force, a society is nothing.", "effect":{
+    { "question": "Capitalism encourages innovation.", "effect":{
     "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "We need to increase the efforts on our national defence.", "effect":{
+    { "question": "Capitalism is the most efficient economic system by far.", "effect":{
     "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "Economic regulation destroys small businesses and harms society.", "effect":{
+    { "question": "People get unproductive under Socialism.", "effect":{
     "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
     { "question": "Capitalism is the only economic system that worked.", "effect":{

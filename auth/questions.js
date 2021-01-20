@@ -42,13 +42,19 @@ questions = [
     { "question": "Socialism is fairer for everyone than the current economic system.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "Socialism or Communism is better than Capitalism.", "effect":{
+    { "question": "Rent is comparable to theft.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
     { "question": "Most of the problems we face today is caused by Capitalism.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "A communist utopia is possible.", "effect":{
+    { "question": "Economic class would not exist in an ideal society.", "effect":{
+    "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+    
+    { "question": "People who are unable to work should be cared for by the state.", "effect":{
+    "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+    
+    { "question": "Socialism is the only system which will respond to people’s needs.", "effect":{
     "olig": 0, "civil": -10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
  //[2] Capitalism (Civil)
@@ -64,7 +70,13 @@ questions = [
     { "question": "People get unproductive under Socialism.", "effect":{
     "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "Capitalism is the only economic system that worked.", "effect":{
+    { "question": "The government should cooperate with big businesses to some degree.", "effect":{
+    "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+    
+    { "question": "Labor unions should be heavily restricted, if not banned.", "effect":{
+    "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
+
+     { "question": "The survival of the fittest is an ordinary, and we shouldn't stop it.", "effect":{
     "olig": 0, "civil": 10, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
 
 //[3] Populism
@@ -203,7 +215,7 @@ questions = [
     { "question": "Even the poor should have a chance to become a leader of the nation.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 10, "disun": 0 }},
     
-//[7] Hereditary
+//[8] Unity
     { "question": "Authoritarians should work toghether for a common goal.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": -10 }},
   

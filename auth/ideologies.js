@@ -61,6 +61,12 @@ ideologies = [
 "desc": "Fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, strong regimentation of society and of the economy which came to prominence in early 20th-century Europe.",
 "next": "National Socialism, National Bolshevism",
 "stats": { "olig": 0, "civil": 50, "elit": 60, "preve": 70, "diver": 10, "ruleund": 30, "bestsuit": 50, "disun": 80 }},
+   
+{ "name": "Neo-Fascism",
+"link": "https://en.wikipedia.org/wiki/Fascism",
+"desc": "Fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, strong regimentation of society and of the economy which came to prominence in early 20th-century Europe.",
+"next": "National Socialism, National Bolshevism",
+"stats": { "olig": 0, "civil": 100, "elit": 60, "preve": 70, "diver": 10, "ruleund": 30, "bestsuit": 50, "disun": 80 }},
   
 { "name": "State Capitalism",
 "link": "https://en.wikipedia.org/wiki/State_capitalism",

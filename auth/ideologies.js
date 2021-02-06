@@ -114,7 +114,7 @@ ideologies = [
 { "name": "Constitutional Monarchism",
 "link": "https://en.wikipedia.org/wiki/Constitutional_monarchy",
 "desc": "A constitutional monarchy is a form of monarchy in which the sovereign exercises authority in accordance with a written or unwritten constitution. Constitutional monarchy differs from absolute monarchy for which constitutional monarchs are bound to exercise their powers and authorities within the limits prescribed within an established legal framework.",
-"next": "Constitutional Capitalism, Conservatism, Elective Monarchism",
+"next": "Fiscal Conservatism, Conservatism, Elective Monarchism",
 "stats": { "olig": 60, "civil": 60, "elit": 40, "preve": 50, "diver": 50, "ruleund": 50, "bestsuit": 40, "disun": 50 }},
   
 { "name": "Conservatism",

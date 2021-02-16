@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>InfValues Results</title>
+    <link rel="icon" type="x-icon" href="icon.png">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>InfValues</h1>
+    <hr>
+
+    <h1>Results</h1>
+    <br>
+
+    <div class="center-container">
+        <p style="margin:-2px auto">
+            Thanks for taking the test! Here are your results below.
+            There are currently 45 Axes in the test. <b>This test is not completed yet.</b>
+        </p>
+        <br>
+
+
+        <p id="compareCta" style="margin: 0">
+            If you have someone else's link, you can
+            <a href="#" class="toggle-compare-button">click here to compare</a>
+            your results.
+        </p>
+
+        <div id="compareContainer" style="display: none">
+            <p style="margin: 0;">
+                Paste a link below to compare the results. An arrow
+                will indicate how different are the results from the link.
+                <a href="#" class="toggle-compare-button">Disable comparison</a>
+            </p>
+            <input id="compareLinkInput" type="text"
+                style="width: 100%; font-size: 0.9em; padding: 4px; margin: 16px 0 0;"
+                placeholder="Paste a link to compare"
+            />
+        </div>
+        <br>
+    </div>
+
+    <canvas id="canvas" width="956" height="5807" style="border:1px solid #d3d3d3;"></canvas>
+
+    <div class="center-container">
+        <p style="margin:0">
+            If you have any suggestions or opinions about this test, please fill in <a href="https://forms.gle/AA5aYwSb9MnHunMc8">this form</a>.
+        </p>
+        </br>
+    </div>
+
+    <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button>
+    <br>
+
+    <img id="compass" src="compass.png" alt="Image" style="display: none;" />
+
+    <script>
+        // rendering/scaling info
+        const renderConfig = {
+            // center (x-axis 0-point)
+            xCenter: 481,
+
+            // total x-axis width (containing values between scale start and scale end, around xCenter)
+            xWidth: 960, // note: image has last approx 5 pixels cut off on the right hand side
+
+            // 'width' of the scale (from lowest to highest possible value)
+            scaleSpan: 20, // (-10 .. 10)
+
+            // width of the marker box
+            markerWidth: 120,
+
+            // if true, the marker's edge would be touching end of scale at value=scaleMax
+            // if false, the marker would be centered around end of scale at value=scaleMax
+            markerKeepInside: true,
+
+            // two dots will appear instead of a comparison arrow if the difference is
+            // smaller than this value in pixels
+            compareJoinAtPixels: 15,
+
+            compareArrowBackground: {
+                barHeight: 8,
+                circleRadius: 7,
+                arrowHeadHeight: 24,
+                color: 'rgba(0, 0, 0, 0.5)'
+            },
+
+            compareArrowForeground: {
+                barHeight: 4,
+                circleRadius: 5,
+                arrowHeadHeight: 16,
+                color: 'rgba(255, 255, 255, 0.85)'
+            },
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // create definition of rows to be displayed on the image
+        // contains: axis name (corresponding to URL), top y position and height of row
+        const rowList = [
+           // axisName,	y, 		height
+            [ 'cap',	0,		133 ],
+            [ 'auth',	133,	135 ],
+            [ 'nat',	268,	135 ],
+            [ 'trad',	403,	135 ],
+            [ 'acc',	538,	135 ],
+            [ 'relig',	673,	135 ],
+            [ 'rad',	808,	135 ],
+            [ 'nonv',	943,	135 ],
+            [ 'noo',	1078,	135 ],
+            [ 'const',	1213,	135 ],
+            [ 'inter',	1348,	135 ],
+            [ 'assi',	1478,	137 ],
+            [ 'prag',	1615,	138 ],
+            [ 'prud',	1753,	135 ],
+            [ 'free',	1888,	135 ],
+            [ 'pat',	2023,	134 ],
+            [ 'unru',	2157,	134 ],
+            [ 'imp',	2291,	134 ],
+            [ 'dec',	2425,	134 ],
+            [ 'nih',	2559,	135 ],
+            [ 'contra',	2694,	135 ],
+            [ 'gadsen',	2829,	135 ],
+            [ 'puni',	2964,	137 ],
+            [ 'spir',	3101,	133 ],
+            [ 'lcen',	3234,	135 ],
+            [ 'pron',	3369,	135 ],
+            [ 'incom',	3504,	135 ],
+            [ 'clim',	3639,	135 ],
+            [ 'hors',	3774,	135 ],
+            [ 'ptax',	3909,	135 ],
+            [ 'pmart',	4044,	134 ],
+            [ 'consq',	4178,	134 ],
+            [ 'enth',	4311,	131 ],
+            [ 'ahs',	4442,	134 ],
+            [ 'fact',	4576,	134 ],
+            [ 'trpop',	4710,	138 ],
+            [ 'wmar',	4848,	135 ],
+            [ 'trade',	4983,	135 ],
+            [ 'cmind',	5117,	135 ],
+            [ 'poach',	5252,	135 ],
+            [ 'hier',	5387,	130 ],
+            [ 'open',	5517,	142 ],
+            [ 'semir',	5660,	146 ],
+
+            /*
+            // todo: add more boxes when questions are added
+            ...
+            */
+        ] // transform the list into objects containing:
+          // axisName, y, height (from above), value (from URL)
+        .map(entry => {
+            const axisName = entry[0];
+            const urlValue = urlParams.get(axisName);
+            return {
+                axisName: axisName,
+                value: urlValue ? parseFloat(urlValue) : null,
+                y: entry[1],
+                height: entry[2]
+            };
+        });
+
+        function xCenteredRect(ctx, xCenter, y, width, height) {
+            ctx.rect(xCenter - width/2, y, width, height);
+        }
+
+        function drawRowHighlights(ctx, rowList, config) {
+            const xSpan = config.markerKeepInside
+                ? (config.xWidth - config.markerWidth)
+                : config.xWidth;
+
+            const scaleToPixelsRatio = xSpan / config.scaleSpan;
+
+            const rectWidth = config.markerWidth;
+
+            ctx.fillStyle = "rgba(225, 225, 225, 0.55)";
+
+            rowList
+                .filter(row => row.value !== null)
+                .forEach(row => {
+                    const x = config.xCenter + scaleToPixelsRatio * row.value;
+                    ctx.beginPath();
+                        xCenteredRect(ctx, x, row.y, rectWidth, row.height);
+                    ctx.fill();
+                });
+        }
+
+        function drawCompareArrow(ctx, x_my, x_theirs, y, config, joinAt) {
+            const arrowSize = config.arrowHeadHeight / 2;
+            const my_left = x_my < x_theirs;
+            const x1 = my_left ? x_my : x_theirs;
+            const x2 = my_left ? x_theirs : x_my
+            const headOffsetSize = arrowSize / 2;
+            const headOffset = my_left ? headOffsetSize : -headOffsetSize;
+            ctx.fillStyle = config.color;
+            ctx.beginPath();
+                if(x2 - x1 > joinAt) {
+                    xCenteredRect(ctx, (x1+x2-headOffset)/2, y - Math.round(config.barHeight/2), x2 - x1 - headOffsetSize, config.barHeight);
+                    ctx.moveTo(x_theirs - headOffset, y + arrowSize);
+                    ctx.lineTo(x_theirs + headOffset * 1.5, y);
+                    ctx.lineTo(x_theirs - headOffset, y - arrowSize);
+                    ctx.moveTo(x_my, y);
+                }else{
+                    ctx.arc(x_theirs, y, config.circleRadius * 0.75, 0, Math.PI * 2)
+                }
+                ctx.arc(x_my, y, config.circleRadius, 0, Math.PI * 2)
+            ctx.fill();
+        }
+
+        function drawRowCompare(ctx, rowList, comparedValues, config) {
+            const xSpan = config.markerKeepInside
+                ? (config.xWidth - config.markerWidth)
+                : config.xWidth;
+
+            const scaleToPixelsRatio = xSpan / config.scaleSpan;
+
+
+            rowList
+                .filter(row => row.axisName in comparedValues)
+                .forEach(row => {
+                    const x_theirs = config.xCenter + scaleToPixelsRatio * comparedValues[row.axisName];
+                    const x_my = row.value !== null
+                        ? config.xCenter + scaleToPixelsRatio * row.value
+                        : x_theirs;
+
+                    const y = Math.round(row.y + row.height * 0.7);
+                    drawCompareArrow(ctx, x_my, x_theirs, y, config.compareArrowBackground, config.compareJoinAtPixels);
+                    drawCompareArrow(ctx, x_my, x_theirs, y, config.compareArrowForeground, config.compareJoinAtPixels);
+                });
+        }
+
+
+        window.onload = function() {
+            const img = document.getElementById("compass");
+            const c = document.getElementById("canvas");
+            const ctx = canvas.getContext("2d");
+            let compareEnabled = false;
+            let comparedValues = null;
+            let compareTextValue = null;
+
+            function redraw() {
+                ctx.drawImage(img, 0, 0);
+
+                drawRowHighlights(ctx, rowList, renderConfig);
+
+                if(compareEnabled && comparedValues) {
+                    drawRowCompare(ctx, rowList, comparedValues, renderConfig);
+                }
+            }
+
+            redraw();
+
+            const toggleCompareButtons = document.getElementsByClassName('toggle-compare-button');
+            const compareCta = document.getElementById('compareCta');
+            const compareContainer = document.getElementById('compareContainer');
+            const compareInput = document.getElementById('compareLinkInput');
+
+
+            function onCompareChanged() {
+                if(compareEnabled) {
+                    compareCta.style.display = 'none';
+                    compareContainer.style.display = 'block';
+                }else{
+                    compareCta.style.display = 'block';
+                    compareContainer.style.display = 'none';
+                }
+                try {
+                    const params = compareTextValue.replace(/^.*\?/, '');
+                    const urlParams = new URLSearchParams(params);
+                    const entries = rowList.map(el => [
+                            el.axisName,
+                            urlParams.get(el.axisName)
+                        ])
+                        .filter(el => el[1] !== null)
+                        .map(el => [el[0], parseFloat(el[1])]);
+                    comparedValues = entries.length ? Object.fromEntries(entries) : null;
+                }catch(err) {
+                    comparedValues = null;
+                }
+
+                redraw();
+            }
+
+            function onCompareValueChanged() {
+                const inputValue = compareInput.value || '';
+                if(compareTextValue !== inputValue) {
+                    compareTextValue = inputValue;
+                    onCompareChanged();
+                }
+            }
+
+            compareInput.addEventListener('change', onCompareValueChanged);
+            compareInput.addEventListener('keydown', () => setTimeout(onCompareValueChanged, 10));
+            compareInput.addEventListener('paste', () => setTimeout(onCompareValueChanged, 10));
+
+            for(let i = 0; i < toggleCompareButtons.length; i++) {
+                const button = toggleCompareButtons[i];
+                button.addEventListener('click', (ev) => {
+                    compareEnabled = !compareEnabled;
+                    onCompareChanged();
+                    ev.preventDefault();
+                });
+            }
+        }
+    </script>
+</body>
+</html>

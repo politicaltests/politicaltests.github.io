@@ -20,5 +20,14 @@ questions =  [
     {"id": 14, "question": "Workers should directly own what they produce.", "effects": {"soc": 1}},
 
  //Authoritarian
-    {"id": 14, "question": "Workers should directly own what they produce.", "effects": {"soc": 1}},
+    {"id": 15, "question": "I support a strong government.", "effects": {"auth": 1}},
+    {"id": 16, "question": "Even when protesting an authoritarian government, violence cannot be accepted.", "effects": {"auth": 1}},
+    {"id": 17, "question": "Security and order is more important than freedom and liberty.", "effects": {"auth": 1}},
+    {"id": 18, "question": "I prefer autocracy over democracy.", "effects": {"auth": 1}},
+    {"id": 19, "question": "I disagree with most of the enlightenment ideas.", "effects": {"auth": 1}},
+    {"id": 20, "question": "Mandates on certain ways of life are sometimes justified.", "effects": {"auth": 1}},
+    {"id": 21, "question": "If a certain object negatively impacts society, it should be banned.", "effects": {"auth": 1}},
+    {"id": 22, "question": "Civil disobedience must be actively suppressed.", "effects": {"auth": 1}},
+    {"id": 23, "question": "Surveillance should be used to keep society on the right track.", "effects": {"auth": 1}},
+
  ];

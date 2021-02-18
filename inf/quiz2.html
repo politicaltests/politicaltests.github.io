@@ -61,6 +61,15 @@
         [array[i], array[j]] = [array[j], array[i]];
       }
     }
+    
+    function createButton(buttonInfo) {
+        if ( buttonInfo["effect"] === null || Number.isInteger(buttonInfo["effect"]) ) {
+            var btn = $(`<button class="button" onclick="next_question(${buttonInfo["effect"]})" ;
+        } else {
+            var btn = $(`<button class="button" onclick="next_question('${buttonInfo["effect"]}')" ;
+        }
+        $("#answers").append(btn);
+    }
 
     // Question initialization
 

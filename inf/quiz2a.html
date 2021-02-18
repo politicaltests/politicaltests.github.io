@@ -62,7 +62,8 @@
       }
     }
     
-    function createButton(buttonInfo) {
+    //Buttons
+   function createButton(buttonInfo) {
         if ( buttonInfo["effect"] === null || Number.isInteger(buttonInfo["effect"]) ) {
             var btn = $(`<button class="button" onclick="next_question(${buttonInfo["effect"]})" style="background-color: ${buttonInfo["color"]};">${buttonInfo["label"]}</button> <br>`);
         } else {
@@ -70,6 +71,12 @@
         }
         $("#answers").append(btn);
     }
+
+    function addSelect(value, name) {
+        var opt = $(`<option value='${value}'>${name}</option>`);
+        $("#select").append(opt);
+    }
+    
 
     // Question initialization
 

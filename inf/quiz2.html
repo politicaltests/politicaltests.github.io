@@ -64,9 +64,9 @@
     
     function createButton(buttonInfo) {
         if ( buttonInfo["effect"] === null || Number.isInteger(buttonInfo["effect"]) ) {
-            var btn = $(`<button class="button" onclick="next_question(${buttonInfo["effect"]})" ;
+            var btn = $(`<button class="button" onclick="next_question(${buttonInfo["effect"]})" style="background-color: ${buttonInfo["color"]};">${buttonInfo["label"]}</button> <br>`);
         } else {
-            var btn = $(`<button class="button" onclick="next_question('${buttonInfo["effect"]}')" ;
+            var btn = $(`<button class="button" onclick="next_question('${buttonInfo["effect"]}')" style="background-color: ${buttonInfo["color"]};">${buttonInfo["label"]}</button>  <br>`);
         }
         $("#answers").append(btn);
     }

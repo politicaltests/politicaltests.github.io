@@ -29,5 +29,7 @@ questions =  [
     {"id": 21, "question": "If a certain object negatively impacts society, it should be banned.", "effects": {"auth": 1}},
     {"id": 22, "question": "Civil disobedience must be actively suppressed.", "effects": {"auth": 1}},
     {"id": 23, "question": "Surveillance should be used to keep society on the right track.", "effects": {"auth": 1}},
+    
+
 
  ];

@@ -10,10 +10,10 @@ questions =  [
     {"id": 8, "question": "Capitalism rose more people out of poverty than any other economic system.", "effects": {"id": 10}},
 
  //Authoritarian
-    {"id": 15, "question": "I support a strong government.", "effects": {"id": 100}},
-    {"id": 16, "question": "Even when protesting an authoritarian government, violence cannot be accepted.", "effects": {"id": 100}},
-    {"id": 17, "question": "Security and order is more important than freedom and liberty.", "effects": {"id": 100}},
-    {"id": 18, "question": "Mandates on certain ways of life are sometimes justified.", "effects": {"id": 100}},
+    {"id": 9, "question": "I support a strong government.", "effects": {"id": 100}},
+    {"id": 10, "question": "Even when protesting an authoritarian government, violence cannot be accepted.", "effects": {"id": 100}},
+    {"id": 11, "question": "Security and order is more important than freedom and liberty.", "effects": {"id": 100}},
+    {"id": 12, "question": "Mandates on certain ways of life are sometimes justified.", "effects": {"id": 100}},
     
 
 

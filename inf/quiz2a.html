@@ -78,14 +78,78 @@
     }
     
 
-    // Question initialization
-
-    init_question();
+       // Init question
 
     function init_question() {
-        $("#question-text").html(questionsObject[questionsOrder[qn]].question);
+        if (jQuery.isEmptyObject(testAnswers)) {
+            location.href = `quiz.html`
+        }
+        current = questionsObject[questionsOrder[qn]]
+
+
+        $("#question-text").html(current.question);
         $("#question-number").html("Question "+(qn + 1)+" of "+(questionsOrder.length));
 
+        $("#answers").empty();
+
+        if (current.questionType === "smallSelection") {
+            current.answers.forEach(createButton);
+
+        } else if (current.questionType === "bigSelection") {
+
+            $("#answers").append($('<select id="select" class="selection">'));
+
+            var opt = $(`<option value=null disabled selected>Choose a country</option>`);
+            $("#select").append(opt);
+
+            for (const key in current.answers) {
+                addSelect(key, current.answers[key])
+            }
+            $("<br>").insertAfter("#select");
+
+            var btn = $(`<button class="button" id="go" onclick="next_question(getActiveDropdown());" style="background-color:#4caf50; display: none;">Go!</button> <br>`);
+            $("#answers").append(btn);
+            createButton({"label":"Refuse","color":"#a9a9a9","effect":null});
+
+            $("#select").change(function(){
+                $("#go").show()
+            });
+        } else if (current.questionType === "customNumber") {
+            $("#answers").append($(`<input type="tel" id="number" class="num_input" maxlength="${current.range[1].toString().length}" min="${current.range[0]}" max="${current.range[1]}"> <br>`));
+
+            var btn = $(`<button disabled class="button green_button" id="go" onclick="next_question(getActiveNumber());">Next!</button> <br>`);
+            $("#answers").append(btn);
+
+            createButton({"label":"Refuse","color":"#a9a9a9","effect":null});
+
+            $("#number").on("input", function(){
+                var nr = Number(getActiveNumber());
+                if ( (current.range[0] <= nr) && (nr => current.range[1]) ) {
+                    $("#go").prop('disabled', false)
+                } else {
+                    $("#go").prop('disabled', true)
+                }
+            });
+            
+            $("#number").focus();
+        } else if (current.questionType === "customText") {
+            $("#answers").append($(`<input type="text" id="text" class="text_input"> <br>`));
+
+            var btn = $(`<button disabled class="button green_button" id="go" onclick="next_question(getActiveText());">Next!</button> <br>`);
+            $("#answers").append(btn);
+
+            createButton({"label":"Refuse / Don't know","color":"#a9a9a9","effect":null});
+
+            $("#text").on("input", function(){
+                if ( getActiveText().length > 0 ) {
+                    $("#go").prop('disabled', false)
+                } else {
+                    $("#go").prop('disabled', true)
+                }
+            });
+
+            $("#text").focus();
+        }
 
 
         if (jQuery.isEmptyObject(answers)) {
@@ -111,7 +175,7 @@
         if (qn < questionsOrder.length) {
             init_question();
         } else {
-            results();
+            pass(true);
         }
     }
 

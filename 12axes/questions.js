@@ -1,5 +1,5 @@
 questions = 
-    [[//Federal-Unitary`
+    [[//Federal-Unitary
         [//4
             "There is no need for a national government",
             "Subdivisions of nations should have their own militaries",
@@ -40,7 +40,9 @@ questions =
             "There is no need for local or state governments",
             "Laws should be completely consistent within all regions of a nation",
             "Strong states weaken a nation"
-        ]],[//Democratic-Authoritarian`
+        ]],
+     
+     [//Democratic-Authoritarian`
         [//4
             "Direct democracy is the best form of government",
             "People should vote issue by issue themselves",
@@ -80,7 +82,9 @@ questions =
             "Elections are a waste of resources",
             "Catering to popular opinion is detrimental to a nation",
             "A nation must obey its leadership without question"
-        ]],[//Globalist-Isolationist
+        ]],
+     
+     [//Globalist-Isolationist
         [//4
             "A united world government would be beneficial to mankind.",
             "We are first and foremost citizens of Earth",
@@ -120,7 +124,9 @@ questions =
             "Diplomacy only hurts nations",
             "There should not be international law",
             "Any deals other countries want must be bad for us"
-        ]],[//Militarist-Pacifist
+        ]],
+     
+     [//Militarist-Pacifist
         [//4
             "War is needed to make an economy thrive",
             "A constant state of war benefits a country",
@@ -160,7 +166,9 @@ questions =
             "War is never justified",
             "In the modern era, militaries aren't really necessary",
             "Nations should not maintain a military"
-        ]],[//Security-Freedom
+        ]],
+     
+     [//Security-Freedom
         [//4
             "Those who disagree with the government should be removed from the country",
             "The government should monitor all citizens to combat terrorism",
@@ -200,7 +208,9 @@ questions =
             "The very existence of the state is a threat to our liberty.",
             "There should be no police force",
             "People's freedom should have no limits"
-        ]],[//Equality-Markets`
+        ]],
+     
+     [//Equality-Markets`
         [//4
             "Communism, if implemented correctly, would be a good form of economics",
             "From each according to his ability, to each according to his need",
@@ -240,7 +250,9 @@ questions =
             "The government should not regulate the economy at all",
             "The government should not break up monopolies",
             "Those who do not work should die"
-        ]],[//Secular-Religious
+        ]],
+     
+     [//Secular-Religious
         [//4
             "Religion should be banned",
             "Faith is complete nonsense",
@@ -280,7 +292,9 @@ questions =
             "Theocracy is a good system of government",
             "The government should support and only recognize one religion",
             "Most bad things happening in the world are caused by us turning away from religion"
-        ]],[//Progressive-Traditional
+        ]],
+     
+     [//Progressive-Traditional
         [//4
             "If AI could rule more effectively than humans, then AI should rule",
             "Genetic modification is a force for good, even on humans.",
@@ -321,7 +335,9 @@ questions =
             "Traditional medicines are often more effective than modern medicines",
             "The Internet should be banned",
             "We must go back to a basic way of life without modern conveniences."
-        ]],[//Assimilationist-Multiculturalist
+        ]],
+     
+     [//Assimilationist-Multiculturalist
         [//4
             "Foreigners should never enter the country",
             "We should not allow any refugees",

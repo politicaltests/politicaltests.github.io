@@ -114,12 +114,10 @@
 <hr/>
 <!-- <canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas> -->
 <button class="button" onclick="location.href='https://politicaltests.github.io/12axes.html.html';" style="background-color: #2196f3;">Back</button> <br>
-    
+<button class="button" value="Copy Url" onclick="Copy();" style="background-color: #2196f3;">Back</button> <br>
 <script>
-    function simpleView() {
-        var url = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
-        url = url.replace('results.html','simpleview.html')
-        console.log(url) // "http://website.com/post/something-else/"
+   function Copy() {
+    urlCopied.innerHTML = window.location.href;
     }
     
     function getQueryVariable(variable)

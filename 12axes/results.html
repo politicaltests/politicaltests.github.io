@@ -135,19 +135,6 @@
         }
     }
 
-    document.getElementById("a-label").innerHTML = setLabel(a, aArray)
-    document.getElementById("b-label").innerHTML = setLabel(b, bArray)
-    document.getElementById("c-label").innerHTML = setLabel(c, cArray)
-    document.getElementById("d-label").innerHTML = setLabel(d, dArray)
-    document.getElementById("e-label").innerHTML = setLabel(e, eArray)
-    document.getElementById("f-label").innerHTML = setLabel(f, fArray)
-    document.getElementById("g-label").innerHTML = setLabel(g, gArray)
-    document.getElementById("h-label").innerHTML = setLabel(h, hArray)
-    document.getElementById("i-label").innerHTML = setLabel(i, iArray)
-    document.getElementById("j-label").innerHTML = setLabel(j, jArray)
-    document.getElementById("k-label").innerHTML = setLabel(k, kArray)
-    document.getElementById("l-label").innerHTML = setLabel(l, lArray)
-
     aArray = ["Confederal","Federational","Federal","Semifederal","Unitary","Centralized","Extremely Centralized"]
     bArray = ["Liquid Democracy","Direct Democracy","Representative Democracy","Centrist","Oligarchy","Aristocracy","Autocracy"]
     cArray = ["World Government","Internationalism","Cooperation","Non-Interventionist","Anti-Interventionist","Nationalist","Ultranationalist"]
@@ -160,6 +147,19 @@
     jArray = ["Planned","Interventionism","Regulationism","Balanced","Markets","Free Market","Laissez-Faire"]
     kArray = ["Ultraglobalist","Globalist","Free Trade","Moderate","Limited Trade","Protectionist","Isolationist"]
     lArray = ["Transhumanist","Accelerationist","Technological","Neutral","Bioconservative","Decelerationist","Primitive"]
+    
+    document.getElementById("a-label").innerHTML = setLabel(a, aArray)
+    document.getElementById("b-label").innerHTML = setLabel(b, bArray)
+    document.getElementById("c-label").innerHTML = setLabel(c, cArray)
+    document.getElementById("d-label").innerHTML = setLabel(d, dArray)
+    document.getElementById("e-label").innerHTML = setLabel(e, eArray)
+    document.getElementById("f-label").innerHTML = setLabel(f, fArray)
+    document.getElementById("g-label").innerHTML = setLabel(g, gArray)
+    document.getElementById("h-label").innerHTML = setLabel(h, hArray)
+    document.getElementById("i-label").innerHTML = setLabel(i, iArray)
+    document.getElementById("j-label").innerHTML = setLabel(j, jArray)
+    document.getElementById("k-label").innerHTML = setLabel(k, kArray)
+    document.getElementById("l-label").innerHTML = setLabel(l, lArray)
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else

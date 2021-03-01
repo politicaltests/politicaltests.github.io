@@ -265,13 +265,6 @@ div.l2 {
     text-align: right;
     border-left-style: solid;
 }
-div.simple {
-  height: 1000px;
-  width: 70%;
-  display: none;
-  background-color: LightGray;
-
-}
 span.weight-300 {
     font-weight: 300;
 }

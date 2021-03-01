@@ -376,7 +376,6 @@ questions =
             "Governments should be as concerned about foreign citizens as they are about those within their borders.",
             "Anybody who wants to enter the country should be able to.",
             "The benefits of open borders would outweigh the costs."
-        ]
      ]],
     
     [//Planned - Laissez-Faire
@@ -419,7 +418,6 @@ questions =
             "Government should not regulate the economy at all.",
             "I agree with the principles of the Austrian School of Economics.",
             "Taxation is theft."
-        ]
      ]],
          
      [//Protectionism/Isolationism - Globalism
@@ -462,49 +460,48 @@ questions =
             "We must actively promote foreign products.",
             "Protectionism is an unnecessary and unrealistic idea.",
             "Local products are often poor in quality."
-        ]
      ]], 
     
      [//Acceleration-Bioconservative
         [//4
-            "If AI could rule more effectively than humans, then AI should rule",
+            "If AI could rule more effectively than humans, then AI should rule.",
             "Genetic modification is a force for good, even on humans.",
-            "Tradition just hinders the progress of technology"
+            "We should continue developing AI even if that means we are going to be replaced."
         ],
         [//3
-            "Automation overall is extremely good for society",
-            "Traditions are of no value on their own.",
-            "When people have already suffered for technology to be developed, we should use that technology"
+            "Technological progress and innovation cannot be stopped.",
+            "I am a transhumanist.",
+            "When people have already suffered for technology to be developed, we should use that technology."
         ],
         [//2
             "We should put effort into getting a person on Mars in the near future",
-            "Testing products on animals is ethical",
-            "Technological progress is usually good"
+            "Transhumanism isn't as radical as many people think it is.",
+            "Technological progress is usually good."
         ],
         [//1
-            "Human Caused climate change is currently one of the greatest threats to our way of life.",
-            "Environmental regulations are essential.",
+            "The quality of life is generally going up decade by decade.",
+            "Developing alternative technology is a better means of helping the environment than environmental regulations.",
             "A better world will come from automation, science, and technology."
         ],
         [//-1
-            "To chase progress at all costs is dangerous.",
-            "Technology is not always beneficial",
-            "Traditions are important"
+            "Technology must be slowed down to protect the environment.",
+            "Regulations on idustries must be implemented to protect the environment.",
+            "Technology is making people lose jobs, which is ultimately harmful for humanity."
         ],
         [//-2
-            "Technology is negatively affecting modern society",
-            "Genetic modification should be used rarely, if ever",
-            "Maintaining family values is essential."
+            "I oppose human genetic modification.",
+            "Genetic modification should be used rarely, if ever.",
+            "The threat of machines taking over humanity is very real."
         ],
         [//-3
             "Society was better many years ago than it is now.",
-            "It is important that we maintain the traditions of our past.",
-            "The elders in society know the best path for it"
+            "Modern technology and the modern lifestyle made life meaningless and dull.",
+            "If we continue human technological progress, humanity is doomed."
         ],
         [//-4
-            "Traditional medicines are often more effective than modern medicines",
-            "The Internet should be banned",
-            "We must go back to a basic way of life without modern conveniences."
+            "Traditional medicines are often more effective than modern medicines.",
+            "The Internet should be banned.",
+            "We must return to a primitive lifestyle."
         ]
         ]];
      

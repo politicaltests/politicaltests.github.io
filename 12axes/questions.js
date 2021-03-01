@@ -336,7 +336,7 @@ questions =
             "Sharia law isn't as bad as people think it is."
         ]],
      
-     [//Assimilationist-Multiculturalist
+     /* [//Assimilationist-Multiculturalist
         [//4
             "Foreigners should never enter the country.",
             "We should not allow any refugees.",
@@ -463,7 +463,7 @@ questions =
             "Protectionism is an unnecessary and unrealistic idea.",
             "Local products are often poor in quality."
         ]
-     ]],
+     ]], */
     
      [//Acceleration-Bioconservative
         [//4

@@ -111,6 +111,10 @@
     <img id="img-l2" src="value_images/bioconservative.png" height="128pt"/>
 </div>
     
+  <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="ideologyLink()" style="color: #2222DD;text-decoration: underline"></span></h2>
+  <h3><span class="weight-300" id="ideodesc-label"></span></h3><br>
+  <h3><b> Next Matches: <span class="weight-300" id="nextmatch-label"></span> </b></h3> <hr> 
+    
 <hr/>
 <!-- <canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas> -->
 <button class="button" onclick="location.href='https://www.screenshotmachine.com/';" style="background-color: #2196f3;">
@@ -261,6 +265,9 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.l - l), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
+	        ideolink = ideologies[i].link
+            ideodesc = ideologies[i].desc
+            nextmatch = ideologies[i].next
             ideodist = dist
         }
     }

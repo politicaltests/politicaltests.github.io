@@ -33,11 +33,11 @@
 
     function init_all_questions(qs) {
         //1,2,3,-2,-4
-        var t = [1,2,3,4,5,6,7,8,9,10];
+        var t = [1,2,3,5,7];
         for(var i = 0; i < 12; i++) //Number of Axes
         {
             var c = Math.random()<0.5;
-            for(var j = 0; j < 10; j++) //Number of questions per axis
+            for(var j = 0; j < 9; j++) //Number of questions per axis
             {
                 var m = [i,c?t[j]:(8-t[j]),Math.floor(Math.random()*questions[i][c?t[j]:(8-t[j])].length)];
                 qs.push(m);

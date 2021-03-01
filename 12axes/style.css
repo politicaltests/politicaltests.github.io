@@ -201,7 +201,7 @@ div.f {
     border-right-style: solid;
 }
 div.f2 {
-    background-color: #00897b;
+    background-color: #FFD966;
     text-align: right;
     border-left-style: solid;
 }
@@ -235,6 +235,37 @@ div.i2 {
     text-align: right;
     border-left-style: solid;
 }
+div.j {
+    background-color: #A61C00;
+    text-align: left;
+    border-right-style: solid;
+}
+div.j2 {
+    background-color: #00897B;
+    text-align: right;
+    border-left-style: solid;
+}
+div.k {
+    background-color: #03A9F4;
+    text-align: left;
+    border-right-style: solid;
+}
+div.k2 {
+    background-color: #9C27B0;
+    text-align: right;
+    border-left-style: solid;
+}
+div.l {
+    background-color: #76A5AF;
+    text-align: left;
+    border-right-style: solid;
+}
+div.l2 {
+    background-color: #F6B26B;
+    text-align: right;
+    border-left-style: solid;
+}
+
 
 span.weight-300 {
     font-weight: 300;

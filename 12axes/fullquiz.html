@@ -24,7 +24,7 @@
 
 
 <script>
-    var scores = [0, 0, 0, 0, 0, 0, 0, 0, 0];//fed, dem, glo, mil, fre, equ, sec, pro, mul - User's scores
+    var scores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];//fed, dem, glo, mil, fre, equ, sec, pro, mul - User's scores
     var qn = 0; // Question number
     var answers = [];
     var quests = [];
@@ -33,7 +33,7 @@
 
     function init_all_questions(qs) {
         //1,2,3,-2,-4
-        for(var i = 0; i < 9; i++) //Number of Axes
+        for(var i = 0; i < 12; i++) //Number of Axes
         {
             for(var  j = 0; j < questions[i].length; j++)
             {
@@ -120,7 +120,10 @@
             + `&f=${calc_score(scores[5])}`
             + `&g=${calc_score(scores[6])}`
             + `&h=${calc_score(scores[7])}`
-            + `&i=${calc_score(scores[8])}`;
+            + `&i=${calc_score(scores[8])}`
+            + `&j=${calc_score(scores[9])}`
+            + `&k=${calc_score(scores[10])}`
+            + `&l=${calc_score(scores[11])}`;
     }
 </script>
 </body>

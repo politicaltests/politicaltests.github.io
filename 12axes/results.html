@@ -109,23 +109,18 @@
     <div class="bar l" id="bar-l"><div class="text-wrapper" id="l"></div></div>
     <div class="bar l2" id="bar-l2"><div class="text-wrapper" id="l2"></div></div>
     <img id="img-l2" src="value_images/bioconservative.png" height="128pt"/>
-</div>   
+</div>
+    
 <hr/>
 <!-- <canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas> -->
-<button class="clipboard">Click me to copy current Url</button>    
 <button class="button" onclick="location.href='https://politicaltests.github.io/12axes.html.html';" style="background-color: #2196f3;">Back</button> <br>
     
 <script>
-    var $temp = $("<input>");
-    var $url = $(location).attr('href');
-
-    $('.clipboard').on('click', function() {
-    $("body").append($temp);
-     $temp.val($url).select();
-     document.execCommand("copy");
-      $temp.remove();
-      $("button").text("URL copied!");
-    })
+    function simpleView() {
+        var url = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
+        url = url.replace('results.html','simpleview.html')
+        console.log(url) // "http://website.com/post/something-else/"
+    }
     
     function getQueryVariable(variable)
     {
@@ -175,7 +170,6 @@
     
     /* leftArray = ["Federal","Democratic","Globalist","Militarist","Security","Equality","Secular","Progressive","Assimilationist","Secular","Progressive","Assimilationist"]
     rightArray = ["Unitary","Authoritarian","Isolationist","Pacifist","Freedom","Markets","Religious","Traditional","Multiculturalist","Secular","Progressive","Assimilationist"]
-
     function setLabel(val,axis) {
         if (val >= 90) { return "Fanatic " + leftArray[axis] } else
         if (val >= 80) { return "Extreme " + leftArray[axis] } else
@@ -297,13 +291,11 @@
             ctx.drawImage(img, x, y, w, h)
         }
     } 
-
     window.onload = function() {
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
         ctx.fillStyle = "#EEEEEE"
         ctx.fillRect(0,0,800,1200)
-
         img = document.getElementById("img-federal")
         ctx.drawImage(img, 20, 120, 100, 100);
         img = document.getElementById("img-unitary")
@@ -350,7 +342,6 @@
         ctx.drawImage(img, 680, 1440, 100, 100)
         img = document.getElementById("img-bioconservative")
         ctx.drawImage(img, 20, 1440, 100, 100)
-
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 130, 560, 80)
         ctx.fillRect(120, 250, 560, 80)
@@ -422,7 +413,6 @@
         ctx.fillText("9Axes", 20, 90)
         ctx.font="40px Montserrat"
         ctx.textAlign="right"
-
         ctx.font="50px Montserrat"
         ctx.textAlign="left"
         if (a  > 20) {ctx.fillText(a + "%", 130, 187.5)}
@@ -437,7 +427,6 @@
         if (j  > 20) {ctx.fillText(j + "%", 130, 1267.5)}
         if (k  > 20) {ctx.fillText(k + "%", 130, 1387.5)}
         if (l  > 20) {ctx.fillText(l + "%", 130, 1507.5)}
-
         ctx.textAlign="right"
         if (a2    > 20) {ctx.fillText(a2 + "%", 670, 187.5)}
         if (b2     > 20) {ctx.fillText(b2 + "%", 670, 307.5)}
@@ -451,7 +440,6 @@
         if (j2  > 20) {ctx.fillText(j2 + "%", 670, 1267.5)}
         if (k2  > 20) {ctx.fillText(k2 + "%", 670, 1387.5)}
         if (l2  > 20) {ctx.fillText(l2 + "%", 670, 1507.5)}
-
         ctx.font="300 30px Montserrat"
         ctx.fillText("9Axes.github.io", 780, 55)
         ctx.textAlign="center"
@@ -467,7 +455,6 @@
         ctx.fillText(document.getElementById("j-label").innerHTML, 400, 1205)
         ctx.fillText(document.getElementById("k-label").innerHTML, 400, 1325)
         ctx.fillText(document.getElementById("l-label").innerHTML, 400, 1445)
-
     } */
     </script>
 </body>

@@ -138,7 +138,7 @@
         }
     }
 
-    /* aArray = ["Confederal","Federational","Federal","Semifederal","Unitary","Centralized","Extremely Centralized"]
+    aArray = ["Confederal","Federational","Federal","Semifederal","Unitary","Centralized","Extremely Centralized"]
     bArray = ["Liquid Democracy","Direct Democracy","Representative Democracy","Centrist","Oligarchy","Aristocracy","Autocracy"]
     cArray = ["World Government","Internationalism","Cooperation","Non-Interventionist","Anti-Interventionist","Nationalist","Ultranationalist"]
     dArray = ["Expansionist","Militarist","Military-Focused","Neutral","Non-Aggressive","Pacifist","Anti-War"]
@@ -161,9 +161,9 @@
         if (val >= 10) { return ary[5] } else
         if (val >= 0) { return ary[6] } else
         	{return ""}
-    } */
+    } 
     
-    leftArray = ["Federal","Democratic","Globalist","Militarist","Security","Equality","Secular","Progressive","Assimilationist","Secular","Progressive","Assimilationist"]
+    /* leftArray = ["Federal","Democratic","Globalist","Militarist","Security","Equality","Secular","Progressive","Assimilationist","Secular","Progressive","Assimilationist"]
     rightArray = ["Unitary","Authoritarian","Isolationist","Pacifist","Freedom","Markets","Religious","Traditional","Multiculturalist","Secular","Progressive","Assimilationist"]
 
     function setLabel(val,axis) {
@@ -176,7 +176,7 @@
         if (val > 20) { return rightArray[axis] } else
         if (val > 10) { return "Extreme " + rightArray[axis] } else
         	{return "Fanatic " + rightArray[axis]}
-    }
+    } */
     
     a  = getQueryVariable("a")
     b  = getQueryVariable("b")
@@ -191,18 +191,18 @@
     k  = getQueryVariable("k")
     l  = getQueryVariable("l")
 
-    a2 = 100-a;
-    b2 = 100-b;
-    c2 = 100-c;
-    d2 = 100-d;
-    e2 = 100-e;
-    f2 = 100-f;
-    g2 = 100-g;
-    h2 = 100-h;
-    i2 = 100-i;
-    j2 = 100-j;
-    k2 = 100-k;
-    l2 = 100-l;
+    a2 = (100-a).toFixed(1)
+    b2 = (100-b).toFixed(1)
+    c2 = (100-c).toFixed(1)
+    d2 = (100-d).toFixed(1)
+    e2 = (100-e).toFixed(1)
+    f2 = (100-f).toFixed(1)
+    g2 = (100-g).toFixed(1)
+    h2 = (100-h).toFixed(1)
+    i2 = (100-i).toFixed(1)
+    j2 = (100-j).toFixed(1)
+    k2 = (100-k).toFixed(1)
+    l2 = (100-l).toFixed(1)
 
     setBarValue("a", a)
     setBarValue("a2", a2)
@@ -230,7 +230,7 @@
     setBarValue("l2", l2)
     
 
-    /* document.getElementById("a-label").innerHTML = setLabel(a, aArray)
+    document.getElementById("a-label").innerHTML = setLabel(a, aArray)
     document.getElementById("b-label").innerHTML = setLabel(b, bArray)
     document.getElementById("c-label").innerHTML = setLabel(c, cArray)
     document.getElementById("d-label").innerHTML = setLabel(d, dArray)
@@ -241,9 +241,32 @@
     document.getElementById("i-label").innerHTML = setLabel(i, iArray)
     document.getElementById("j-label").innerHTML = setLabel(j, jArray)
     document.getElementById("k-label").innerHTML = setLabel(k, kArray)
-    document.getElementById("l-label").innerHTML = setLabel(l, lArray) */
+    document.getElementById("l-label").innerHTML = setLabel(l, lArray) 
     
-    document.getElementById("a-label").innerHTML = setLabel(a, 0)
+    ideology = ""
+    ideodist = Infinity
+    for (var i = 0; i < ideologies.length; i++) {
+        dist = 0
+        dist += Math.pow(Math.abs(ideologies[i].stats.a - a), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.b - b), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.c - c), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.d - d), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.e - e), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.f - f), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.g - g), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.h - h), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.i - i), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.j - j), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.k - k), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.l - l), 2)
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+            ideodist = dist
+        }
+    }
+    document.getElementById("ideology-label").innerHTML = ideology
+    
+    /* document.getElementById("a-label").innerHTML = setLabel(a, 0)
     document.getElementById("b-label").innerHTML = setLabel(b, 1)
     document.getElementById("c-label").innerHTML = setLabel(c, 2)
     document.getElementById("d-label").innerHTML = setLabel(d, 3)
@@ -254,7 +277,7 @@
     document.getElementById("i-label").innerHTML = setLabel(i, 8)
     document.getElementById("j-label").innerHTML = setLabel(j, 9)
     document.getElementById("k-label").innerHTML = setLabel(k, 10)
-    document.getElementById("l-label").innerHTML = setLabel(l, 11) 
+    document.getElementById("l-label").innerHTML = setLabel(l, 11) */
 
 
     /* function createImage(src, x, y, w, h) {

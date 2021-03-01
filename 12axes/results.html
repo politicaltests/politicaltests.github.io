@@ -1,7 +1,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>9Axes Results</title>
+<title>12Axes Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
@@ -10,7 +10,7 @@
 </script>
 
 <body>
-<h1>9Axes</h1>
+<h1>12Axes</h1>
 <hr>
 
 <h1>Results</h1>   
@@ -67,7 +67,7 @@
     <img id="img-equality" src="value_images/equality.png" height="128pt"/>
     <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
     <div class="bar markets" id="bar-privatize"><div class="text-wrapper" id="privatize"></div></div>
-    <img id="img-markets" src="value_images/privatize.png" height="128pt"/>
+    <img id="img-markets" src="value_images/private.png" height="128pt"/>
 </div>
     
 <h2><span class="weight-300" id="j-label"></span></h2>
@@ -80,7 +80,7 @@
     
 <h2><span class="weight-300" id="k-label"></span></h2>
 <div class="axis">
-    <img id="img-globalism" src="value_images/globalism.png" height="128pt"/>
+    <img id="img-globalism" src="value_images/globalist.png" height="128pt"/>
     <div class="bar globalism" id="bar-globalism"><div class="text-wrapper" id="globalism"></div></div>
     <div class="bar protectionism" id="bar-protectionism"><div class="text-wrapper" id="protectionism"></div></div>
     <img id="img-protectionism" src="value_images/protectionism.png" height="128pt"/>
@@ -182,9 +182,9 @@
     g  = getQueryVariable("g")
     h  = getQueryVariable("h")
     i  = getQueryVariable("i")
-    j  = getQueryVariable("i")
-    k  = getQueryVariable("i")
-    l  = getQueryVariable("i")
+    j  = getQueryVariable("j")
+    k  = getQueryVariable("k")
+    l  = getQueryVariable("l")
 
     a2 = 100-a;
     b2 = 100-b;
@@ -195,13 +195,16 @@
     g2 = 100-g;
     h2 = 100-h;
     i2 = 100-i;
+    j2 = 100-j;
+    k2 = 100-k;
+    l2 = 100-l;
 
     setBarValue("federal", a)
     setBarValue("unitary", a2)
     setBarValue("democratic", b)
     setBarValue("authority", b2)
-    setBarValue("globalist", c)
-    setBarValue("isolation", c2)
+    setBarValue("internationalism", c)
+    setBarValue("nationalism", c2)
     setBarValue("militarist", d)
     setBarValue("pacifist", d2)
     setBarValue("security", e)
@@ -216,6 +219,10 @@
     setBarValue("multiculture", i2)
     setBarValue("planned", j)
     setBarValue("markets", j2)
+    setBarValue("globalist", k)
+    setBarValue("protectionist", k2)
+    setBarValue("technology", l)
+    setBarValue("bioconservative", l2)
     
 
     document.getElementById("a-label").innerHTML = setLabel(a, 0)
@@ -232,13 +239,13 @@
     document.getElementById("l-label").innerHTML = setLabel(l, 11)
 
 
-    function createImage(src, x, y, w, h) {
+    /* function createImage(src, x, y, w, h) {
         img = new Image ()
         img.src = src
         img.onLoad = function() {
             ctx.drawImage(img, x, y, w, h)
         }
-    }
+    } 
 
     window.onload = function() {
         var c = document.getElementById("banner")
@@ -410,6 +417,6 @@
         ctx.fillText(document.getElementById("k-label").innerHTML, 400, 1325)
         ctx.fillText(document.getElementById("l-label").innerHTML, 400, 1445)
 
-    }
+    } */
     </script>
 </body>

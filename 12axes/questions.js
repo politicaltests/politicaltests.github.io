@@ -505,5 +505,6 @@ questions =
             "Traditional medicines are often more effective than modern medicines",
             "The Internet should be banned",
             "We must go back to a basic way of life without modern conveniences."
-        ]],
+        ]
+        ]];
      

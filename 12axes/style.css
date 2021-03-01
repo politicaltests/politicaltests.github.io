@@ -145,92 +145,92 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
-div.federal {
+div.a {
     background-color: #ffeb3b;
     text-align: left;
     border-right-style: solid;
 }
-div.unitary {
+div.a2 {
     background-color: #f44336;
     text-align: right;
     border-left-style: solid;
 }
-div.democratic {
+div.b {
     background-color: #00897b;
     text-align: left;
     border-right-style: solid;
 }
-div.authority {
+div.b2 {
     background-color: #ff9800;
     text-align: right;
     border-left-style: solid;
 }
-div.globalist {
+div.c {
     background-color: #03a9f4;
     text-align: left;
     border-right-style: solid;
 }
-div.isolation {
+div.c2 {
     background-color: #9c27b0;
     text-align: right;
     border-left-style: solid;
 }
-div.pacifist {
+div.d {
     background-color: #ea90ab;
     text-align: right;
     border-left-style: solid;
 }
-div.militarist {
+div.d2 {
     background-color: #8bc34a;
     text-align: left;
     border-right-style: solid;
 }
-div.security {
+div.e {
     background-color: #3f51b5;
     text-align: left;
     border-right-style: solid;
 }
-div.freedom {
+div.e2 {
     background-color: #ffeb3b;
     text-align: right;
     border-left-style: solid;
 }
-div.equality {
+div.f {
     background-color: #f44336;
     text-align: left;
     border-right-style: solid;
 }
-div.markets {
+div.f2 {
     background-color: #00897b;
     text-align: right;
     border-left-style: solid;
 }
-div.secular {
+div.g {
     background-color: #ff9800;
     text-align: left;
     border-right-style: solid;
 }
-div.religious {
+div.g2 {
     background-color: #03a9f4;
     text-align: right;
     border-left-style: solid;
 }
-div.progress {
+div.h {
     background-color: #9c27b0;
     text-align: left;
     border-right-style: solid;
 }
-div.tradition {
+div.h2 {
     background-color: #8bc34a;
     text-align: right;
     border-left-style: solid;
 }
-div.assimilation {
+div.i {
     background-color: #ea90ab;
     text-align: left;
     border-right-style: solid;
 }
-div.multiculture {
+div.i2 {
     background-color: #3f51b5;
     text-align: right;
     border-left-style: solid;

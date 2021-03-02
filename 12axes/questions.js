@@ -213,21 +213,21 @@ questions =
      [//Equality-Markets
         [//4
             "Communism, if implemented correctly, would be a good form of economics.",
-            "Private property should be abolished.",
+            "Absolute equality is good.",
             "Equality of outcome is important."
         ],
         [//3
-            "Oppression by corporations is more of a concern than oppression by governments.",
-            "Regimes like the USSR were never truly Socialist.",
+            "Private property should be abolished.",
+            "Classes should not exist.",
             "Most, if not all corporations are inherently evil."
         ],
         [//2
             "I support single-payer, universal healthcare.",
-            "The wealthy have far more than they need.",
-            "Basic things needed to live, such as healthcare, are rights."
+            "Class war is a real and important issue.",
+            "I prefer Collectivism over Individualism."
         ],
         [//1
-            "Class war is a real and important issue.",
+            "The wealthy have far more than they need.",
             "Services like roads should be publicly owned.",
             "People born to wealthy families have unfair success even when they aren't skilled and don't work hard."
         ],
@@ -239,7 +239,7 @@ questions =
         [//-2
             "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
             "Capitalism is better than any existing alternative.",
-            "The government is a bigger monopoly than corporations are."
+            "Economic classes are inevitable."
         ],
         [//-3
             "The freer the market, the freer the people.",
@@ -407,7 +407,7 @@ questions =
         [//-2
             "Economic regulation causes more harm than good.",
             "Currently, taxation is too complex and should be simplified.",
-            "I support a free market."
+            "UBI is a better means of providing welfare when compared to the current welfare system."
         ],
         [//-3
             "Fully privatized healthcare is a better means of providing healthcare than single-payer systems.",
@@ -416,7 +416,7 @@ questions =
         ],
         [//-4
             "Government should not regulate the economy at all.",
-            "I agree with the principles of the Austrian School of Economics.",
+            "Most, if not all economic crises are caused by government intervention.",
             "Taxation is theft."
      ]],
          

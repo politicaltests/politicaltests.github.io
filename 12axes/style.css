@@ -51,10 +51,8 @@ p.question {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-p.question:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}   
+} 
 h1 {
     color: #222222;
     font-family: 'Montserrat', sans-serif;

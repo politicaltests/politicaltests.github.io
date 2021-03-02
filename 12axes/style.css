@@ -7,7 +7,7 @@ body {
     min-height: calc(100vh - 4em);
     margin: 0 auto;
     padding: 2em;
-    background-color: #E5E5E5;
+    background-color: #cccccc;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 p {
@@ -16,6 +16,14 @@ p {
     font-size: 16pt;
     line-height: 1;
     margin: 4pt;
+}
+div.element {
+    width: 70%;
+    min-height: calc(100vh - 4em);
+    padding: 2em;
+    background-color: #EEEEEE;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
 }
 a{
     color: #2222DD;

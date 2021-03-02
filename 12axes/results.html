@@ -270,9 +270,8 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.l - l), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
-	        ideolink = ideologies[i].link
+	    ideolink = ideologies[i].link
             ideodesc = ideologies[i].desc
-            nextmatch = ideologies[i].next
             ideodist = dist
         }
     }

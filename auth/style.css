@@ -1,5 +1,5 @@
 html {
-    background-color: #bbbbbb;
+    background: linear-gradient(180deg, rgba(26,82,118,1) 0%, rgba(46,134,193,1) 24%, rgba(72,201,176,1) 62%, rgba(125,206,160,1) 100%);
     padding: 0px;
 }
 body {
@@ -7,11 +7,8 @@ body {
     min-height: calc(100vh - 4em);
     margin: 0 auto;
     padding: 2em;
-    background-color: #dddddd;
-    border-color: #eeeeee;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
+    background-color: rgba(229, 229, 229, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 p {
     color: #444444;
@@ -20,7 +17,20 @@ p {
     line-height: 1;
     margin: 4pt;
 }
-
+div.element {
+    width: 85%;
+    padding: 16pt;
+    background-color: #EEEEEE;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+    margin: auto;
+}
+a{
+    color: #2222DD;
+}
+a:hover{
+    color: #5b5b5b;
+}
 p.value-description {
     text-indent: -16pt;
     margin-left: 20pt;
@@ -41,8 +51,8 @@ p.question {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
 h1 {
     color: #222222;
     font-family: 'Montserrat', sans-serif;
@@ -60,28 +70,9 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
-body.__i18n-ko h2 {
-    line-height: 120%;
-    margin-top: 0.5em
-}
-h3 {
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18pt;
-    line-height: 18pt;
-    margin-top: 12pt;
-    margin-bottom: 0pt;
-}
 li {
     font-size: 16pt;
     text-indent: 16pt;
-}
-dt {
-    font-family: 'Montserrat', sans-serif;
-}
-dd {
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 12pt;
 }
 a {
     font-family: inherit;
@@ -89,8 +80,8 @@ a {
 img.center {
     display: block;
     margin: 1em auto;
-    width: 20%;
-    min-width: 400pt;
+    width: 50%;
+    min-width: 500pt;
 }
 .button {
     background-color: #2196f3;
@@ -108,9 +99,9 @@ img.center {
     margin: -2px auto;
     cursor: pointer;
 }
-.button:hover {
-  background-color: DarkGray;
-}
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  
 .small_button, .small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;

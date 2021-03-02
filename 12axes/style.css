@@ -19,11 +19,11 @@ p {
 }
 div.element {
     width: 70%;
-    min-height: calc(100vh - 4em);
-    padding: 2em;
+    padding: 16pt;
     background-color: #EEEEEE;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 16px;
+    margin: auto;
 }
 a{
     color: #2222DD;

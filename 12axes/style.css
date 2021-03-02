@@ -7,7 +7,8 @@ body {
     min-height: calc(100vh - 4em);
     margin: 0 auto;
     padding: 2em;
-    background-color: #e5e5e5;
+    background-color: rgba(229, 229, 229, 0.5);
+    filter: blur(8px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 p {

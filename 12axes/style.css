@@ -1,5 +1,5 @@
 html {
-    background-color: #bbbbbb;
+    background-color: linear-gradient(180deg, rgba(26,82,118,1) 0%, rgba(46,134,193,1) 24%, rgba(72,201,176,1) 62%, rgba(125,206,160,1) 100%);
     padding: 0px;
 }
 body {
@@ -7,7 +7,7 @@ body {
     min-height: calc(100vh - 4em);
     margin: 0 auto;
     padding: 2em;
-    background-color: #dddddd;
+    background-color: #E5E5E5;
     border-color: #eeeeee;
     border-left-style: solid;
     border-right-style: solid;

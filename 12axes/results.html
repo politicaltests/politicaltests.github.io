@@ -1,6 +1,11 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
+	
+<!-- Dynamic Scrolling -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
 <title>12Axes Results</title>
 <link rel="icon" type="x-icon" href="../icons/12axes.png">
 <link rel="shortcut icon" type="x-icon" href="../icons/12axes.png">
@@ -15,97 +20,99 @@
 
 <h1>Results</h1>   
 <br><br>
+	
 <div class="element">	
-<h2><b>Structure: </b><span class="weight-300" id="a-label"></span></h2>
-<div class="axis">
+	
+<h2 data-aos="fade-right"><b>Structure: </b><span class="weight-300" id="a-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-a" src="value_images/federal.png" height="128pt"/>
     <div class="bar a" id="bar-a"><div class="text-wrapper" id="a"></div></div>
     <div class="bar a2" id="bar-a2"><div class="text-wrapper" id="a2"></div></div>
     <img id="img-a2" src="value_images/unitary.png" height="128pt"/>
 </div>
     
-<h2><b>Representation: </b><span class="weight-300" id="b-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Representation: </b><span class="weight-300" id="b-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-b" src="value_images/democracy.png" height="128pt"/>
     <div class="bar b" id="bar-b"><div class="text-wrapper" id="b"></div></div>
     <div class="bar b2" id="bar-b2"><div class="text-wrapper" id="b2"></div></div>
     <img id="img-b2" src="value_images/authority.png" height="128pt"/>
 </div>
 
-<h2><b>Power: </b><span class="weight-300" id="e-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Power: </b><span class="weight-300" id="e-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-e" src="value_images/security.png" height="128pt"/>
     <div class="bar e" id="bar-e"><div class="text-wrapper" id="e"></div></div>
     <div class="bar e2" id="bar-e2"><div class="text-wrapper" id="e2"></div></div>
     <img id="img-e2" src="value_images/freedom.png" height="128pt"/>
 </div>
     
-<h2><b>Intervention: </b><span class="weight-300" id="c-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Intervention: </b><span class="weight-300" id="c-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-c" src="value_images/internationalism.png" height="128pt"/>
     <div class="bar c" id="bar-c"><div class="text-wrapper" id="c"></div></div>
     <div class="bar c2" id="bar-c2"><div class="text-wrapper" id="c2"></div></div>
     <img id="img-c2" src="value_images/nationalism.png" height="128pt"/>
 </div>
     
-<h2><b>Diplomacy: </b><span class="weight-300" id="d-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Diplomacy: </b><span class="weight-300" id="d-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-d" src="value_images/militarist.png" height="128pt"/>
     <div class="bar d" id="bar-d"><div class="text-wrapper" id="d"></div></div>
     <div class="bar d2" id="bar-d2"><div class="text-wrapper" id="d2"></div></div>
     <img id="img-d2" src="value_images/pacifist.png" height="128pt"/>
 </div>
  
-<h2><b>Immigration: </b><span class="weight-300" id="i-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Immigration: </b><span class="weight-300" id="i-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-i" src="value_images/assimilationist.png" height="128pt"/>
     <div class="bar i" id="bar-i"><div class="text-wrapper" id="i"></div></div>
     <div class="bar i2" id="bar-i2"><div class="text-wrapper" id="i2"></div></div>
     <img id="img-i2" src="value_images/multiculturalist.png" height="128pt"/>
 </div>
 
-<h2><b>Economy: </b><span class="weight-300" id="f-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Economy: </b><span class="weight-300" id="f-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-f" src="value_images/equality.png" height="128pt"/>
     <div class="bar f" id="bar-f"><div class="text-wrapper" id="f"></div></div>
     <div class="bar f2" id="bar-f2"><div class="text-wrapper" id="f2"></div></div>
     <img id="img-f2" src="value_images/private.png" height="128pt"/>
 </div>
     
-<h2><b>Control: </b><span class="weight-300" id="j-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Control: </b><span class="weight-300" id="j-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-j" src="value_images/planned.png" height="128pt"/>
     <div class="bar j" id="bar-j"><div class="text-wrapper" id="j"></div></div>
     <div class="bar j2" id="bar-j2"><div class="text-wrapper" id="j2"></div></div>
     <img id="img-j2" src="value_images/markets.png" height="128pt"/>
 </div>
     
-<h2><b>Trade: </b><span class="weight-300" id="k-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Trade: </b><span class="weight-300" id="k-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-k" src="value_images/protectionism.png" height="128pt"/>
     <div class="bar k" id="bar-k"><div class="text-wrapper" id="k"></div></div>
     <div class="bar k2" id="bar-k2"><div class="text-wrapper" id="k2"></div></div>
     <img id="img-k2" src="value_images/globalist.png" height="128pt"/>
 </div>
     
-<h2><b>Religion: </b><span class="weight-300" id="g-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Religion: </b><span class="weight-300" id="g-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-g" src="value_images/secular.png" height="128pt"/>
     <div class="bar g" id="bar-g"><div class="text-wrapper" id="g"></div></div>
     <div class="bar g2" id="bar-g2"><div class="text-wrapper" id="g2"></div></div>
     <img id="img-g2" src="value_images/religious.png" height="128pt"/>
 </div>
     
-<h2><b>Culture: </b><span class="weight-300" id="h-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Culture: </b><span class="weight-300" id="h-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-h" src="value_images/progress.png" height="128pt"/>
     <div class="bar h" id="bar-h"><div class="text-wrapper" id="h"></div></div>
     <div class="bar h2" id="bar-h2"><div class="text-wrapper" id="h2"></div></div>
     <img id="img-h2" src="value_images/tradition.png" height="128pt"/>
 </div>
 
-<h2><b>Technology: </b><span class="weight-300" id="l-label"></span></h2>
-<div class="axis">
+<h2 data-aos="fade-right"><b>Technology: </b><span class="weight-300" id="l-label"></span></h2>
+<div class="axis" data-aos="fade-right">
     <img id="img-l" src="value_images/technology.png" height="128pt"/>
     <div class="bar l" id="bar-l"><div class="text-wrapper" id="l"></div></div>
     <div class="bar l2" id="bar-l2"><div class="text-wrapper" id="l2"></div></div>
@@ -113,7 +120,7 @@
 </div>
 </div>
 <br> <br> 
-<div class="element"> 
+<div class="element" data-aos="fade-right"> 
   <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="ideologyLink()" style="color: #2222DD;text-decoration: underline"></span></h2>
   <h3><span class="weight-300" id="ideodesc-label"></span></h3><br>
 </div>

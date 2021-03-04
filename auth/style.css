@@ -70,6 +70,10 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+h3 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
 li {
     font-size: 16pt;
     text-indent: 16pt;

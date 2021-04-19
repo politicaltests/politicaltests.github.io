@@ -78,18 +78,6 @@ ideologies = [
     },
     
     {
-        "name": "Mao Zedong Thought / Maoism",
-        "link": "https://en.wikipedia.org/wiki/Maoism",
-        "desc": "Maoism is a variety of Marxism–Leninism that Mao Zedong developed for realising a socialist revolution in the agricultural, pre-industrial society of the Republic of China and later the People's Republic of China. The philosophical difference between Maoism and traditional Marxism–Leninism is that the peasantry are the revolutionary vanguard in pre-industrial societies rather than the proletariat.",
-        "stats": {
-            "econ": 100,
-            "dipl": 40,
-            "govt": 0,
-            "scty": 50
-        }
-    },
-    
-    {
         "name": "State Socialism",
         "link": "https://en.wikipedia.org/wiki/State_Socialism",
         "desc": "State socialism is a political and economic ideology within the socialist movement advocating state ownership of the means of production, either as a temporary measure or as a characteristic of socialism in the transition from the capitalist to the socialist mode of production or communist society.",

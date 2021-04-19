@@ -16,7 +16,7 @@ ideologies = [
         "desc": "Libertarian Socialism is an anti-authoritarian, anti-statist and libertarian political philosophy within the socialist movement which rejects the state socialist conception of socialism as a statist form where the state retains centralized control of the economy.",
         "stats": {
             "econ": 80,
-            "dipl": 70,
+            "dipl": 80,
             "govt": 80,
             "scty": 80
         }
@@ -90,16 +90,9 @@ ideologies = [
     },
     
     {
-        "name": "Religious Communism",
-        "stats": {
-            "econ": 100,
-            "dipl": 50,
-            "govt": 30,
-            "scty": 30
-        }
-    },
-    {
         "name": "State Socialism",
+        "link": "https://en.wikipedia.org/wiki/State_Socialism",
+        "desc": "State socialism is a political and economic ideology within the socialist movement advocating state ownership of the means of production, either as a temporary measure or as a characteristic of socialism in the transition from the capitalist to the socialist mode of production or communist society.",
         "stats": {
             "econ": 80,
             "dipl": 30,
@@ -107,24 +100,7 @@ ideologies = [
             "scty": 70
         }
     },
-    {
-        "name": "Theocratic Socialism",
-        "stats": {
-            "econ": 80,
-            "dipl": 50,
-            "govt": 30,
-            "scty": 20
-        }
-    },
-    {
-        "name": "Religious Socialism",
-        "stats": {
-            "econ": 80,
-            "dipl": 50,
-            "govt": 70,
-            "scty": 20
-        }
-    },
+    
     {
         "name": "Democratic Socialism",
         "stats": {
@@ -143,15 +119,7 @@ ideologies = [
             "scty": 70
         }
     },
-    {
-        "name": "Libertarian Socialism",
-        "stats": {
-            "econ": 80,
-            "dipl": 80,
-            "govt": 80,
-            "scty": 80
-        }
-    },
+
     {
         "name": "Anarcho-Syndicalism",
         "stats": {
@@ -170,15 +138,7 @@ ideologies = [
             "scty": 70
         }
     },
-    {
-        "name": "Theocratic Distributism",
-        "stats": {
-            "econ": 60,
-            "dipl": 40,
-            "govt": 30,
-            "scty": 20
-        }
-    },
+
     {
         "name": "Distributism",
         "stats": {

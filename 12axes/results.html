@@ -278,7 +278,15 @@
         }
     }
     document.getElementById("ideology-label").innerHTML = ideology
-    
+
+    function createImage(src, x, y, w, h) {
+        img = new Image ()
+        img.src = src
+        img.onLoad = function() {
+            ctx.drawImage(img, x, y, w, h)
+        }
+    }
+	
     /* document.getElementById("a-label").innerHTML = setLabel(a, 0)
     document.getElementById("b-label").innerHTML = setLabel(b, 1)
     document.getElementById("c-label").innerHTML = setLabel(c, 2)

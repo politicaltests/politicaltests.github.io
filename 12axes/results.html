@@ -259,9 +259,9 @@
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - f), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - b), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - c), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - h), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.govt - e), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - k), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.scty - h), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -269,14 +269,6 @@
     }
 	
     document.getElementById("ideology-label").innerHTML = ideology
-
-    function createImage(src, x, y, w, h) {
-        img = new Image ()
-        img.src = src
-        img.onLoad = function() {
-            ctx.drawImage(img, x, y, w, h)
-        }
-    }
 	
     /* document.getElementById("a-label").innerHTML = setLabel(a, 0)
     document.getElementById("b-label").innerHTML = setLabel(b, 1)

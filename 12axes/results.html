@@ -121,9 +121,7 @@
  <div class="element"> 
   <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="ideologyLink()" style="color: #2222DD;text-decoration: underline"></span></h2>
   <h3><span class="weight-300" id="ideodesc-label"></span></h3><br>
-</div>
-<canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas> 
-	
+</div>	
 	
 <br><br>
 <button class="button" onclick="location.href='https://www.screenshotmachine.com/';" style="background-color: #2196f3;">
@@ -257,30 +255,19 @@
     document.getElementById("l-label").innerHTML = setLabel(l, lArray) 
     
     ideology = ""
-    ideolink = ""
-    ideodesc = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.a - a), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.b - b), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.c - c), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.d - d), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.e - e), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.f - f), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.g - g), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.h - h), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.i - i), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.j - j), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.k - k), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.l - l), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.econ - f), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.govt - b), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - c), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.scty - h), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
-	    ideolink = ideologies[i].link
-            ideodesc = ideologies[i].desc
             ideodist = dist
         }
     }
+	
     document.getElementById("ideology-label").innerHTML = ideology
 
     function createImage(src, x, y, w, h) {

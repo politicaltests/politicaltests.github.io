@@ -78,7 +78,7 @@ ideologies = [
     },
     
     {
-        "name": "Maoism",
+        "name": "Mao Zedong Thought / Maoism",
         "link": "https://en.wikipedia.org/wiki/Maoism",
         "desc": "Maoism is a variety of Marxism–Leninism that Mao Zedong developed for realising a socialist revolution in the agricultural, pre-industrial society of the Republic of China and later the People's Republic of China. The philosophical difference between Maoism and traditional Marxism–Leninism is that the peasantry are the revolutionary vanguard in pre-industrial societies rather than the proletariat.",
         "stats": {

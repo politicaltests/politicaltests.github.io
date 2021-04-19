@@ -264,11 +264,18 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.scty - h), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
+	    ideolink = ideologies[i].link
+            ideodesc = ideologies[i].desc
             ideodist = dist
         }
     }
 	
     document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideodesc-label").innerHTML = ideodesc
+	
+	function ideologyLink() {
+  	window.open(ideolink);
+	}
 	
     /* document.getElementById("a-label").innerHTML = setLabel(a, 0)
     document.getElementById("b-label").innerHTML = setLabel(b, 1)

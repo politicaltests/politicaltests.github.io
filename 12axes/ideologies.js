@@ -68,7 +68,7 @@ ideologies = [
     {
         "name": "Stalinism",
         "link": "https://en.wikipedia.org/wiki/Stalinism",
-        "desc": "Stalinism is the means of governing and policies which were implemented in the Soviet Union from 1927 to 1953 by Joseph Stalin. It included the creation of a one-party totalitarian police state; rapid industrialization; the theory of socialism in one country, and the collectivization of agriculture."
+        "desc": "Stalinism is the means of governing and policies which were implemented in the Soviet Union from 1927 to 1953 by Joseph Stalin. It included the creation of a one-party totalitarian police state; rapid industrialization; the theory of socialism in one country, and the collectivization of agriculture.",
         "stats": {
             "econ": 100,
             "dipl": 20,

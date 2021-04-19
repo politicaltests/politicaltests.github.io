@@ -91,6 +91,8 @@ ideologies = [
     
     {
         "name": "Democratic Socialism",
+        "link": "https://en.wikipedia.org/wiki/Democratic_socialism",
+        "desc": "Democratic socialism is a political philosophy supporting political democracy within a socially owned economy, with a particular emphasis on economic democracy, workplace democracy and workers' self-management within a market socialist economy or some form of a decentralised planned socialist economy.",
         "stats": {
             "econ": 80,
             "dipl": 50,
@@ -100,6 +102,8 @@ ideologies = [
     },
     {
         "name": "Revolutionary Socialism",
+        "link": "https://en.wikipedia.org/wiki/Revolutionary_socialism"
+        "desc": "Revolutionary socialism is a political philosophy, doctrine and tradition within socialism which stresses the idea that a social revolution is necessary in order to bring about structural changes to society. More specifically, it is the view that revolution is a necessary precondition for a transition from the capitalist mode of production to the socialist mode of production.",
         "stats": {
             "econ": 80,
             "dipl": 20,
@@ -110,6 +114,8 @@ ideologies = [
 
     {
         "name": "Anarcho-Syndicalism",
+        "link": "https://en.wikipedia.org/wiki/Anarcho-syndicalism"
+        "desc": "Anarcho-syndicalism is a political philosophy and anarchist school of thought that views revolutionary industrial unionism or syndicalism as a method for workers in capitalist society to gain control of an economy and thus control influence in broader society. The end goal of syndicalism is to abolish the wage system, regarding it as wage slavery. Anarcho-syndicalist theory therefore generally focuses on the labour movement.",
         "stats": {
             "econ": 80,
             "dipl": 50,
@@ -119,6 +125,8 @@ ideologies = [
     },
     {
         "name": "Left-Wing Populism",
+        "link": "https://en.wikipedia.org/wiki/Left-wing_populism",
+        "desc": "Left-wing populism, also called social populism, is a political ideology that combines left-wing politics with populist rhetoric and themes. Its rhetoric often consists of anti-elitism, opposition to the Establishment and speaking for the 'common people'.",
         "stats": {
             "econ": 60,
             "dipl": 40,
@@ -129,6 +137,8 @@ ideologies = [
 
     {
         "name": "Distributism",
+        "link": "https://en.wikipedia.org/wiki/Distributism",
+        "desc": "Distributism is an economic theory asserting that the world's productive assets should be widely owned rather than concentrated. It views both laissez-faire capitalism and state socialism as equally flawed and exploitative, favoring economic mechanisms such as cooperatives and member-owned mutual organizations as well as small businesses and large-scale competition law reform such as antitrust regulations.",
         "stats": {
             "econ": 60,
             "dipl": 50,
@@ -138,6 +148,8 @@ ideologies = [
     },
     {
         "name": "Social Liberalism",
+        "link": "https://en.wikipedia.org/wiki/Social_liberalism",
+        "desc": "Social Liberalism is a political philosophy and variety of liberalism that endorses a regulated market economy and the expansion of civil and political rights. Under social liberalism, the common good is viewed as harmonious with the freedom of the individual.",
         "stats": {
             "econ": 60,
             "dipl": 60,
@@ -147,6 +159,8 @@ ideologies = [
     },
     {
         "name": "Christian Democracy",
+        "link": "https://en.wikipedia.org/wiki/Christian_Democracy",
+        "desc": "Christian democracy is often considered centre-right on cultural, social and moral issues, but centre-left 'with respect to economic and labor issues, civil rights, and foreign policy' as well as the environment. Christian democrats support a social market economy."
         "stats": {
             "econ": 60,
             "dipl": 60,
@@ -156,6 +170,8 @@ ideologies = [
     },
     {
         "name": "Social Democracy",
+        "link": "https://en.wikipedia.org/wiki/Social_Democracy",
+        "desc": "Social democracy is a political, social and economic philosophy within socialism. As a policy regime, it is described by academics as advocating economic and social interventions to promote social justice within the framework of a liberal-democratic polity and a capitalist-oriented mixed economy.",
         "stats": {
             "econ": 60,
             "dipl": 70,
@@ -165,6 +181,8 @@ ideologies = [
     },
     {
         "name": "Progressivism",
+        "link": "https://en.wikipedia.org/wiki/Progressivism",
+        "desc": "Progressivism is a political philosophy in support of social reform. It is based on the idea of progress in which advancements in science, technology, economic development and social organization are vital to the improvement of the human condition.",
         "stats": {
             "econ": 60,
             "dipl": 80,
@@ -174,6 +192,8 @@ ideologies = [
     },
     {
         "name": "Anarcho-Mutualism",
+        "link": "https://en.wikipedia.org/wiki/Mutualism_(economic_theory)",
+        "desc": "Anarcho-Mutualism is an anarchist school of thought and economic theory that advocates a socialist society based on free markets and usufructs, i.e. occupation and use property norms.",
         "stats": {
             "econ": 60,
             "dipl": 50,
@@ -181,26 +201,11 @@ ideologies = [
             "scty": 70
         }
     },
-    {
-        "name": "National Totalitarianism",
-        "stats": {
-            "econ": 50,
-            "dipl": 20,
-            "govt": 0,
-            "scty": 50
-        }
-    },
-    {
-        "name": "Global Totalitarianism",
-        "stats": {
-            "econ": 50,
-            "dipl": 80,
-            "govt": 0,
-            "scty": 50
-        }
-    },
+
     {
         "name": "Technocracy",
+        "link": "https://en.wikipedia.org/wiki/Technocracy",
+        "desc": "Technocracy is a system of government that in which a decision-maker or makers are elected by the population or appointed on the basis of their expertise in a given area of responsibility, particularly with regard to scientific or technical knowledge.",
         "stats": {
             "econ": 60,
             "dipl": 60,
@@ -210,6 +215,8 @@ ideologies = [
     },
     {
         "name": "Centrist",
+        "link": "https://en.wikipedia.org/wiki/Centrism",
+        "desc": "Centrism is a political outlook or position that involves acceptance and/or support of a balance of social equality and a degree of social hierarchy, while opposing political changes which would result in a significant shift of society strongly to either the left or the right.",
         "stats": {
             "econ": 50,
             "dipl": 50,
@@ -219,6 +226,8 @@ ideologies = [
     },
     {
         "name": "Liberalism",
+        "link": "https://en.wikipedia.org/wiki/Liberalism",
+        "desc": "Liberalism is a political and moral philosophy based on liberty, consent of the governed and equality before the law. Liberals espouse a wide array of views depending on their understanding of these principles, but they generally support free markets, free trade, limited government, individual rights (including civil rights and human rights), capitalism, democracy, secularism, gender equality, racial equality, internationalism, freedom of speech, freedom of the press and freedom of religion.",
         "stats": {
             "econ": 50,
             "dipl": 60,
@@ -228,6 +237,8 @@ ideologies = [
     },
     {
         "name": "Religious Anarchism",
+        "link": "https://en.wikipedia.org/wiki/Anarchism_and_religion",
+        "desc": "Religious Anarchism promotes the idea of a personal belief in religion within an Anarchist society. They believe that the relationship with God, rather than the government, should be the primary focus on human life.",
         "stats": {
             "econ": 50,
             "dipl": 50,
@@ -248,6 +259,8 @@ ideologies = [
     },
     {
         "name": "Moderate Conservatism",
+        "link": "https://en.wikipedia.org/wiki/Centre-right_politics",
+        "desc": "Moderate Conservatism have been influenced by economic liberalism, generally supporting free markets, limited government spending and other policies heavily associated with neoliberalism. The moderate right is neither universally socially conservative nor culturally liberal, and often combines both beliefs with support for civil liberties and elements of traditionalism.",
         "stats": {
             "econ": 40,
             "dipl": 40,
@@ -257,6 +270,8 @@ ideologies = [
     },
     {
         "name": "Reactionary",
+        "link": "https://en.wikipedia.org/wiki/Reactionary",
+        "desc": "In political science, a reactionary or reactionist is a person or entity holding political views that favour a return to a previous political state of society that they believe possessed positive characteristics that are absent in contemporary society.",
         "stats": {
             "econ": 40,
             "dipl": 40,
@@ -266,6 +281,8 @@ ideologies = [
     },
     {
         "name": "Social Libertarianism",
+        "link": "https://en.wikipedia.org/wiki/Left-libertarianism",
+        "desc": "Social Libertarianism is a political philosophy and type of libertarianism that stresses both individual freedom and social equality. Social libertarianism represents several related yet distinct approaches to political and social theory. In its classical usage, it refers to anti-authoritarian varieties of left-wing politics such as anarchism, especially social anarchism.",
         "stats": {
             "econ": 60,
             "dipl": 70,
@@ -274,7 +291,9 @@ ideologies = [
         }
     },
     {
-        "name": "Libertarianism",
+        "name": "Right-Libertarianism",
+        "link": "https://en.wikipedia.org/wiki/Right-libertarianism",
+        "desc": "Right-Libertarianism is a political philosophy and type of libertarianism that supports capitalist property rights and defends market distribution of natural resources and private property. It supports civil liberties, especially natural law, negative rights and a major reversal of the modern welfare state.",
         "stats": {
             "econ": 40,
             "dipl": 60,
@@ -284,6 +303,8 @@ ideologies = [
     },
     {
         "name": "Anarcho-Egoism",
+        "link": "https://en.wikipedia.org/wiki/Egoism",
+        "desc": "Egoism is the philosophy concerned with the role of the self, or ego, as the motivation and goal of one's own action. That is, they may be interested in either describing that people do act in self-interest or prescribing that they should.",
         "stats": {
             "econ": 40,
             "dipl": 50,
@@ -292,43 +313,20 @@ ideologies = [
         }
     },
     {
-        "name": "Nazism",
-        "stats": {
-            "econ": 40,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 5
-        }
-    },
-    {
-        "name": "Autocracy",
-        "stats": {
-            "econ": 50,
-            "dipl": 20,
-            "govt": 20,
-            "scty": 50
-        }
-    },
-    {
         "name": "Fascism",
+        "link": "https://en.wikipedia.org/wiki/Fascism",
+        "desc": "Fascism is a form of far-right, authoritarian ultranationalism characterized by dictatorial power, forcible suppression of opposition and strong regimentation of society and of the economy.",
         "stats": {
             "econ": 40,
-            "dipl": 20,
-            "govt": 20,
-            "scty": 20
-        }
-    },
-    {
-        "name": "Capitalist Fascism",
-        "stats": {
-            "econ": 20,
-            "dipl": 20,
-            "govt": 20,
-            "scty": 20
+            "dipl": 10,
+            "govt": 10,
+            "scty": 10
         }
     },
     {
         "name": "Conservatism",
+        "link": "https://en.wikipedia.org/wiki/Conservatism",
+        "desc": "Conservatism is a political and social philosophy promoting traditional social institutions. The central tenets of conservatism may vary in relation to the traditional values or practices of the culture and civilization in which it appears. Conservatives usually seek to preserve a range of institutions such as organized religion, parliamentary government, and property rights.",
         "stats": {
             "econ": 30,
             "dipl": 40,
@@ -338,6 +336,8 @@ ideologies = [
     },
     {
         "name": "Neo-Liberalism",
+        "link": "https://en.wikipedia.org/wiki/Neoliberalism",
+        "desc": "Neoliberalism is generally associated with policies of economic liberalization, including privatization, deregulation, globalization, free trade, austerity and reductions in government spending in order to increase the role of the private sector in the economy and society; however, the defining features of neoliberalism in both thought and practice have been the subject of substantial scholarly debate.",
         "stats": {
             "econ": 30,
             "dipl": 30,
@@ -382,57 +382,12 @@ ideologies = [
         }
     },
     {
-        "name": "Fundamentalism",
-        "stats": {
-            "econ": 20,
-            "dipl": 30,
-            "govt": 30,
-            "scty": 5
-        }
-    },
-    {
-        "name": "Libertarian Capitalism",
-        "stats": {
-            "econ": 20,
-            "dipl": 50,
-            "govt": 80,
-            "scty": 60
-        }
-    },
-    {
-        "name": "Market Anarchism",
-        "stats": {
-            "econ": 20,
-            "dipl": 50,
-            "govt": 100,
-            "scty": 50
-        }
-    },
-    {
         "name": "Objectivism",
         "stats": {
             "econ": 10,
             "dipl": 50,
             "govt": 90,
             "scty": 40
-        }
-    },
-    {
-        "name": "Totalitarian Capitalism",
-        "stats": {
-            "econ": 0,
-            "dipl": 30,
-            "govt": 0,
-            "scty": 50
-        }
-    },
-    {
-        "name": "Ultra-Capitalism",
-        "stats": {
-            "econ": 0,
-            "dipl": 40,
-            "govt": 50,
-            "scty": 50
         }
     },
     {

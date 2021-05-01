@@ -413,7 +413,7 @@ ideologies = [
     },
     {
         "name": "Anarcho-Capitalism",
-        "link": "https://en.wikipedia.org/wiki/Anarcho-Capitalism"
+        "link": "https://en.wikipedia.org/wiki/Anarcho-Capitalism",
         "desc": "Anarcho-capitalism is a political philosophy and economic theory that advocates the elimination of centralized states in favor of a system of private property enforced by private agencies, free markets and the right-libertarian interpretation of self-ownership, which extends the concept to include control of private property as part of the self. In the absence of statute, anarcho-capitalists hold that society tends to contractually self-regulate and civilize through participation in the free market which they describe as a voluntary society.",
         "stats": {
             "econ": 10,

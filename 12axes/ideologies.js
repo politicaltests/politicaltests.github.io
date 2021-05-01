@@ -160,7 +160,7 @@ ideologies = [
     {
         "name": "Christian Democracy",
         "link": "https://en.wikipedia.org/wiki/Christian_Democracy",
-        "desc": "Christian democracy is often considered centre-right on cultural, social and moral issues, but centre-left 'with respect to economic and labor issues, civil rights, and foreign policy' as well as the environment. Christian democrats support a social market economy."
+        "desc": "Christian democracy is often considered centre-right on cultural, social and moral issues, but centre-left 'with respect to economic and labor issues, civil rights, and foreign policy' as well as the environment. Christian democrats support a social market economy.",
         "stats": {
             "econ": 60,
             "dipl": 60,

@@ -4,9 +4,9 @@ ideologies = [
         "link": "https://en.wikipedia.org/wiki/Anarcho-communism",
         "desc": "Anarcho-Communism is a political philosophy and anarchist school of thought which advocates the abolition of the state, capitalism, wage labour, social hierarchies and private property, in favour of common ownership of the means of production and direct democracy.",
         "stats": {
-            "econ": 100,
+            "econ": 90,
             "dipl": 50,
-            "govt": 100,
+            "govt": 95,
             "scty": 90
         }
     },
@@ -407,7 +407,7 @@ ideologies = [
         "stats": {
             "econ": 20,
             "dipl": 50,
-            "govt": 90,
+            "govt": 95,
             "scty": 50
         }
     },

@@ -102,7 +102,7 @@ ideologies = [
     },
     {
         "name": "Revolutionary Socialism",
-        "link": "https://en.wikipedia.org/wiki/Revolutionary_socialism"
+        "link": "https://en.wikipedia.org/wiki/Revolutionary_socialism",
         "desc": "Revolutionary socialism is a political philosophy, doctrine and tradition within socialism which stresses the idea that a social revolution is necessary in order to bring about structural changes to society. More specifically, it is the view that revolution is a necessary precondition for a transition from the capitalist mode of production to the socialist mode of production.",
         "stats": {
             "econ": 80,
@@ -114,7 +114,7 @@ ideologies = [
 
     {
         "name": "Anarcho-Syndicalism",
-        "link": "https://en.wikipedia.org/wiki/Anarcho-syndicalism"
+        "link": "https://en.wikipedia.org/wiki/Anarcho-syndicalism",
         "desc": "Anarcho-syndicalism is a political philosophy and anarchist school of thought that views revolutionary industrial unionism or syndicalism as a method for workers in capitalist society to gain control of an economy and thus control influence in broader society. The end goal of syndicalism is to abolish the wage system, regarding it as wage slavery. Anarcho-syndicalist theory therefore generally focuses on the labour movement.",
         "stats": {
             "econ": 80,

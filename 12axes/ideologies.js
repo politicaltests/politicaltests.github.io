@@ -347,6 +347,8 @@ ideologies = [
     },
     {
         "name": "Classical Liberalism",
+        "link": "https://en.wikipedia.org/wiki/Classical_Liberalism",
+        "desc": "Classical liberalism is a political ideology and a branch of liberalism that advocates civil liberties under the rule of law with an emphasis on economic freedom. It drew on classical economics, especially the economic ideas as espoused by Adam Smith in Book One of The Wealth of Nations and on a belief in natural law, progress and utilitarianism.",
         "stats": {
             "econ": 30,
             "dipl": 60,
@@ -356,24 +358,30 @@ ideologies = [
     },
     {
         "name": "Authoritarian Capitalism",
+        "link": "https://en.wikipedia.org/wiki/Authoritarian_capitalism",
+        "desc": "Authoritarian Capitalism, also called Illiberal Capitalism, is an economic system in which a capitalist market economy exists alongside an authoritarian government. It combines private property and the functioning of market forces with repression of dissent, restrictions on freedom of speech and either a lack of elections or an electoral system with a single dominant political party.",
         "stats": {
             "econ": 20,
             "dipl": 30,
-            "govt": 20,
+            "govt": 10,
             "scty": 40
         }
     },
     {
         "name": "State Capitalism",
+        "link": "https://en.wikipedia.org/wiki/State_Capitalism",
+        "desc": "State capitalism is an economic system in which the state undertakes business and commercial economic activity and where the means of production are organized and managed as state-owned enterprises, or where there is otherwise a dominance of corporatized government agencies.",
         "stats": {
-            "econ": 20,
+            "econ": 30,
             "dipl": 50,
-            "govt": 30,
+            "govt": 20,
             "scty": 50
         }
     },
     {
-        "name": "Neo-Conservatism",
+        "name": "Neoconservatism",
+        "link": "https://en.wikipedia.org/wiki/Neoconservatism",
+        "desc": "Neoconservatism typically advocate the promotion of democracy and interventionism in international affairs, including peace through strength (by means of military force), and are known for espousing disdain for communism, terrorism, and political radicalism.",
         "stats": {
             "econ": 20,
             "dipl": 20,
@@ -383,17 +391,32 @@ ideologies = [
     },
     {
         "name": "Objectivism",
+        "link": "https://en.wikipedia.org/wiki/Objectivism",
+        "desc": "Objectivism's main tenets are that reality exists independently of consciousness, that one can attain objective knowledge from perception through the process of concept formation and inductive logic, and that the proper moral purpose of one's life is the pursuit of one's own happiness. It claimes that the only social system consistent with this morality is one that displays full respect for individual rights embodied in laissez-faire capitalism and limited government.",
         "stats": {
-            "econ": 10,
+            "econ": 20,
             "dipl": 50,
             "govt": 90,
-            "scty": 40
+            "scty": 60
+        }
+    },
+        {
+        "name": "Voluntaryism",
+        "link": "https://en.wikipedia.org/wiki/Objectivism",
+        "desc": "Voluntaryism advocates for its principal beliefs, which stems from the principles of self-ownership and non-aggression. It rejects a mandatory government and taxation, in favour of free markets and Voluntary/No Government. It allows for multiple economic systems (as long as they are voluntary), but is mostly associated with Right-Wing economic views.",
+        "stats": {
+            "econ": 20,
+            "dipl": 50,
+            "govt": 90,
+            "scty": 50
         }
     },
     {
         "name": "Anarcho-Capitalism",
+        "link": "https://en.wikipedia.org/wiki/Anarcho-Capitalism"
+        "desc": "Anarcho-capitalism is a political philosophy and economic theory that advocates the elimination of centralized states in favor of a system of private property enforced by private agencies, free markets and the right-libertarian interpretation of self-ownership, which extends the concept to include control of private property as part of the self. In the absence of statute, anarcho-capitalists hold that society tends to contractually self-regulate and civilize through participation in the free market which they describe as a voluntary society.",
         "stats": {
-            "econ": 0,
+            "econ": 10,
             "dipl": 50,
             "govt": 100,
             "scty": 50

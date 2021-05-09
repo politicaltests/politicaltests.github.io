@@ -6,7 +6,7 @@ ideologies = [
         "stats": {
             "econ": 90,
             "dipl": 50,
-            "govt": 95,
+            "govt": 5,
             "scty": 50
         }
     },
@@ -17,7 +17,7 @@ ideologies = [
         "stats": {
             "econ": 80,
             "dipl": 80,
-            "govt": 80,
+            "govt": 20,
             "scty": 50
         }
     },
@@ -28,7 +28,7 @@ ideologies = [
         "stats": {
             "econ": 100,
             "dipl": 100,
-            "govt": 60,
+            "govt": 40,
             "scty": 50
         }
     },
@@ -39,7 +39,7 @@ ideologies = [
         "stats": {
             "econ": 100,
             "dipl": 70,
-            "govt": 60,
+            "govt": 40,
             "scty": 50
         }
     },
@@ -50,7 +50,7 @@ ideologies = [
         "stats": {
             "econ": 100,
             "dipl": 30,
-            "govt": 30,
+            "govt": 70,
             "scty": 50
         }
     },
@@ -61,7 +61,7 @@ ideologies = [
         "stats": {
             "econ": 100,
             "dipl": 40,
-            "govt": 20,
+            "govt": 80,
             "scty": 60
         }
     },
@@ -72,7 +72,7 @@ ideologies = [
         "stats": {
             "econ": 100,
             "dipl": 20,
-            "govt": 0,
+            "govt": 100,
             "scty": 40
         }
     },
@@ -84,7 +84,7 @@ ideologies = [
         "stats": {
             "econ": 80,
             "dipl": 30,
-            "govt": 30,
+            "govt": 70,
             "scty": 50
         }
     },
@@ -96,7 +96,7 @@ ideologies = [
         "stats": {
             "econ": 80,
             "dipl": 50,
-            "govt": 40,
+            "govt": 60,
             "scty": 50
         }
     },
@@ -119,7 +119,7 @@ ideologies = [
         "stats": {
             "econ": 80,
             "dipl": 50,
-            "govt": 100,
+            "govt": 0,
             "scty": 50
         }
     },
@@ -130,7 +130,7 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 40,
-            "govt": 30,
+            "govt": 70,
             "scty": 50
         }
     },
@@ -153,7 +153,7 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 60,
-            "govt": 60,
+            "govt": 40,
             "scty": 80
         }
     },
@@ -175,7 +175,7 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 70,
-            "govt": 60,
+            "govt": 40,
             "scty": 50
         }
     },
@@ -186,7 +186,7 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 80,
-            "govt": 60,
+            "govt": 40,
             "scty": 100
         }
     },
@@ -197,7 +197,7 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 50,
-            "govt": 100,
+            "govt": 0,
             "scty": 50
         }
     },
@@ -209,7 +209,7 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 60,
-            "govt": 20,
+            "govt": 80,
             "scty": 50
         }
     },
@@ -231,7 +231,7 @@ ideologies = [
         "stats": {
             "econ": 50,
             "dipl": 60,
-            "govt": 60,
+            "govt": 40,
             "scty": 60
         }
     },
@@ -242,7 +242,7 @@ ideologies = [
         "stats": {
             "econ": 50,
             "dipl": 50,
-            "govt": 100,
+            "govt": 0,
             "scty": 30
         }
     },
@@ -253,7 +253,7 @@ ideologies = [
         "stats": {
             "econ": 40,
             "dipl": 30,
-            "govt": 30,
+            "govt": 70,
             "scty": 40
         }
     },
@@ -275,7 +275,7 @@ ideologies = [
         "stats": {
             "econ": 40,
             "dipl": 40,
-            "govt": 40,
+            "govt": 60,
             "scty": 10
         }
     },
@@ -286,7 +286,7 @@ ideologies = [
         "stats": {
             "econ": 60,
             "dipl": 70,
-            "govt": 80,
+            "govt": 20,
             "scty": 50
         }
     },
@@ -297,7 +297,7 @@ ideologies = [
         "stats": {
             "econ": 40,
             "dipl": 60,
-            "govt": 80,
+            "govt": 20,
             "scty": 50
         }
     },
@@ -308,7 +308,7 @@ ideologies = [
         "stats": {
             "econ": 40,
             "dipl": 50,
-            "govt": 100,
+            "govt": 0,
             "scty": 50
         }
     },
@@ -319,7 +319,7 @@ ideologies = [
         "stats": {
             "econ": 40,
             "dipl": 10,
-            "govt": 10,
+            "govt": 90,
             "scty": 10
         }
     },
@@ -330,12 +330,12 @@ ideologies = [
         "stats": {
             "econ": 30,
             "dipl": 40,
-            "govt": 40,
+            "govt": 60,
             "scty": 30
         }
     },
     {
-        "name": "Neo-Liberalism",
+        "name": "Neoliberalism",
         "link": "https://en.wikipedia.org/wiki/Neoliberalism",
         "desc": "Neoliberalism is generally associated with policies of economic liberalization, including privatization, deregulation, globalization, free trade, austerity and reductions in government spending in order to increase the role of the private sector in the economy and society; however, the defining features of neoliberalism in both thought and practice have been the subject of substantial scholarly debate.",
         "stats": {
@@ -352,7 +352,7 @@ ideologies = [
         "stats": {
             "econ": 30,
             "dipl": 60,
-            "govt": 60,
+            "govt": 40,
             "scty": 50
         }
     },
@@ -363,7 +363,7 @@ ideologies = [
         "stats": {
             "econ": 20,
             "dipl": 30,
-            "govt": 10,
+            "govt": 90,
             "scty": 50
         }
     },
@@ -374,7 +374,7 @@ ideologies = [
         "stats": {
             "econ": 30,
             "dipl": 50,
-            "govt": 20,
+            "govt": 80,
             "scty": 50
         }
     },
@@ -385,7 +385,7 @@ ideologies = [
         "stats": {
             "econ": 20,
             "dipl": 20,
-            "govt": 40,
+            "govt": 60,
             "scty": 20
         }
     },
@@ -396,7 +396,7 @@ ideologies = [
         "stats": {
             "econ": 20,
             "dipl": 50,
-            "govt": 90,
+            "govt": 10,
             "scty": 50
         }
     },
@@ -407,7 +407,7 @@ ideologies = [
         "stats": {
             "econ": 20,
             "dipl": 50,
-            "govt": 95,
+            "govt": 5,
             "scty": 50
         }
     },
@@ -418,7 +418,7 @@ ideologies = [
         "stats": {
             "econ": 10,
             "dipl": 50,
-            "govt": 100,
+            "govt": 0,
             "scty": 50
         }
     }

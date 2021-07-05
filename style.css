@@ -294,3 +294,7 @@ div.desc {
 img.indexicon {
     height: 10px;
 }
+div.gallerylist {
+  margin-left: auto;
+  margin-right: auto;
+}

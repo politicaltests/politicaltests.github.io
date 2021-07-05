@@ -291,3 +291,6 @@ div.desc {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+img.indexicon {
+    height: 10px;
+}

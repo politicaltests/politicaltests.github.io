@@ -299,5 +299,5 @@ img.indexicon {
 div.gallerylist {
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: inline-block;
 }

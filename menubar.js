@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $("#navbar-frame").load("navbar.html");
+    $("hr.navbar-frame").load("navbar.html");
 });

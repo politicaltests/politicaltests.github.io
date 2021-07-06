@@ -304,47 +304,49 @@ div.gallerylist {
 }
 
 /* Menu Bar */
-div ul {
+.navbar {
   list-style-type: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0px;
   padding: 0px;
   overflow: hidden;
   background-color: #BBB;
   border-radius: 5px;
+  position: sticky;
+  top: 0;
 }
 
 li {
   float: left;
 }
 
-li a, .dropbtn {
+li a, .dropbtn{
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 10px;
+  padding: 14px 16px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #EEE;
+   background-color: #EEE;
   color: black
 }
 
-a.active {
-  background-color: #CCC;
+.active {
+  background-color: #4CAF50;
   font-family: 'Montserrat', sans-serif;
-} 
+}
 
-li.dropdown {
+.dropdown {
+  float: left;
+  overflow: hidden;
   display: inline-block;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -359,7 +361,9 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;

@@ -271,7 +271,7 @@ canvas {
     margin-right: auto;
 }
 
-//Gallery on index
+/* Gallery on index */
 div.gallery {
   margin: 5px;
   border: 2px solid #ccc;
@@ -303,7 +303,7 @@ div.gallerylist {
   display: inline-block;
 }
 
-//Menu Bar
+/* Menu Bar */
 ul {
   list-style-type: none;
   margin: 0;

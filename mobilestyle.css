@@ -191,7 +191,6 @@ canvas {
 
 /* Gallery on index */
 div.gallery {
-  margin: 5px;
   border: 2px solid #ccc;
   float: left;
   width: 70%;

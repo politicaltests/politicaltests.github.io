@@ -313,7 +313,7 @@ ul {
 }
 
 li {
-  float: left;
+  float: center;
 }
 
 li a, .dropbtn {
@@ -333,6 +333,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 a.active {
   background-color: #CCC;
+  font-family: 'Montserrat', sans-serif;
 } 
 
 li.dropdown {
@@ -350,7 +351,7 @@ li.dropdown {
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 12px;
   text-decoration: none;
   display: block;
   text-align: left;

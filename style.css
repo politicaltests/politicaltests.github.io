@@ -125,82 +125,8 @@ img.center {
 }
 .button1:hover {
   background-color: Gray;
-}
-.button2 {
-    background-color: DarkRed;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 24pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-.button2:hover {
-  background-color: DimGray;
-}
-.button3 {
-    background-color: Tan;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 24pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-.button3:hover {
-  background-color: #4a4a4a;
-}
-.button4 {
-    background-color: SlateGray;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 24pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-.button4:hover {
-  background-color: DarkSlateGray;
-}
-.button5 {
-    background-color: Coral;
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 24pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-.button5:hover {
-  background-color: Black;
+  border: 2px;
+  border-color: Black;
 }
 .small_button, .small_button_off {
     background-color: #333;

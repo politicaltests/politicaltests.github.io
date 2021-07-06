@@ -326,10 +326,11 @@ li a, .dropbtn{
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  font-size: 20px
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-   background-color: #EEE;
+  background-color: #EEE;
   color: black
 }
 

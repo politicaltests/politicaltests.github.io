@@ -304,10 +304,10 @@ div.gallerylist {
 }
 
 /* Menu Bar */
-ul {
+div ul {
   list-style-type: none;
-  margin: 5px;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
   background-color: #BBB;
   border-radius: 5px;
@@ -318,10 +318,10 @@ li {
 }
 
 li a, .dropbtn {
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
-  padding: 14px 14px;
+  padding: 10px 10px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 

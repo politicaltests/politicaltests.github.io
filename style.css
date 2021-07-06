@@ -316,7 +316,7 @@ li {
   float: left;
 }
 
-li a.menu-a, .dropbtn {
+li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -326,7 +326,7 @@ li a.menu-a, .dropbtn {
 
 }
 
-li a.menu-a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
   background-color: #EEE;
   color: black
 }

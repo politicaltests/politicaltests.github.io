@@ -306,7 +306,7 @@ div.gallerylist {
 /* Menu Bar */
 ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 5px;
   padding: 0;
   overflow: hidden;
   background-color: #BBB;
@@ -314,7 +314,7 @@ ul {
 }
 
 li {
-  float: center;
+  float: left;
 }
 
 li a, .dropbtn {

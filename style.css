@@ -306,7 +306,7 @@ div.gallerylist {
 /* Menu Bar */
 div ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 5px;
   padding: 0px;
   overflow: hidden;
   background-color: #BBB;

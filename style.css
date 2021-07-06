@@ -275,6 +275,7 @@ div.gallery {
   border: 2px solid #ccc;
   float: left;
   width: 30%;
+  display: inline;
 }
 
 div.gallery:hover {
@@ -297,5 +298,5 @@ img.indexicon {
 div.gallerylist {
   margin-left: auto;
   margin-right: auto;
- display: inline;
+ display: block;
 }

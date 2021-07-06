@@ -1,3 +1,1 @@
-$(document).ready(function(){
-    $("#navbar-frame").load("navbar.html");
-});
+$('#navbar-frame').load('navbar.html #menubarcode');

@@ -274,7 +274,8 @@ div.gallery {
   margin: 5px;
   border: 2px solid #ccc;
   float: left;
-  width: 20%;
+  width: 40%;
+  width: 50%;
   display: block;
 }
 

@@ -99,9 +99,6 @@ img.center {
     min-width: 500pt;
 }
 img.values {
-    border-color: #444444;
-    border-style: solid;
-    border-width: 2px;
     border-radius: 8pt;
     display: block;
     width: 60%;

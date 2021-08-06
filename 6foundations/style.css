@@ -57,10 +57,12 @@ p.quiz-topic {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 36pt;
+    font-size: 30pt;
     justify-content: center;
     align-items: center;
     text-align: center;
+    text-decoration: overline;
+    font-style: italic;
 }
 h1 {
     color: #222222;

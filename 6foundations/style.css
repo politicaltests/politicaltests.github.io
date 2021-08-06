@@ -53,6 +53,15 @@ p.question {
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
+p.quiz-topic {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 36pt;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 h1 {
     color: #222222;
     font-family: 'Montserrat', sans-serif;

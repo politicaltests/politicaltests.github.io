@@ -1,3 +1,4 @@
+questions = [
 //Care
 { "question": "The emotional suffering of others", "effect": {
   "care": 10, "fairness": 0, "loyalty": 0, "authority": 0, "sanctity": 0, "liberty": 0 }},
@@ -66,4 +67,4 @@
     
 { "question": "Whether or not soldiers or policemen obey their orders", "effect": {
   "care": 0, "fairness": 0, "loyalty": 10, "authority": 0, "sanctity": 0, "liberty": 0 }},
-
+];

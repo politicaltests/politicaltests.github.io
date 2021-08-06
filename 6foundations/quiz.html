@@ -60,22 +60,20 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_olig, max_civil, max_elit, max_preve, max_diver, max_ruleund, max_bestsuit, max_disun; // Max possible scores
-    max_olig = max_civil = max_elit = max_preve = max_diver = max_ruleund = max_bestsuit = max_disun = 0;
-    var olig, civil, elit, preve, diver, ruleund, bestsuit, disun; // User's scores
-    olig = civil = elit = preve = diver = ruleund = bestsuit = disun = 0;
+var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_liberty; // Max possible scores
+    max_care = max_fairness = max_loyalty = max_authority = max_sanctity = max_liberty = 0;
+    var care, fairness, loyalty, authority, sanctity, liberty, bestsuit, disun; // User's scores
+    care = fairness = loyalty = authority = sanctity = liberty = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_olig += Math.abs(questions[i].effect.olig)
-        max_civil += Math.abs(questions[i].effect.civil)
-        max_elit += Math.abs(questions[i].effect.elit)
-        max_preve += Math.abs(questions[i].effect.preve)
-        max_diver += Math.abs(questions[i].effect.diver)
-        max_ruleund += Math.abs(questions[i].effect.ruleund)
-        max_bestsuit += Math.abs(questions[i].effect.bestsuit)
-        max_disun += Math.abs(questions[i].effect.disun)
+        max_care += Math.abs(questions[i].effect.care)
+        max_fairness += Math.abs(questions[i].effect.fairness)
+        max_loyalty += Math.abs(questions[i].effect.loyalty)
+        max_authority += Math.abs(questions[i].effect.authority)
+        max_sanctity += Math.abs(questions[i].effect.sanctity)
+        max_liberty += Math.abs(questions[i].effect.liberty)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -91,14 +89,12 @@ stats"></a></div></noscript>
     }
 
     function next_question(mult) {
-        olig += mult*questions[qn].effect.olig
-        civil += mult*questions[qn].effect.civil
-        elit += mult*questions[qn].effect.elit
-        preve += mult*questions[qn].effect.preve
-        diver += mult*questions[qn].effect.diver
-        ruleund += mult*questions[qn].effect.ruleund
-        bestsuit += mult*questions[qn].effect.bestsuit
-        disun += mult*questions[qn].effect.disun
+        care += mult*questions[qn].effect.care
+        fairness += mult*questions[qn].effect.fairness
+        loyalty += mult*questions[qn].effect.loyalty
+        authority += mult*questions[qn].effect.authority
+        sanctity += mult*questions[qn].effect.sanctity
+        liberty += mult*questions[qn].effect.liberty
         
         qn++;
         prev_answer = mult;
@@ -113,14 +109,12 @@ stats"></a></div></noscript>
             return;
         }
         qn--;
-        olig -= prev_answer * questions[qn].effect.olig;
-        civil -= prev_answer * questions[qn].effect.civil;
-        elit -= prev_answer * questions[qn].effect.elit;
-        preve -= prev_answer * questions[qn].effect.preve;
-        diver -= prev_answer * questions[qn].effect.diver;
-        ruleund -= prev_answer * questions[qn].effect.ruleund;
-        bestsuit -= prev_answer * questions[qn].effect.bestsuit;
-        disun -= prev_answer * questions[qn].effect.disun;
+        care -= prev_answer * questions[qn].effect.care;
+        fairness -= prev_answer * questions[qn].effect.fairness;
+        loyalty -= prev_answer * questions[qn].effect.loyalty;
+        authority -= prev_answer * questions[qn].effect.authority;
+        sanctity -= prev_answer * questions[qn].effect.sanctity;
+        liberty -= prev_answer * questions[qn].effect.liberty;
         
         prev_answer = null;
         init_question();
@@ -131,14 +125,12 @@ stats"></a></div></noscript>
     }
     function results() {
         location.href = `results.html`
-            + `?olig=${calc_score(olig,max_olig)}`
-            + `&civil=${calc_score(civil,max_civil)}`
-            + `&elit=${calc_score(elit,max_elit)}`
-            + `&preve=${calc_score(preve,max_preve)}`
-            + `&diver=${calc_score(diver,max_diver)}`
-            + `&ruleund=${calc_score(ruleund,max_ruleund)}`
-            + `&bestsuit=${calc_score(bestsuit,max_bestsuit)}`
-            + `&disun=${calc_score(disun,max_disun)}`
+            + `?care=${calc_score(care,max_care)}`
+            + `&fairness=${calc_score(fairness,max_fairness)}`
+            + `&loyalty=${calc_score(loyalty,max_loyalty)}`
+            + `&authority=${calc_score(authority,max_authority)}`
+            + `&sanctity=${calc_score(sanctity,max_sanctity)}`
+            + `&liberty=${calc_score(liberty,max_liberty)}`
     }
 </script>
 </body>

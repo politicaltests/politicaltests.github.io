@@ -108,43 +108,6 @@ button:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }  
 
-.btn-group button {
-  border: none; 
-  border-radius: 8pt;
-  color: white; 
-  padding: 8pt;
-  margin: 5px;
-  min-width: 500pt;
-  text-align: center;
-  text-decoration: none;
-  font-size: 24pt;
-  margin: -2px auto;
-  cursor: pointer;
-  float: left; 
-}
-
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.btn-group button:hover {
-  background-color: #3e8e41;
-}
-
-.brn-group {
-  width: 70%;
-}
-
-#btn-group-2 button {
-  width: 50%;
-}
-
-#btn-group-3 button {
-  width: 33%;
-}
-
 .small_button, .small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;

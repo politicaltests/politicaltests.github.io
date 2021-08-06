@@ -67,4 +67,6 @@ questions = [
     
 { "question": "Whether or not soldiers or policemen obey their orders", "effect": {
   "care": 0, "fairness": 0, "loyalty": 10, "authority": 0, "sanctity": 0, "liberty": 0 }},
+  
+//Authority
 ];

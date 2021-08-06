@@ -1,9 +1,10 @@
 <head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='/auth/style.css' rel='stylesheet' type='text/css'>
 <title>AuthValues</title>
-<link rel="icon" type="x-icon" href="/icons/authvalues.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
+<link rel="icon" type="x-icon" href="/icons/6foundations.png">
+<link rel="shortcut icon" type="x-icon" href="/icons/6foundations.png">
 <meta charset="utf-8">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -15,7 +16,7 @@
 </head>
 <body>
 <script type="application/javascript"
-        src="/auth/questions.js">
+        src="/6foundations/questions.js">
 </script>
 <h1>AuthValues</h1>
 <hr>
@@ -28,16 +29,26 @@
 </div>
   
 <p class="question" id="question-text"></p>
+ 
+<div class="btn-group" id="btn-group-2">
+  <button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
+  <button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
+</div>
+
+<div class="btn-group" id="btn-group-3">
+  <button class="button" onclick="next_question( 0.3)" style="background-color: #66CDAA;">Partially Agree</button> <br>
+  <button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
+  <button class="button" onclick="next_question(-0.3)" style="background-color: #F5B7B1;">Partially Disagree</button> <br>
+</div>
   
-<button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
-<button class="button" onclick="next_question( 0.3)" style="background-color: #66CDAA;">Partially Agree</button> <br>
-<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-<button class="button" onclick="next_question(-0.3)" style="background-color: #F5B7B1;">Partially Disagree</button> <br>
+<div class="btn-group" id="btn-group-2">
 <button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
 <button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
+</div>
+  
 <hr>
-<button class="button" onclick="next_question( 0.0)" style="background-color: Gray;">Skip Question</button> <br>
+  
+<button class="small_button" onclick="next_question( 0.0)" id="back_button">Skip</button>
 <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
 <button class="small_button_off" id="back_button_off">Back</button><br>
 

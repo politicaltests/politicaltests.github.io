@@ -59,20 +59,20 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_liberty; // Max possible scores
-    max_care = max_fairness = max_loyalty = max_authority = max_sanctity = max_liberty = 0;
-    var care, fairness, loyalty, authority, sanctity, liberty, bestsuit, disun; // User's scores
-    care = fairness = loyalty = authority = sanctity = liberty = 0;
+    var max_ca, max_fa, max_la, max_aa, max_sa, max_lia; // Max possible scores
+    max_ca = max_fa = max_la = max_aa = max_sa = max_lia = 0;
+    var ca, fa, la, aa, sa, lia, bestsuit, disun; // User's scores
+    ca = fa = la = aa = sa = lia = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_care += Math.abs(questions[i].effect.care)
-        max_fairness += Math.abs(questions[i].effect.fairness)
-        max_loyalty += Math.abs(questions[i].effect.loyalty)
-        max_authority += Math.abs(questions[i].effect.authority)
-        max_sanctity += Math.abs(questions[i].effect.sanctity)
-        max_liberty += Math.abs(questions[i].effect.liberty)
+        max_ca += Math.abs(questions[i].effect.ca)
+        max_fa += Math.abs(questions[i].effect.fa)
+        max_la += Math.abs(questions[i].effect.la)
+        max_aa += Math.abs(questions[i].effect.aa)
+        max_sa += Math.abs(questions[i].effect.sa)
+        max_lia += Math.abs(questions[i].effect.lia)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -88,12 +88,12 @@ var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_libert
     }
 
     function next_question(mult) {
-        care += mult*questions[qn].effect.care
-        fairness += mult*questions[qn].effect.fairness
-        loyalty += mult*questions[qn].effect.loyalty
-        authority += mult*questions[qn].effect.authority
-        sanctity += mult*questions[qn].effect.sanctity
-        liberty += mult*questions[qn].effect.liberty
+        ca += mult*questions[qn].effect.ca
+        fa += mult*questions[qn].effect.fa
+        la += mult*questions[qn].effect.la
+        aa += mult*questions[qn].effect.aa
+        sa += mult*questions[qn].effect.sa
+        lia += mult*questions[qn].effect.lia
         
         qn++;
         prev_answer = mult;
@@ -108,12 +108,12 @@ var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_libert
             return;
         }
         qn--;
-        care -= prev_answer * questions[qn].effect.care;
-        fairness -= prev_answer * questions[qn].effect.fairness;
-        loyalty -= prev_answer * questions[qn].effect.loyalty;
-        authority -= prev_answer * questions[qn].effect.authority;
-        sanctity -= prev_answer * questions[qn].effect.sanctity;
-        liberty -= prev_answer * questions[qn].effect.liberty;
+        ca -= prev_answer * questions[qn].effect.ca;
+        fa -= prev_answer * questions[qn].effect.fa;
+        la -= prev_answer * questions[qn].effect.la;
+        aa -= prev_answer * questions[qn].effect.aa;
+        sa -= prev_answer * questions[qn].effect.sa;
+        lia -= prev_answer * questions[qn].effect.lia;
         
         prev_answer = null;
         init_question();
@@ -124,12 +124,12 @@ var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_libert
     }
     function results() {
         location.href = `results.html`
-            + `?care=${calc_score(care,max_care)}`
-            + `&fairness=${calc_score(fairness,max_fairness)}`
-            + `&loyalty=${calc_score(loyalty,max_loyalty)}`
-            + `&authority=${calc_score(authority,max_authority)}`
-            + `&sanctity=${calc_score(sanctity,max_sanctity)}`
-            + `&liberty=${calc_score(liberty,max_liberty)}`
+            + `?ca=${calc_score(ca,max_ca)}`
+            + `&fa=${calc_score(fa,max_fa)}`
+            + `&la=${calc_score(la,max_la)}`
+            + `&aa=${calc_score(aa,max_aa)}`
+            + `&sa=${calc_score(sa,max_sa)}`
+            + `&lia=${calc_score(lia,max_lia)}`
     }
 </script>
 </body>

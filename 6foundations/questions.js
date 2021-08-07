@@ -7,19 +7,13 @@ questions = [
 { "question": "Whether or not people are being treated differently than others", "effect": {
   "ca": 10, "fa": 0, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
     
-{ "question": "Whether or not people are being kind to each others", "effect": {
+{ "question": "Whether or not people are being kind to each other", "effect": {
   "ca": 10, "fa": 0, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
     
 { "question": "Whether or not there is social justice", "effect": {
   "ca": 10, "fa": 0, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
     
 { "question": "Whether or not some people are socially marginalized", "effect": {
-  "ca": 10, "fa": 0, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
-    
-{ "question": "Whether or not systematic racism exists", "effect": {
-  "ca": 10, "fa": 0, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
-    
-{ "question": "Whether or not people in society are virtous", "effect": {
   "ca": 10, "fa": 0, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
     
 { "question": "Whether or not people care for the unfortunate", "effect": {
@@ -41,18 +35,10 @@ questions = [
 { "question": "Whether or not society is equal", "effect": {
   "ca": 0, "fa": 10, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
     
-{ "question": "Whether or not society is equitable", "effect": {
-  "ca": 0, "fa": 10, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
-    
-{ "question": "How inheritance causes economic inequality", "effect": {
-  "ca": 0, "fa": 10, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
-    
 { "question": "Whether or not rich people are helping society", "effect": {
   "ca": 0, "fa": 10, "la": 0, "aa": 0, "sa": 0, "lia": 0 }},
     
 //Loyalty
-{ "question": "Whether or not a person showed love for their country", "effect": {
-  "ca": 0, "fa": 0, "la": 10, "aa": 0, "sa": 0, "lia": 0 }},
 
 { "question": "Whether or not people are willing to sacrifice themselves for their community or country", "effect": {
   "ca": 0, "fa": 0, "la": 10, "aa": 0, "sa": 0, "lia": 0 }},

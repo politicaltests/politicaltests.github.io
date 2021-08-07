@@ -66,21 +66,6 @@ questions = [
   "care": 0, "fairness": 0, "loyalty": 10 /*, "authority": 0, "sanctity": 0, "liberty": 0 */ }},
     
 { "question": "Whether or not soldiers or policemen obey their orders", "effect": {
-  "care": 0, "fairness": 0, "loyalty": 10 /*, "authority": 0, "sanctity": 0, "liberty": 0 */ }},
-  
-//Authority
-{ "question": "Whether or not an action caused chaos or disorder", "effect": {
-  "care": 0, "fairness": 0, "loyalty": 0 /*, "authority": 10, "sanctity": 0, "liberty": 0 */ }},
-  
-{ "question": "Whether or not tradition is preserved", "effect": {
-  "care": 0, "fairness": 0, "loyalty": 0 /*, "authority": 10, "sanctity": 0, "liberty": 0 */ }},
-  
-{ "question": "Whether or not God would approve of an act", "effect": {
-  "care": 0, "fairness": 0, "loyalty": 0 /*, "authority": 10, "sanctity": 0, "liberty": 0 */ }},  
-  
-{ "question": "Whether or not people submit to Authority", "effect": {
-  "care": 0, "fairness": 0, "loyalty": 0 /*, "authority": 10, "sanctity": 0, "liberty": 0 */ }},  
-  
-//-------
+  "care": 0, "fairness": 0, "loyalty": 10 /*, "authority": 0, "sanctity": 0, "liberty": 0 */ }}
   
 ];

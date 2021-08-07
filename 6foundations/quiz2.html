@@ -61,7 +61,7 @@ stats"></a></div></noscript>
 <script>
   
     //Update This:
-    quiz_b = 24
+    quiz_a = 22
       
     var max_authority, max_sanctity, max_liberty; // Max possible scores
     max_authority = max_sanctity = max_liberty =  0;
@@ -80,7 +80,7 @@ stats"></a></div></noscript>
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length +  quiz_b);
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1 + quiz_a) + " of " + (questions.length +  quiz_a);
         if (prev_answer == null) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';

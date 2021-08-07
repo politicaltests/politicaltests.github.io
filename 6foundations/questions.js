@@ -69,3 +69,5 @@ questions = [
   "care": 0, "fairness": 0, "loyalty": 10 /*, "authority": 0, "sanctity": 0, "liberty": 0 */ }}
   
 ];
+
+//Update this: https://github.com/politicaltests/politicaltests.github.io/blob/main/6foundations/quiz2.html

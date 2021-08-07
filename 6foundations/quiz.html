@@ -59,7 +59,11 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_liberty; // Max possible scores
+  
+    //Update This:
+    quiz_b = 24
+      
+    var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_liberty; // Max possible scores
     max_care = max_fairness = max_loyalty = /* max_authority = max_sanctity = max_liberty = */ 0;
     var care, fairness, loyalty /*, authority, sanctity, liberty */; // User's scores
     care = fairness = loyalty /* = authority = sanctity = liberty */ = 0;
@@ -76,7 +80,7 @@ var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_libert
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length +  24);
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length +  quiz_b);
         if (prev_answer == null) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';

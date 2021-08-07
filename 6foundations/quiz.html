@@ -76,7 +76,7 @@ var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_libert
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length +  24);
         if (prev_answer == null) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';
@@ -123,7 +123,7 @@ var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_libert
         return (100*(max+score)/(2*max)).toFixed(1)
     }
     function results() {
-        location.href = `results.html`
+        location.href = `instructions2.html`
             + `?care=${calc_score(care,max_care)}`
             + `&fairness=${calc_score(fairness,max_fairness)}`
             + `&loyalty=${calc_score(loyalty,max_loyalty)}`

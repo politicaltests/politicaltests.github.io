@@ -119,6 +119,7 @@ stats"></a></div></noscript>
     }
     function results() {
         location.href = `results.html`
+            + window.location.search.substring(1)
             + `&authority=${calc_score(authority,max_authority)}`
             + `&sanctity=${calc_score(sanctity,max_sanctity)}`
             + `&liberty=${calc_score(liberty,max_liberty)}` 

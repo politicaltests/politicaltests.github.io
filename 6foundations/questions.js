@@ -15,7 +15,7 @@ questions = [
 { "question": "Whether or not some people are socially marginalized", "effect": {
   "care": 10, "fairness": 0, "loyalty": 0 }},
     
-{ "question": "Whether or not systematic racism exists", "effect": {
+{ "question": "Animal Rights", "effect": {
   "care": 10, "fairness": 0, "loyalty": 0 }},
     
 { "question": "Whether or not people in society are virtous", "effect": {

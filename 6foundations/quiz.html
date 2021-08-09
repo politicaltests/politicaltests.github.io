@@ -31,11 +31,11 @@
   
 <p class="question" id="question-text"></p>
  
-<button class="button" onclick="next_question( 1.0)" style="background-color: #8B0000;"> <span class="material-icons">stars</span><span class="material-icons">stars</span> Very Important</button> <br>
-<button class="button" onclick="next_question( 0.5)" style="background-color: #D2691E;"> <span class="material-icons">stars</span> Important</button> <br>
-<button class="button" onclick="next_question( 0.0)" style="background-color: #DAA520;"> <span class="material-icons">help</span> Slightly Important</button> <br>
-<button class="button" onclick="next_question(-0.5)" style="background-color: #978863;"> <span class="material-icons">highlight_off</span> Unimportant</button> <br>
-<button class="button" onclick="next_question(-1.0)" style="background-color: #808080;"> <span class="material-icons">highlight_off</span><span class="material-icons">highlight_off</span> Very Unimportant</button> <br>
+<button class="button" onclick="next_question(1.0)" style="background-color: #8B0000;"> <span class="material-icons">stars</span><span class="material-icons">stars</span> Very Important</button> <br>
+<button class="button" onclick="next_question(0.8)" style="background-color: #D2691E;"> <span class="material-icons">stars</span> Important</button> <br>
+<button class="button" onclick="next_question(0.6)" style="background-color: #DAA520;"> <span class="material-icons">help</span> Slightly Important</button> <br>
+<button class="button" onclick="next_question(0.4)" style="background-color: #978863;"> <span class="material-icons">highlight_off</span> Unimportant</button> <br>
+<button class="button" onclick="next_question(0.2)" style="background-color: #808080;"> <span class="material-icons">highlight_off</span><span class="material-icons">highlight_off</span> Very Unimportant</button> <br>
    
 <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
 <button class="small_button_off" id="back_button_off">Back</button><br>
@@ -64,9 +64,9 @@ stats"></a></div></noscript>
     quiz_b = 24
       
     var max_care, max_fairness, max_loyalty, max_authority, max_sanctity, max_liberty; // Max possible scores
-    max_care = max_fairness = max_loyalty = /* max_authority = max_sanctity = max_liberty = */ 0;
-    var care, fairness, loyalty /*, authority, sanctity, liberty */; // User's scores
-    care = fairness = loyalty /* = authority = sanctity = liberty */ = 0;
+    max_care = max_fairness = max_loyalty = 0;
+    var care, fairness, loyalty; // User's scores
+    care = fairness = loyalty = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
@@ -74,9 +74,6 @@ stats"></a></div></noscript>
         max_care += Math.abs(questions[i].effect.care)
         max_fairness += Math.abs(questions[i].effect.fairness)
         max_loyalty += Math.abs(questions[i].effect.loyalty)
-        /* max_authority += Math.abs(questions[i].effect.authority)
-        max_sanctity += Math.abs(questions[i].effect.sanctity)
-        max_liberty += Math.abs(questions[i].effect.liberty) */
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -95,9 +92,6 @@ stats"></a></div></noscript>
         care += mult*questions[qn].effect.care
         fairness += mult*questions[qn].effect.fairness
         loyalty += mult*questions[qn].effect.loyalty
-        /* authority += mult*questions[qn].effect.authority
-        sanctity += mult*questions[qn].effect.sanctity
-        liberty += mult*questions[qn].effect.liberty */
         
         qn++;
         prev_answer = mult;
@@ -115,16 +109,12 @@ stats"></a></div></noscript>
         care -= prev_answer * questions[qn].effect.care;
         fairness -= prev_answer * questions[qn].effect.fairness;
         loyalty -= prev_answer * questions[qn].effect.loyalty;
-        /* authority -= prev_answer * questions[qn].effect.authority;
-        sanctity -= prev_answer * questions[qn].effect.sanctity;
-        liberty -= prev_answer * questions[qn].effect.liberty; */
         
         prev_answer = null;
         init_question();
 
     }
     function calc_score(score,max) {
-        // return (100*(max+score)/(2*max)).toFixed(1)
       return (score).toFixed(1)
     }
     function results() {
@@ -132,9 +122,6 @@ stats"></a></div></noscript>
             + `?care=${calc_score(care,max_care)}`
             + `&fairness=${calc_score(fairness,max_fairness)}`
             + `&loyalty=${calc_score(loyalty,max_loyalty)}`
-            /* + `&authority=${calc_score(authority,max_authority)}`
-            + `&sanctity=${calc_score(sanctity,max_sanctity)}`
-            + `&liberty=${calc_score(liberty,max_liberty)}` */
     }
 </script>
 </body>

@@ -3,9 +3,6 @@ questions = [
 { "question": "The emotional suffering of others", "effect": {
   "care": 5, "fairness": 0, "loyalty": 0 }},
     
-{ "question": "Whether or not people are being treated differently than others", "effect": {
-  "care": 5, "fairness": 0, "loyalty": 0 }},
-    
 { "question": "Whether or not people are being kind to each others", "effect": {
   "care": 5, "fairness": 0, "loyalty": 0 }},
     
@@ -16,9 +13,6 @@ questions = [
   "care": 5, "fairness": 0, "loyalty": 0 }},
     
 { "question": "Animal Rights", "effect": {
-  "care": 5, "fairness": 0, "loyalty": 0 }},
-    
-{ "question": "Whether or not people in society are virtous", "effect": {
   "care": 5, "fairness": 0, "loyalty": 0 }},
     
 { "question": "Whether or not people care for the unfortunate", "effect": {
@@ -38,12 +32,6 @@ questions = [
   "care": 0, "fairness": 5, "loyalty": 0 }},
     
 { "question": "Whether or not society is equal", "effect": {
-  "care": 0, "fairness": 5, "loyalty": 0 }},
-    
-{ "question": "Whether or not society is equitable", "effect": {
-  "care": 0, "fairness": 5, "loyalty": 0 }},
-    
-{ "question": "How inheritance causes economic inequality", "effect": {
   "care": 0, "fairness": 5, "loyalty": 0 }},
     
 { "question": "Whether or not rich people are helping society", "effect": {

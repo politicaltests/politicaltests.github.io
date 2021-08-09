@@ -23,7 +23,7 @@ questions = [
 { "question": "Some acts are wrong because they are unnatural.", "effect": {
   "authority": 0, "sanctity": 5, "liberty": 0 }},
   
-{ "question": "<div class='tooltip'><p class='tool'>Chastity</p><span class='tooltiptext'>Self-Refraint from activity considered immoral, especially special activity</span></div> is an important virtue.", "effect": {
+{ "question": "Chastity is an important virtue.", "effect": {
   "authority": 0, "sanctity": 5, "liberty": 0 }},
   
 { "question": "People should not do things that are disgusting, even if no one is harmed.", "effect": {

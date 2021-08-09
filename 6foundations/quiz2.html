@@ -61,7 +61,7 @@ stats"></a></div></noscript>
 <script>
   
     //Update This:
-    quiz_a = 22
+    quiz_a = 18
       
     var max_authority, max_sanctity, max_liberty; // Max possible scores
     max_authority = max_sanctity = max_liberty =  0;
@@ -74,9 +74,6 @@ stats"></a></div></noscript>
         max_care += Math.abs(questions[i].effect.care)
         max_fairness += Math.abs(questions[i].effect.fairness)
         max_loyalty += Math.abs(questions[i].effect.loyalty)
-        /* max_authority += Math.abs(questions[i].effect.authority)
-        max_sanctity += Math.abs(questions[i].effect.sanctity)
-        max_liberty += Math.abs(questions[i].effect.liberty) */
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -118,7 +115,7 @@ stats"></a></div></noscript>
 
     }
     function calc_score(score,max) {
-        return (100*(max+score)/(2*max)).toFixed(1)
+        return (score).toFixed(1)
     }
     function results() {
         location.href = `results.html`

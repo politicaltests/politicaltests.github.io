@@ -113,7 +113,8 @@
         }
     }
 
-    careArray = ["Bureaucracy","care","Aristocracy","Anocracy","Despotism","nocare","Totalitarian nocare"]
+    //Arrays
+    /* careArray = ["Bureaucracy","care","Aristocracy","Anocracy","Despotism","nocare","Totalitarian nocare"]
     fairnessArray = ["Laissez-Faire Capitalist","Capitalist","Regulatory Capitalist","Mixed nofair","Social Democrat","Socialist","Communist"]
     loyaltyArray = ["Plutocracy","loyaltysm","Statism","Neutral","Majoritarianism","noloyal","Democracy"]
     authorityArray = ["Surveillance","authority","Moderation","Neutral","Discouragement","noauth","Little/No/Negative Punishment"]
@@ -132,10 +133,9 @@
         if (val >= 10) { return ary[5] } else
         if (val >= 0) { return ary[6] } else
             {return ""}
-    }
+    } */
 
     //Define Values
-    
     care      = getQueryVariable("care")      
     fairness  = getQueryVariable("fairness")  
     loyalty   = getQueryVariable("loyalty")   
@@ -163,12 +163,13 @@
     setBarValue("liberty", liberty)
     setBarValue("nolib", nolib)
 
-    document.getElementById("care-label").innerHTML = setLabel(care, careArray)
-    document.getElementById("fairness-label").innerHTML = setLabel(fairness, fairnessArray)
-    document.getElementById("loyalty-label").innerHTML = setLabel(loyalty, loyaltyArray)
-    document.getElementById("authority-label").innerHTML = setLabel(authority, authorityArray)
-    document.getElementById("sanctity-label").innerHTML = setLabel(sanctity, sanctityArray)
-    document.getElementById("liberty-label").innerHTML = setLabel(liberty, libertyArray)
+    //Score
+    document.getElementById("care-label").innerHTML = ((getQueryVariable("care") / 100) * 30)
+    document.getElementById("fairness-label").innerHTML = ((getQueryVariable("fairness") / 100) * 30)
+    document.getElementById("loyalty-label").innerHTML = ((getQueryVariable("loyalty") / 100) * 30)
+    document.getElementById("authority-label").innerHTML = ((getQueryVariable("authority") / 100) * 30)
+    document.getElementById("sanctity-label").innerHTML = ((getQueryVariable("sanctity") / 100) * 30)
+    document.getElementById("liberty-label").innerHTML = ((getQueryVariable("liberty") / 100) * 30)
 
     //Ideologies      
     ideology = ""

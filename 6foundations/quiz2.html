@@ -52,11 +52,13 @@
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
+
     for (var i = 0; i < questions.length; i++) {
         max_care += Math.abs(questions[i].effect.authority)
         max_fairness += Math.abs(questions[i].effect.sanctity)
         max_loyalty += Math.abs(questions[i].effect.liberty)
     }
+  
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
         document.getElementById("question-number").innerHTML = "Question " + (qn + 1 + quiz_a) + " of " + (questions.length +  quiz_a);
@@ -73,7 +75,7 @@
     function next_question(mult) {
         authority += mult*questions[qn].effect.authority
         sanctity += mult*questions[qn].effect.sanctity
-        liberty += mult*questions[qn].effect.liberty 
+        liberty += mult*questions[qn].effect.liberty
         
         qn++;
         prev_answer = mult;
@@ -90,7 +92,7 @@
         qn--;
         authority -= prev_answer * questions[qn].effect.authority;
         sanctity -= prev_answer * questions[qn].effect.sanctity;
-        liberty -= prev_answer * questions[qn].effect.liberty; 
+        liberty -= prev_answer * questions[qn].effect.liberty;
         
         prev_answer = null;
         init_question();

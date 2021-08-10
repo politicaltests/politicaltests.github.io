@@ -182,18 +182,17 @@
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.a - care), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.b - fairness), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.c - loyalty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.d - authority), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.e - sanctity), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.f - liberty), 2) 
+        dist += Math.pow(Math.abs(ideologies[i].stats.care - care), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.fairness - fairness), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.loyalty - loyalty), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.authority - authority), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.sanctity - sanctity), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.liberty - liberty), 2) 
 	    
         if (dist < ideodist) {
             ideology = ideologies[i].name
 	    ideolink = ideologies[i].link
             ideodesc = ideologies[i].desc
-            nextmatch = ideologies[i].next
             ideodist = dist
         }
     }

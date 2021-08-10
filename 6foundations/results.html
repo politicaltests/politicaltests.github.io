@@ -140,12 +140,12 @@
 
     //Define Values
     
-    care      = (getQueryVariable("care")      / 30)
-    fairness  = (getQueryVariable("fairness")  / 30)
-    loyalty   = (getQueryVariable("loyalty")   / 30)
-    authority = (getQueryVariable("authority") / 30)
-    sanctity  = (getQueryVariable("sanctity")  / 30)
-    liberty   = (getQueryVariable("liberty")   / 30)
+    care      = getQueryVariable("care")      
+    fairness  = getQueryVariable("fairness")  
+    loyalty   = getQueryVariable("loyalty")   
+    authority = getQueryVariable("authority") 
+    sanctity  = getQueryVariable("sanctity")  
+    liberty   = getQueryVariable("liberty")   
 
     nocare    = (100 - care     ).toFixed(1)
     nofair     = (100 - fairness ).toFixed(1)
@@ -174,17 +174,12 @@
     document.getElementById("sanctity-label").innerHTML = setLabel(sanctity, sanctityArray)
     document.getElementById("liberty-label").innerHTML = setLabel(liberty, libertyArray)
 
-    //Ideologies
-    function getIdeologyNameByIndex(i) { return ( ideologies[i].name; }
-    function getIdeologyDescriptionByIndex(i) { return ( ideologies[i].desc; }
-    
+    //Ideologies      
     ideology = ""
+    ideolink = ""
     ideodesc = ""
+    nextmatch = ""
     ideodist = Infinity
-    ideologyToDistance = {};
-    sortedIdeologies = [];
-    ideologyIndexAndDistance = [];
-    
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.a - care), 2)
@@ -193,37 +188,22 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.d - authority), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.e - sanctity), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.f - liberty), 2) 
-      
-        ideologyToDistance[ideologies[i].name] = dist;
-        ideologyIndexAndDistance.push({index: i, distance: dist});
+	    
+        if (dist < ideodist) {
+            ideology = ideologies[i].name
+	    ideolink = ideologies[i].link
+            ideodesc = ideologies[i].desc
+            nextmatch = ideologies[i].next
+            ideodist = dist
+        }
     }
-    
-    ideologyIndexAndDistance.sort(function(a, b) {
-        return a.distance - b.distance;
-    });
-
-    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
-        return indexAndDistance.distance;
-    });
-
-    closestDistance = distances[0];
-    farthestDistance = distances[distances.length - 1];
-    distanceSpan = farthestDistance - closestDistance;
-
-    closestMatch = ideologyIndexAndDistance[0];
-    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
-	  document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
-
-    nextMatches = document.getElementById('next-matches');
-    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
-        i = indexAndDistance.index;
-        ideology = getIdeologyNameByIndex(i);
-        ideodesc = getIdeologyDescriptionByIndex(i);
-        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
-        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
-        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
-            "<dd>" + ideodesc + "</dd>";
-    }).join("\n");
+	
+    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideodesc-label").innerHTML = ideodesc
+	
+    function ideologyLink() {
+  	window.open(ideolink);
+    }
 
     </script>
 

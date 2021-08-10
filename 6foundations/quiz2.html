@@ -71,9 +71,9 @@ stats"></a></div></noscript>
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_care += Math.abs(questions[i].effect.care)
-        max_fairness += Math.abs(questions[i].effect.fairness)
-        max_loyalty += Math.abs(questions[i].effect.loyalty)
+        max_care += Math.abs(questions[i].effect.authority)
+        max_fairness += Math.abs(questions[i].effect.sanctity)
+        max_loyalty += Math.abs(questions[i].effect.liberty)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;

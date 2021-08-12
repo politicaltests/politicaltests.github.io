@@ -16,6 +16,7 @@
 </script>
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="application/javascript"
         src="/6foundations/ideologies.js">
 </script>
@@ -26,35 +27,35 @@
 <br><br>
 
 <div class="element">
-<h2>Power Balance: <span class="weight-300" id="care-label"></span></h2>
+<h2>Care: <span class="weight-300" id="care-label"></span></h2>
 <div class="axis">
     <img id="img-care" src="/6foundations/value_images/care.png" height="128pt"/>
     <div class="bar care" id="bar-care"><div class="text-wrapper" id="care"></div></div>
     <div class="bar nocare" id="bar-nocare"><div class="text-wrapper" id="nocare"></div></div>
 </div>
 
-<h2>nofair: <span class="weight-300" id="fairness-label"></span></h2>
+<h2>Fairness: <span class="weight-300" id="fairness-label"></span></h2>
 <div class="axis">
     <img id="img-fairness" src="/6foundations/value_images/fairness.png" height="128pt"/>
     <div class="bar fairness" id="bar-fairness"><div class="text-wrapper" id="fairness"></div></div>
     <div class="bar nofair" id="bar-nofair"><div class="text-wrapper" id="nofair"></div></div>
 </div>
 
-<h2>Approach: <span class="weight-300" id="loyalty-label"></span></h2>
+<h2>Loyalty: <span class="weight-300" id="loyalty-label"></span></h2>
 <div class="axis">
     <img id="img-loyalty" src="/6foundations/value_images/loyalty.png" height="128pt"/>
     <div class="bar loyalty" id="bar-loyalty"><div class="text-wrapper" id="loyalty"></div></div>
     <div class="bar noloyal" id="bar-noloyal"><div class="text-wrapper" id="noloyal"></div></div>
 </div>
 
-<h2>Crime: <span class="weight-300" id="authority-label"></span></h2>
+<h2>Authority: <span class="weight-300" id="authority-label"></span></h2>
 <div class="axis">
     <img id="img-authority" src="/6foundations/value_images/authority.png" height="128pt"/>
     <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
     <div class="bar noauth" id="bar-noauth"><div class="text-wrapper" id="noauth"></div></div>
 </div>
 
-<h2>Culture: <span class="weight-300" id="sanctity-label"></span></h2>
+<h2>Sanctity: <span class="weight-300" id="sanctity-label"></span></h2>
 <div class="axis">
     <img id="img-sanctity" src="/6foundations/value_images/sanctity.png" height="128pt"/>
     <div class="bar sanctity" id="bar-sanctity"><div class="text-wrapper" id="sanctity"></div></div>
@@ -62,7 +63,7 @@
 </div>
 
 
-<h2>Hierarchy: <span class="weight-300" id="liberty-label"></span></h2>
+<h2>Liberty: <span class="weight-300" id="liberty-label"></span></h2>
 <div class="axis">
     <img id="img-liberty" src="/6foundations/value_images/liberty.png" height="128pt"/>
     <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
@@ -90,11 +91,32 @@ This is much less accurate than the values and axes since it is just an estimati
 </div>
     
 <br><br>
+<button class="button clipboard" onclick="screenshotText()" style="font-size:18pt;" id="copybutton" data-i18n="copy-url">Copy Results URL</button><br>
 <button class="button" onclick="location.href='https://politicaltests.github.io/6foundations.html';" style="background-color: #2196f3;">Back</button> <br>
 
   <script>
 
-   function getQueryVariable(variable) {
+    window.onload = function doCapture() {
+  	html2canvas(document.getElementById('capture'), {
+    	onrendered: function(canvas) { document.body.appendChild(canvas); },
+  	});
+     }
+	
+    var $temp = $("<input>");
+    var $url = $(location).attr('href');
+
+    $('.clipboard').on('click', function() {
+	$("body").append($temp);
+	$temp.val($url).select();
+	document.execCommand("copy");
+	$temp.remove();
+    })
+   
+    function screenshotText() {
+	document.getElementById("copybutton").innerHTML = "URL Copied!"
+    }
+	  
+    function getQueryVariable(variable) {
            var query = window.location.search.substring(1)
            var vars = query.split("&")
            for (var i=0;i<vars.length;i++) {

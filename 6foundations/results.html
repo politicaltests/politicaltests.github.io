@@ -93,47 +93,7 @@ This is much less accurate than the values and axes since it is just an estimati
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script>
-
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-    type: 'bar',
-    const data = {
-	    
-    labels: [
-    	'Care',
-    	'Fairness',
-    	'Loyalty',
-    	'Authority',
-    	'Sanctity',
-    	'Liberty',
-    ],
- 
-    datasets: [{
-    	label: 'My First Dataset',
-    	data: [carescore, fairscore, loyalscore, authscore, sancscore, libscore],
-    	fill: true,
-    	backgroundColor: 'rgba(255, 99, 132, 0.4)',
-    	borderColor: 'rgb(255, 99, 132)',
-    	pointBackgroundColor: 'rgb(255, 99, 132)',
-    	pointBorderColor: '#fff',
-    	pointHoverBackgroundColor: '#fff',
-    	pointHoverBorderColor: 'rgb(255, 99, 132)'
-    }, {
-	label: 'My Second Dataset',
-	data: [28, 28, 20, 19, 30, 27],
-	fill: true,
-	backgroundColor: 'rgba(54, 162, 235, 0.2)',
-	borderColor: 'rgb(54, 162, 235)',
-	pointBackgroundColor: 'rgb(54, 162, 235)',
-	pointBorderColor: '#fff',
-	pointHoverBackgroundColor: '#fff',
-	pointHoverBorderColor: 'rgb(54, 162, 235)'
-    }]
-    }
-	
-    });
-	
-	window.onload = function doCapture() {
+    window.onload = function doCapture() {
   	html2canvas(document.getElementById('capture'), {
     	onrendered: function(canvas) { document.body.appendChild(canvas); },
   	});

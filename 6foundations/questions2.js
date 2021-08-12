@@ -46,13 +46,13 @@ questions = [
 { "question": "Liberty is more important than security.", "effect": {
   "authority": 0, "sanctity": 0, "liberty": 5 }},
   
-{ "question": "Society should emphasize on individuals, not social groups.", "effect": {
+{ "question": "Society is nothing but a group of individuals, it is not a single entity.", "effect": {
   "authority": 0, "sanctity": 0, "liberty": 5 }},
   
-{ "question": "Everyone has rights that are natural and inalienable.", "effect": {
+{ "question": "Human rights are natural and inalienable, they aren't given by the government.", "effect": {
   "authority": 0, "sanctity": 0, "liberty": 5 }},  
   
-{ "question": "Conscription is evil.", "effect": {
+{ "question": "It's better to live a short but free life, than to live a long life that is heavily restricted by the government.", "effect": {
   "authority": 0, "sanctity": 0, "liberty": 5 }},
   
 { "question": "Showing respect to an unjust authority is a foolish act.", "effect": {

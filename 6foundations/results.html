@@ -113,28 +113,6 @@
         }
     }
 
-    //Arrays
-    /* careArray = ["Bureaucracy","care","Aristocracy","Anocracy","Despotism","nocare","Totalitarian nocare"]
-    fairnessArray = ["Laissez-Faire Capitalist","Capitalist","Regulatory Capitalist","Mixed nofair","Social Democrat","Socialist","Communist"]
-    loyaltyArray = ["Plutocracy","loyaltysm","Statism","Neutral","Majoritarianism","noloyal","Democracy"]
-    authorityArray = ["Surveillance","authority","Moderation","Neutral","Discouragement","noauth","Little/No/Negative Punishment"]
-    sanctityArray = ["Multiculturalism","Polyculturalism","sanctityse","Neutral","Assimilationism","nosanc","Theocracy"]
-    libertyArray = ["State Atheism","Irreligion","Anti-Clericalism","Neutral","Separation of Church and State","Religion","Theocracy"]
-    bestsuitArray = ["Technocracy","Noocracy","Meritocracy","Neutral","Semi-Hereditary","Hereditary","Extremely Herditary"]
-    disunArray = ["Anti-Unity","Disunity","Limited Unity","Neutral","Cooperation","Unity","Strong Cooperation"]
-
-    function setLabel(val,ary) {
-        if (val > 100) { return "" } else
-        if (val > 90) { return ary[0] } else
-        if (val > 75) { return ary[1] } else
-        if (val > 60) { return ary[2] } else
-        if (val >= 40) { return ary[3] } else
-        if (val >= 25) { return ary[4] } else
-        if (val >= 10) { return ary[5] } else
-        if (val >= 0) { return ary[6] } else
-            {return ""}
-    } */
-
     //Define Values
     care      = getQueryVariable("care")      
     fairness  = getQueryVariable("fairness")  
@@ -164,12 +142,19 @@
     setBarValue("nolib", nolib)
 
     //Score
-    document.getElementById("care-label").innerHTML      = Math.round (100* ((getQueryVariable("care")      / 100) * 30) / 100) + " / 30"
-    document.getElementById("fairness-label").innerHTML  = Math.round (100* ((getQueryVariable("fairness")  / 100) * 30) / 100) + " / 30"
-    document.getElementById("loyalty-label").innerHTML   = Math.round (100* ((getQueryVariable("loyalty")   / 100) * 30) / 100) + " / 30"
-    document.getElementById("authority-label").innerHTML = Math.round (100* ((getQueryVariable("authority") / 100) * 30) / 100) + " / 30"
-    document.getElementById("sanctity-label").innerHTML  = Math.round (100* ((getQueryVariable("sanctity")  / 100) * 30) / 100) + " / 30"
-    document.getElementById("liberty-label").innerHTML   = Math.round (100* ((getQueryVariable("liberty")   / 100) * 30) / 100) + " / 30"
+    carescore  = Math.round (100* ((getQueryVariable("care")      / 100) * 30) / 100) 
+    fairscore  = Math.round (100* ((getQueryVariable("fairness")  / 100) * 30) / 100) 
+    loyalscore = Math.round (100* ((getQueryVariable("loyalty")   / 100) * 30) / 100) 
+    authscore  = Math.round (100* ((getQueryVariable("authority") / 100) * 30) / 100) 
+    sancscore  = Math.round (100* ((getQueryVariable("sanctity")  / 100) * 30) / 100) 
+    libscore   = Math.round (100* ((getQueryVariable("liberty")   / 100) * 30) / 100) 
+	  
+    document.getElementById("care-label").innerHTML      = carescore  + " / 30"
+    document.getElementById("fairness-label").innerHTML  = fairscore  + " / 30"
+    document.getElementById("loyalty-label").innerHTML   = loyalscore + " / 30"
+    document.getElementById("authority-label").innerHTML = authscore  + " / 30"
+    document.getElementById("sanctity-label").innerHTML  = sancscore  + " / 30"
+    document.getElementById("liberty-label").innerHTML   = libscore   + " / 30"
 
     //Ideologies      
     ideology = ""

@@ -91,10 +91,30 @@ This is much less accurate than the values and axes since it is just an estimati
 <canvas id="myChart"></canvas>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 <script>
-  //pie chart
-
+   
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: ['Care', 'Fairness', 'Loyalty', 'Authority', 'Sanctity', 'Liberty'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+    	    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+    	    borderColor: 'rgb(255, 99, 132)',
+            borderWidth: 2
+        }, {
+            label: '# of Votes',
+            data: [13, 11, 30, 3, 1, 3],
+    	    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+    	    borderColor: 'rgb(54, 162, 235)',
+            borderWidth: 2
+        }]
+    }
+    });
 
 	
     window.onload = function doCapture() {

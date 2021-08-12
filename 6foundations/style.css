@@ -194,7 +194,9 @@ canvas:not(#myChart) {
     margin: 8pt;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px
+    padding: 5px;
+    padding-left: -10px;
+    padding-right: -10px;
 }
 
 /* AUTH */

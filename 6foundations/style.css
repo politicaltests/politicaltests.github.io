@@ -230,6 +230,7 @@ div.liberty {
 div.nocare, div.nofair, div.noloyal, div.noauth, div.nosanc, div.nolib {
     background-color: #A9A9A9;
     text-align: right;
+    border-left-style: none;
     border-radius: 0px 5px 0px 0px;
 }
 span.weight-300 {

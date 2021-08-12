@@ -1,3 +1,4 @@
+
 <head>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
@@ -6,6 +7,7 @@
 <link rel="icon" type="x-icon" href="../icons/6foundations.png">
 <link rel="shortcut icon" type="x-icon" href="../icons/6foundations.png">
 <meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,35 +27,35 @@
 <div class="axis">
     <img id="img-care" src="/6foundations/value_images/care.png" height="128pt"/>
     <div class="bar care" id="bar-care"><div class="text-wrapper" id="care"></div></div>
-    <div class="bar nocare" id="bar-nocare"></div>
+    <div class="bar nocare" id="bar-nocare"><div class="text-wrapper" id="nocare"></div></div>
 </div>
 
 <h2>Fairness: <span class="weight-300" id="fairness-label"></span></h2>
 <div class="axis">
     <img id="img-fairness" src="/6foundations/value_images/fairness.png" height="128pt"/>
     <div class="bar fairness" id="bar-fairness"><div class="text-wrapper" id="fairness"></div></div>
-    <div class="bar nofair" id="bar-nofair"></div>
+    <div class="bar nofair" id="bar-nofair"><div class="text-wrapper" id="nofair"></div></div>
 </div>
 
 <h2>Loyalty: <span class="weight-300" id="loyalty-label"></span></h2>
 <div class="axis">
     <img id="img-loyalty" src="/6foundations/value_images/loyalty.png" height="128pt"/>
     <div class="bar loyalty" id="bar-loyalty"><div class="text-wrapper" id="loyalty"></div></div>
-    <div class="bar noloyal" id="bar-noloyal"></div>
+    <div class="bar noloyal" id="bar-noloyal"><div class="text-wrapper" id="noloyal"></div></div>
 </div>
 
 <h2>Authority: <span class="weight-300" id="authority-label"></span></h2>
 <div class="axis">
     <img id="img-authority" src="/6foundations/value_images/authority.png" height="128pt"/>
     <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
-    <div class="bar noauth" id="bar-noauth"></div>
+    <div class="bar noauth" id="bar-noauth"><div class="text-wrapper" id="noauth"></div></div>
 </div>
 
 <h2>Sanctity: <span class="weight-300" id="sanctity-label"></span></h2>
 <div class="axis">
     <img id="img-sanctity" src="/6foundations/value_images/sanctity.png" height="128pt"/>
     <div class="bar sanctity" id="bar-sanctity"><div class="text-wrapper" id="sanctity"></div></div>
-    <div class="bar nosanc" id="bar-nosanc"></div>
+    <div class="bar nosanc" id="bar-nosanc"><div class="text-wrapper" id="nosanc"></div></div>
 </div>
 
 
@@ -61,7 +63,7 @@
 <div class="axis">
     <img id="img-liberty" src="/6foundations/value_images/liberty.png" height="128pt"/>
     <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
-    <div class="bar nolib" id="bar-nolib"></div>
+    <div class="bar nolib" id="bar-nolib"><div class="text-wrapper" id="nolib"></div></div>
 </div>
 	
 </div><br>
@@ -85,36 +87,13 @@ This is much less accurate than the values and axes since it is just an estimati
 </div>
     
 <br><br>
-<button class="button clipboard" onclick="screenshotText()" id="copybutton" data-i18n="copy-url">Copy Results URL</button><br>
+<button class="button clipboard" onclick="screenshotText()" style="font-size:18pt;" id="copybutton" data-i18n="copy-url">Copy Results URL</button><br>
 <button class="button" onclick="location.href='https://politicaltests.github.io/6foundations.html';" style="background-color: #2196f3;">Back</button> <br>
 
-<canvas id="myChart" width="800" height="800"></canvas>
+<canvas id="myChart" width="400" height="400"></canvas>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js/3.5.0/chart.min.js"></script>
-
 <script>
-   
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-    type: 'radar',
-    data: {
-        labels: ['Care', 'Fairness', 'Loyalty', 'Authority', 'Sanctity', 'Liberty'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-    	    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    	    borderColor: 'rgb(255, 99, 132)',
-            borderWidth: 2
-        }, {
-            label: '# of Votes',
-            data: [13, 11, 30, 3, 1, 3],
-    	    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-    	    borderColor: 'rgb(54, 162, 235)',
-            borderWidth: 2
-        }]
-    }
-    });
 
 	
     window.onload = function doCapture() {

@@ -191,6 +191,7 @@ canvas:not(#myChart) {
 }
 #myChart {
     display: inline;
+    margin: 8pt;
 }
 
 /* AUTH */

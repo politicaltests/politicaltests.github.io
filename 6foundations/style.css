@@ -179,7 +179,7 @@ div.text-wrapper {
 span.weight-300 {
     font-weight: 300;
 }
-canvas:not(.myChart) {
+canvas:not(#myChart) {
     border-color: #444444;
     border-style: solid;
     border-width: 2px;
@@ -189,12 +189,8 @@ canvas:not(.myChart) {
     margin-left: auto;
     margin-right: auto;
 }
-canvas.myChart {
-    border-style: none;
-    border-width: 2px;
+#myChart {
     display: inline;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* AUTH */

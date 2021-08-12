@@ -162,11 +162,9 @@ div.bar {
     padding: 8pt;
     margin-top: 4pt;
     margin-bottom: 4pt;
-    margin-left: 4pt;
     border-width: 4px;
     border-style: solid;
     border-color: #222222;
-    border-radius: 5px;
     background-color: #eeeeee;
     display: block;
     width: 50%;
@@ -196,30 +194,43 @@ canvas {
 div.care {
     background-color: #807A91;
     text-align: left;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 8px;
 }
 div.fairness {
     background-color: #6AA74F;
     text-align: left;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 8px;
 }
 div.loyalty {
     background-color: #45818D;
     text-align: left;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 8px;
 }
 div.authority {
     background-color: #6AA74F;
     text-align: left;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 8px;
 }
 div.sanctity {
     background-color: #FFD866;
     text-align: left;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 8px;
 }
 div.liberty {
     background-color: #6AA74F;
     text-align: left;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 8px;
 }
 div.nocare, div.nofair, div.noloyal, div.noauth, div.nosanc, div.nolib {
     background-color: #A9A9A9;
     text-align: right;
+    border-radius: 0px 5px 0px 0px;
 }
 span.weight-300 {
     font-weight: 300;

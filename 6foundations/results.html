@@ -142,12 +142,12 @@
     setBarValue("nolib", nolib)
 
     //Score
-    carescore  = Math.round (100* ((getQueryVariable("care")      / 100) * 30) / 100) 
-    fairscore  = Math.round (100* ((getQueryVariable("fairness")  / 100) * 30) / 100) 
-    loyalscore = Math.round (100* ((getQueryVariable("loyalty")   / 100) * 30) / 100) 
-    authscore  = Math.round (100* ((getQueryVariable("authority") / 100) * 30) / 100) 
-    sancscore  = Math.round (100* ((getQueryVariable("sanctity")  / 100) * 30) / 100) 
-    libscore   = Math.round (100* ((getQueryVariable("liberty")   / 100) * 30) / 100) 
+    carescore  = Math.round (100* ((getQueryVariable("care")      / 100) * 30)) / 100 
+    fairscore  = Math.round (100* ((getQueryVariable("fairness")  / 100) * 30)) / 100 
+    loyalscore = Math.round (100* ((getQueryVariable("loyalty")   / 100) * 30)) / 100 
+    authscore  = Math.round (100* ((getQueryVariable("authority") / 100) * 30)) / 100 
+    sancscore  = Math.round (100* ((getQueryVariable("sanctity")  / 100) * 30)) / 100 
+    libscore   = Math.round (100* ((getQueryVariable("liberty")   / 100) * 30)) / 100 
 	  
     document.getElementById("care-label").innerHTML      = carescore  + " / 30"
     document.getElementById("fairness-label").innerHTML  = fairscore  + " / 30"

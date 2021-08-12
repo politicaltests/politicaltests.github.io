@@ -243,10 +243,11 @@ canvas {
     border-radius: 8pt;
     display: block;
     margin: 8pt;
-    margin-left: 38%;
-    margin-right: 22%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: -1%;
-    width: 40%;
+    min-width: 20%;
+    max-width: 50%;
     display: block;
 }
 

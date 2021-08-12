@@ -8,6 +8,9 @@
 <link rel="shortcut icon" type="x-icon" href="../icons/6foundations.png">
 <meta charset="utf-8">
 </head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="application/javascript"
@@ -86,6 +89,9 @@ This is much less accurate than the values and axes since it is just an estimati
 </div>
     
 <br><br>
+
+<canvas id="myChart"></canvas>
+
 <button class="button clipboard" onclick="screenshotText()" style="font-size:18pt;" id="copybutton" data-i18n="copy-url">Copy Results URL</button><br>
 <button class="button" onclick="location.href='https://politicaltests.github.io/6foundations.html';" style="background-color: #2196f3;">Back</button> <br>
 
@@ -205,6 +211,34 @@ This is much less accurate than the values and axes since it is just an estimati
     function ideologyLink() {
   	window.open(ideolink);
     }
+	
+    //Donut
+    var labelArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var dataArray = [55, 49, 44, 24, 15];
+    var barColors = [
+	"#b91d47",
+	"#00aba9",
+	"#2b5797",
+	"#e8c3b9",
+	"#1e7145"
+    ];
+
+    new Chart("myChart", {
+    type: "doughnut",
+    data: {
+    labels: labelArray,
+    datasets: [{
+      backgroundColor: barColors,
+      data: dataArray
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production 2018"
+    }
+  }
+  });
 
     </script>
 

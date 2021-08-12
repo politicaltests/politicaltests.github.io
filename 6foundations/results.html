@@ -89,13 +89,13 @@ This is much less accurate than the values and axes since it is just an estimati
 <button class="button clipboard" onclick="screenshotText()" style="font-size:18pt;" id="copybutton" data-i18n="copy-url">Copy Results URL</button><br>
 <button class="button" onclick="location.href='https://politicaltests.github.io/6foundations.html';" style="background-color: #2196f3;">Back</button> <br>
 
-<canvas id="chart" width="400" height="400"></canvas>
+<canvas id="myChart" width="400" height="400"></canvas>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script>
 
-    var ctx = document.getElementById('chart').getContext('2d');
-    var chart = new Chart(ctx, {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
     type: 'bar',
     const data = {
 	    
@@ -129,6 +129,7 @@ This is much less accurate than the values and axes since it is just an estimati
 	pointHoverBackgroundColor: '#fff',
 	pointHoverBorderColor: 'rgb(54, 162, 235)'
     }]
+    }
 	
     });
 	

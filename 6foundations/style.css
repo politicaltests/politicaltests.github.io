@@ -185,6 +185,7 @@ span.weight-300 {
     margin-left: auto;
     margin-right: auto;
     border-style: none;
+    width: 50%
 }
 .centerLabel {
     font-family: 'Roboto', sans-serif;

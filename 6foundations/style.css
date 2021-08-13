@@ -190,11 +190,8 @@ canvas {
     margin-right: auto;
 }
 #donutchart {
-    display: inline;
-    margin: 8pt;
     margin-left: auto;
     margin-right: auto;
-    padding: auto;
 }
 
 /* AUTH */

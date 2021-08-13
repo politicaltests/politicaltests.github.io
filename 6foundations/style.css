@@ -245,7 +245,7 @@ div.nocare, div.nofair, div.noloyal, div.noauth, div.nosanc, div.nolib {
 span.weight-300 {
     font-weight: 300;
 }
-canvas {
+canvas:not(#donutChart) {
     border-color: #444444;
     border-style: solid;
     border-width: 2px;

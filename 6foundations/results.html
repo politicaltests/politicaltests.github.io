@@ -9,7 +9,7 @@
 <meta charset="utf-8">
 </head>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -90,7 +90,7 @@ This is much less accurate than the values and axes since it is just an estimati
     
 <br><br>
 
-<div style="position: relative;"> <div id="donutchart" style="width: 900px; height: 500px;"></div>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 <div class="centerLabel">Your Moral <br>Values</div> </div>
 
 
@@ -214,28 +214,34 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Moral Value', 'Score' ],
-          ['Care',      1      ],
-          ['Fairness',  2  ],
-          ['Loyalty',   3   ],
-          ['Authority', 4 ],
-          ['Sanctity',  5  ],
-          ['Liberty',   6   ]
-	]);
+var barNames = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
+var barData = [care, fairness, loyalty, authority, sanctity, liberty];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145",
+  "#1e7145"
+];
 
-        var options = {
-          title: 'A Pie Chart of your Moral Values',
-          pieHole: 0.5,
-	
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: barNames,
+    datasets: [{
+      backgroundColor: barColors,
+      data: barData,
+      hoverBorderWidth: 3
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production 2018"
+    }
+  }
+});
 
     </script>
 

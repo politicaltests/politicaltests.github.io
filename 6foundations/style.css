@@ -188,15 +188,13 @@ span.weight-300 {
 .centerLabel {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    left: 2px;
-    top: 2px;
+    left: 515px;
+    top: 120px;
     width: 256px;
     line-height: 256px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     color: maroon;
-    vertical-align: middle;
-    margin: auto;
 }
 
 /* Values */

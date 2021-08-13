@@ -186,7 +186,7 @@ span.weight-300 {
     margin-right: auto;
 }
 .centerLabel {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     left: 515px;
     top: 120px;
@@ -194,7 +194,8 @@ span.weight-300 {
     line-height: 256px;
     text-align: center;
     font-size: 18px;
-    color: maroon;
+    color: darkgray;
+    user-select: none;
 }
 
 /* Values */

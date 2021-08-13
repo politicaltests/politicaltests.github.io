@@ -188,14 +188,14 @@ span.weight-300 {
 .centerLabel {
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    left: 515px;
-    top: 120px;
-    width: 256px;
-    line-height: 256px;
+    left: 700;
+    top: 160;
+    width: 100;
+    line-height: 1.5;
     text-align: center;
     font-size: 18px;
     color: darkgray;
-    user-select: none;
+    font-weight: bold;
 }
 
 /* Values */

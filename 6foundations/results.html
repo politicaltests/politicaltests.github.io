@@ -214,8 +214,8 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-var barNames = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
-var barData = [care, fairness, loyalty, authority, sanctity, liberty];
+var xValues = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
+var yValues = [care, fairness, loyalty, authority, sanctity, liberty];
 var barColors = [
   "#b91d47",
   "#00aba9",
@@ -228,11 +228,10 @@ var barColors = [
 new Chart("myChart", {
   type: "doughnut",
   data: {
-    labels: barNames,
+    labels: xValues,
     datasets: [{
       backgroundColor: barColors,
-      data: barData,
-      hoverBorderWidth: 3
+      data: yValues
     }]
   },
   options: {
@@ -240,6 +239,7 @@ new Chart("myChart", {
       display: true,
       text: "World Wide Wine Production 2018"
     },
+  }
 });
 
     </script>

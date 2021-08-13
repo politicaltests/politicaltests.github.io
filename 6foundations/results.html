@@ -228,6 +228,9 @@ This is much less accurate than the values and axes since it is just an estimati
 	  "#1e7145"
 	];
 
+	var ctx = document.getElementById("donutChart").getContext("2d");
+	ctx.canvas.width = 900;
+	ctx.canvas.height = 900;
 	new Chart("donutChart", {
 	  type: "doughnut",
 	  data: {

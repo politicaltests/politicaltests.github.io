@@ -93,7 +93,7 @@ This is much less accurate than the values and axes since it is just an estimati
 
 <div style="position: relative;">
 <div class="centerLabel">Your Moral Values</div>
-<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<canvas id="donutChart"></canvas>
 </div>
 
 
@@ -217,49 +217,51 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-var xValues = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
-var yValues = [care, fairness, loyalty, authority, sanctity, liberty];
-var barColors = [
-  "#b91d47",
-  "#00aba9",
-  "#2b5797",
-  "#e8c3b9",
-  "#1e7145",
-  "#1e7145"
-];
+    $(window).scroll(function() { if ($('#donutChart').is(':visible')) {
+	var xValues = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
+	var yValues = [care, fairness, loyalty, authority, sanctity, liberty];
+	var barColors = [
+	  "#b91d47",
+	  "#00aba9",
+	  "#2b5797",
+	  "#e8c3b9",
+	  "#1e7145",
+	  "#1e7145"
+	];
 
-new Chart("myChart", {
-  type: "doughnut",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      borderColor: "#fff",
-      borderWidth: 2,
-      data: yValues,
-      hoverBorderColor: "#fff",
-      hoverBorderWidth: "5px"
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "World Wide Wine Production 2018"
-    },
-    tooltips: {
-      enabled: false
-    },
-    plugins: {
-  	labels: {
-	    render: 'percentage',
-    	    fontColor: "#fff",
-    	    precision: 1,
-	    arc: false
-	}
-    }
-  }
-});
-
+	new Chart("donutChart", {
+	  type: "doughnut",
+	  data: {
+	    labels: xValues,
+	    datasets: [{
+	      backgroundColor: barColors,
+	      borderColor: "#fff",
+	      borderWidth: 2,
+	      data: yValues,
+	      hoverBorderColor: "#fff",
+	      hoverBorderWidth: "5px"
+	    }]
+	  },
+	  options: {
+	    title: {
+	      display: true,
+	      text: "World Wide Wine Production 2018"
+	    },
+	    tooltips: {
+	      enabled: false
+	    },
+	    plugins: {
+	  	labels: {
+		    render: 'percentage',
+	    	    fontColor: "#fff",
+		    fontSize: 14,
+	    	    precision: 1,
+		    arc: false
+		}
+	    }
+	  }
+	});
+    }});
     </script>
 
 

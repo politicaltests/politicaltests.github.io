@@ -97,27 +97,6 @@ This is much less accurate than the values and axes since it is just an estimati
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script>
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
-
-        var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
-
 	
     window.onload = function doCapture() {
   	html2canvas(document.getElementById('capture'), {
@@ -233,32 +212,26 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-    var labelArray = ["Italy", "France", "Spain", "USA", "Argentina"];
-    var dataArray = [55, 49, 44, 24, 15];
-    var barColors = [
-	"#b91d47",
-	"#00aba9",
-	"#2b5797",
-	"#e8c3b9",
-	"#1e7145"
-    ];
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
 
-    new Chart("myChart", {
-    type: "doughnut",
-    data: {
-    labels: labelArray,
-    datasets: [{
-      backgroundColor: barColors,
-      data: dataArray
-    }]
-  },
-  options: {
-    title: {
-      display: true,
-      text: "World Wide Wine Production 2018"
-    }
-  }
-  });
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
 
     </script>
 

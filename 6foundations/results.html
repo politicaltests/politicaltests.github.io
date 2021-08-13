@@ -244,14 +244,10 @@ new Chart("myChart", {
       enabled: false
     },
     plugins: {
-    	pieceLabel: {
-    	// mode 'label', 'value' or 'percentage'
-    	mode: (!mode) ? 'percentage' : mode,
-    	precision: 0,
-    	fontSize: 18,
-    	fontColor: '#000',
-    	fontStyle: 'bold',
-    	font-family: 'Roboto', sans-serif;
+  	labels: {
+	    render: 'percentage',
+    	    fontColor: "#000",
+    	    precision: 2
     }
   }
 });

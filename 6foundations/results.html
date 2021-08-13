@@ -232,7 +232,8 @@ new Chart("myChart", {
     labels: xValues,
     datasets: [{
       backgroundColor: barColors,
-      data: yValues
+      data: yValues,
+      hoverBorderWidth: "10px"
     }]
   },
   options: {
@@ -246,9 +247,9 @@ new Chart("myChart", {
     plugins: {
   	labels: {
 	    render: 'percentage',
-    	    fontColor: "#000",
+    	    fontColor: "#fff",
     	    precision: 1,
-	    arc: true
+	    arc: false
 	}
     }
   }

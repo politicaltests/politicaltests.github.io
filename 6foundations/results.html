@@ -217,9 +217,7 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-    $(window).scroll(function() { if ($('#donutChart').is(':visible')) {
-	function = emptyFunction(){}
-	    
+    $(window).scroll(function() { if ($('#donutChart').is(':visible')) {	    
 	var xValues = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
 	var yValues = [care, fairness, loyalty, authority, sanctity, liberty];
 	var barColors = [

@@ -179,22 +179,25 @@ div.text-wrapper {
 span.weight-300 {
     font-weight: 300;
 }
-canvas {
-    border-color: #444444;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8pt;
-    display: block;
-    margin: 8pt;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+/* CHarts */
 #donutchart {
     margin-left: auto;
     margin-right: auto;
 }
+.centerLabel {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 256px;
+    line-height: 256px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: maroon;
+}
 
-/* AUTH */
+/* Values */
 div.care {
     background-color: #807A91;
     text-align: left;

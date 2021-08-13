@@ -181,9 +181,10 @@ span.weight-300 {
 }
 
 /* Charts */
-#donutchart {
+#donutChart {
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
 }
 .centerLabel {
     font-family: 'Roboto', sans-serif;

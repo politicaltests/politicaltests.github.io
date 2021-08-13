@@ -184,7 +184,7 @@ span.weight-300 {
 #donutChart {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 80%; !important
     border-style: none;
 }
 .centerLabel {

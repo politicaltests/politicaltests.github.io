@@ -217,7 +217,7 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-    $(window).scroll(function() { if ($('#donutChart').is(':visible')) {	    
+    $(window).one(.scroll(function() { if ($('#donutChart').is(':visible')) {	    
 	var xValues = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
 	var yValues = [care, fairness, loyalty, authority, sanctity, liberty];
 	var barColors = [
@@ -261,7 +261,7 @@ This is much less accurate than the values and axes since it is just an estimati
 	    }
 	  }
 	});
-    }});
+    }}));
     </script>
 
 

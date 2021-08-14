@@ -26,7 +26,7 @@ div.element {
     margin: auto;
 }
 ChartDiv {
-    overflow: hidden; 
+    overflow: auto; 
     white-space: nowrap; 
     max-height: 550px;
 }

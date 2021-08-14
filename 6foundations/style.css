@@ -187,6 +187,7 @@ span.weight-300 {
     border-style: none;
     max-width: 550px;
     max-height: 550px;
+    display: inline-block;
 }
 #radarChart {
     /* margin-left: auto;
@@ -194,6 +195,7 @@ span.weight-300 {
     border-style: none;
     max-width: 550px;
     max-height: 550px;
+    display: inline-block;
 }
 
 /* Values */

@@ -247,8 +247,8 @@ This is much less accurate than the values and axes since it is just an estimati
 	  };
 	
 	var ctx = document.getElementById("donutChart");
-	ctx.width  = 600;
-	ctx.height = 600;
+	ctx.width  = 550;
+	ctx.height = 550;
 	
 	var donutChart = new Chart(ctx, {
 	  type: 'doughnut',
@@ -263,12 +263,12 @@ This is much less accurate than the values and axes since it is just an estimati
 	    plugins: {
 		title: {
 		    display: true,
-		    fontSize: 30,
 		    position: "bottom",
 		    text: "Click on the legend to hide specific values.",
+		    font:{ size:15, weight: 'bold' }
 		}, 
 		legend: { 
-		    labels:{ font:{ size:24 }}
+		    labels:{ font:{ size:20, weight: 'bold' }}
 		},
 		tooltip: {
 		    enabled: false

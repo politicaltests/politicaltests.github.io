@@ -263,15 +263,19 @@ This is much less accurate than the values and axes since it is just an estimati
 		    enabled: false,
 		    labels:{ fontSize:20 },
 		},
-		labels: {
-    		    render: 'percentage',
-		    fontColor: '#fff',
-		    fontSize: 30,
-    		    fontFamily: '"Montserrat", sans-serif',
-	    	    precision: 1,
-  		}
+		datalabels: {
+ 		    color: '#fff',
+ 		    anchor: 'end',
+ 		    align: 'start',
+ 		    offset: -10,
+ 		    borderWidth: 2,
+ 		    borderColor: '#fff',
+ 		    borderRadius: 25,
+ 		    backgroundColor: (context) => { return context.dataset.backgroundColor; },
+ 		    font: { weight: 'bold', size: '20', fontFamily: '"Montserrat", sans-serif', },
+ 		    formatter: (value) => { return value + ' %'; }
+	        }
 	    }
-		  
 	  }
 	});
 	

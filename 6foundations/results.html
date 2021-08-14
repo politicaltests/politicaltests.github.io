@@ -219,7 +219,6 @@ This is much less accurate than the values and axes since it is just an estimati
     //Donut
 	var donutLabels = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
 	var donutData = [care, fairness, loyalty, authority, sanctity, liberty];
-	var donutOffset = [100, 100, 100, 100, 100, 100];
 	var donutColors = [
 	  "#b91d47",
 	  "#00aba9",
@@ -242,9 +241,9 @@ This is much less accurate than the values and axes since it is just an estimati
 	      backgroundColor: donutColors,
 	      borderColor: "#fff",
 	      data: donutData,
-	      hoverBorderColor: "#fff",
 	      hoverBorderWidth: 5,
-	      hoverOffset: donutOffset,
+	      hoverOffset: 3,
+	      Offset: 0,
 	    }]
 	  },
 	  options: {

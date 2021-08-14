@@ -222,29 +222,9 @@ This is much less accurate than the values and axes since it is just an estimati
 	canvas.width  = 600;
 	canvas.height = 600;
 	
-	const data = {
-	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
-	    datasets: [{
-	      label: 'Dataset',
-	      backgroundColor: [
-	  	"#b91d47",
-	  	"#00aba9",
-	  	"#2b5797",
-	  	"#e8c3b9",
-	  	"#1e7145",
-	  	"#1e7145"
-	      ],
-	      borderColor: "#fff",
-	      data: [care, fairness, loyalty, authority, sanctity, liberty],
-	      hoverBorderColor: "#fff",
-	      hoverBorderWidth: 3,
-	      hoverOffset: 20,
-	    }]
-	  };
-	
 	const config = {
-  	      type: 'doughnut',
-  	      data: data,
+	  type: 'doughnut',
+	  data: data,
 		
 	  options: {
 	    responsive: true,
@@ -277,6 +257,26 @@ This is much less accurate than the values and axes since it is just an estimati
 		  
 	  }
 	};
+	
+	const data = {
+	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
+	    datasets: [{
+	      label: 'Dataset',
+	      backgroundColor: [
+	  	"#b91d47",
+	  	"#00aba9",
+	  	"#2b5797",
+	  	"#e8c3b9",
+	  	"#1e7145",
+	  	"#1e7145"
+	      ],
+	      borderColor: "#fff",
+	      data: [care, fairness, loyalty, authority, sanctity, liberty],
+	      hoverBorderColor: "#fff",
+	      hoverBorderWidth: 3,
+	      hoverOffset: 20,
+	    }]
+	  };
     </script>
 
 

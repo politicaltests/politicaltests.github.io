@@ -229,14 +229,11 @@ This is much less accurate than the values and axes since it is just an estimati
 	];
 
 	var canvas = document.getElementById("donutChart");
-	var ctx = canvas.getContext("2d");
+	var canvas = canvas.getContext("2d");
 	canvas.width  = 600;
 	canvas.height = 600;
 	
-	//
-	if(window.donutChart != undefined)
-	window.donutChart.destroy();
-	window.donutChart = /**/new Chart("donutChart", {
+	new Chart("donutChart", {
 	  type: "doughnut",
 	  data: {
 	    labels: donutLabels,
@@ -277,7 +274,6 @@ This is much less accurate than the values and axes since it is just an estimati
 	    }
 	  }
 	});
-        //window.donutFunction = function() {}; 
     </script>
 
 

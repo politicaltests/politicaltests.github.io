@@ -181,11 +181,17 @@ span.weight-300 {
 }
 
 /* Charts */
-#donutChart, #radarChart {
+#donutChart {
     /* margin-left: auto;
     margin-right: auto; */
     border-style: none;
-    max-width: 600px;
+    max-width: 500px;
+}
+#radarChart {
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-style: none;
+    max-width: 500px;
 }
 
 /* Values */

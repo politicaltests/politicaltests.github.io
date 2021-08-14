@@ -25,8 +25,8 @@ div.element {
     border-radius: 16px;
     margin: auto;
 }
-ChartDiv {
-    overflow: auto; 
+#ChartDiv {
+    overflow: none /*auto*/; 
     white-space: nowrap; 
     max-height: 550px;
 }

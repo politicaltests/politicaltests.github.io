@@ -274,26 +274,6 @@ This is much less accurate than the values and axes since it is just an estimati
 	  }
 	});
 	
-{
-  render: function (args) {
-    // args will be something like:
-    // { label: 'Label', value: 123, percentage: 50, index: 0, dataset: {...} }
-    return '$' + args.value;
-
-    // return object if it is image
-    // return { src: 'image.png', width: 16, height: 16 };
-  }
-}
-
-// dynamic fontColor
-{
-  fontColor: function (args) {
-    // args will be something like:
-    // { index: 0, dataset: {...} }
-    return myColorTransfer(args.dataset.backgroundColor[index]);
-  }
-}
-	
     </script>
 
 

@@ -186,12 +186,12 @@ This is much less accurate than the values and axes since it is just an estimati
     document.getElementById("sanctity-label").innerHTML  = sancscore  + " / 30"
     document.getElementById("liberty-label").innerHTML   = libscore   + " / 30"
 	
-    carepercent = (carescore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
-    fairpercent = (fairscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
-    loyalpercent = (loyalscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
-    authpercent = (authscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
-    sancpercent = (sancscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
-    libpercent = (libscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
+    carepercent = Math.round ((carescore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100)
+    fairpercent = Math.round ((fairscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100)
+    loyalpercent = Math.round ((loyalscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100)
+    authpercent = Math.round ((authscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100)
+    sancpercent = Math.round ((sancscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100)
+    libpercent = Math.round ((libscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100)
 
     //Ideologies      
     ideology = ""
@@ -247,8 +247,8 @@ This is much less accurate than the values and axes since it is just an estimati
 	  };
 	
 	var ctx = document.getElementById("donutChart");
-	ctx.width  = 500;
-	ctx.height = 500;
+	ctx.width  = 600;
+	ctx.height = 600;
 	
 	var donutChart = new Chart(ctx, {
 	  type: 'doughnut',

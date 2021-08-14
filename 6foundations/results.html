@@ -236,14 +236,13 @@ This is much less accurate than the values and axes since it is just an estimati
 	new Chart("donutChart", {
 	  type: "doughnut",
 	  data: {
-	    labels: donutLabels,
+	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
 	    datasets: [{
-	      backgroundColor: donutColors,
-	      borderColor: "#fff",
-	      data: donutData,
+	      backgroundColor: ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145", "#1e7145"],
+	      data: [care, fairness, loyalty, authority, sanctity, liberty],
 	      hoverOffset: 20,
-	      hoverBorderColor: "#fff",
-	      hoverBorderWidth: 5,
+	      /* hoverBorderColor: "#fff",
+	      hoverBorderWidth: 5,*/
 	    }]
 	  },
 	  options: {

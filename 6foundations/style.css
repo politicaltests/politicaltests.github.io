@@ -357,6 +357,6 @@ p.tool {
       max-height: none;
   },
   .donutDiv , .radarDiv {
-      float: none;
+      clear: both;
       width: 100%;
   }

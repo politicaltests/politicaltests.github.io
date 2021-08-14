@@ -185,13 +185,15 @@ span.weight-300 {
     /* margin-left: auto;
     margin-right: auto; */
     border-style: none;
-    max-width: 500px;
+    max-width: 550px;
+    max-height: 550px;
 }
 #radarChart {
     /* margin-left: auto;
     margin-right: auto; */
     border-style: none;
-    max-width: 500px;
+    max-width: 550px;
+    max-height: 550px;
 }
 
 /* Values */

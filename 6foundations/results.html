@@ -99,7 +99,7 @@ This is much less accurate than the values and axes since it is just an estimati
 <button class="button" onclick="location.href='https://politicaltests.github.io/6foundations.html';" style="background-color: #2196f3;">Back</button> <br>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-<script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 
 <script>
 	
@@ -217,6 +217,8 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
+	Chart.register(ChartDataLabels);
+	
 	const data = {
 	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
 	    datasets: [{
@@ -259,19 +261,16 @@ This is much less accurate than the values and axes since it is just an estimati
 		
 	    plugins: {
 		legend: { 
-		    labels:{ fontSize:20 }
+		    labels:{ fontSize:30 }
 		},
 		tooltip: {
 		    enabled: true,
 		    labels:{ fontSize:20 },
 		},
-		labels: {
-    		    render: 'percentage',
-		    fontColor: '#fff',
-		    fontSize: 30,
-    		    fontFamily: '"Montserrat", sans-serif',
-	    	    precision: 1
-  		}
+		datalabels: {
+		    color: '#fff',
+		    font:{ size: 14, family: '"Montserrat", sans-serif', weight: 'bold'},
+		}
 	    }
 	  }
 	});

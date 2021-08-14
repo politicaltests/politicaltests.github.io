@@ -207,42 +207,42 @@ div.care {
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: ;
+    color: #b03a2e;
 }
 div.fairness {
     background-color: #6aa84f;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: ;
+    color: #1e8449;
 }
 div.loyalty {
     background-color: #8e7cc3;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: ;
+    color: #6c3483;
 }
 div.authority {
     background-color: #1c4587;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: ;
+    color: #1f618d;
 }
 div.sanctity {
     background-color: #de8a52;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: ;
+    color: #af601a;
 }
 div.liberty {
     background-color: #f1c232;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: ;
+    color: #b7950b;
 }
 div.nocare, div.nofair, div.noloyal, div.noauth, div.nosanc, div.nolib {
     background-color: #A9A9A9;

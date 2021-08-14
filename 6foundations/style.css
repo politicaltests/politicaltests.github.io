@@ -25,10 +25,15 @@ div.element {
     border-radius: 16px;
     margin: auto;
 }
-a{
+ChartDiv {
+    overflow: hidden; 
+    white-space: nowrap; 
+    max-height: 550px;
+}
+a {
     color: #2222DD;
 }
-a:hover{
+a:hover {
     color: #5b5b5b;
 }
 p.value-description {
@@ -338,3 +343,13 @@ p.tool {
   font-feature-settings: 'liga';
 }
 
+@media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  ChartDiv {
+      overflow: visible;
+      max-height: none;
+  },
+  #donutChart, #radarChart {
+      float: left;
+      margin-left: auto;
+      margin-right: auto;
+  }

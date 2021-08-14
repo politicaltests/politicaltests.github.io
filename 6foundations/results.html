@@ -228,31 +228,30 @@ This is much less accurate than the values and axes since it is just an estimati
 	  "#1e7145"
 	];
 
-	var canvas = document.getElementById("donutChart");
-	var ctx = canvas.getContext("2d");
+	var ctx = document.getElementById('donutChart').getContext('2d');
 	canvas.width  = 600;
 	canvas.height = 600;
 	
-	new Chart("donutChart", {
+	var donutChart = new Chart(ctx, {
 	  type: "doughnut",
 	  data: {
 	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
 	    datasets: [{
-	      backgroundColor: ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145", "#1e7145"],
 	      data: [care, fairness, loyalty, authority, sanctity, liberty],
-	      hoverOffset: 20,
-	      /* hoverBorderColor: "#fff",
-	      hoverBorderWidth: 5,*/
+	      backgroundColor: ["#b91d47", "#00aba9", "#2b5797", "#e8c3b9", "#1e7145", "#1e7145"],
+	      hoverBorderColor: "#fff",
+	      hoverBorderWidth: 5,
+	      hoverOffset: 20
 	    }]
 	  },
 	  options: {
 	    responsive: true,
 	    maintainAspectRatio: true,
-	    position: "bottom",
 	    title: {
 	      display: true,
 	      fontSize: 20,
 	      text: "Click on the legend to hide specific values.",
+	      position: 'bottom'
 	    },
   	    legend:{ 
 	      labels:{ fontSize:20 }

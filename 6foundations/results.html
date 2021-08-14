@@ -91,11 +91,13 @@ This is much less accurate than the values and axes since it is just an estimati
 
 <div class="element">
 <br> <canvas id="donutChart"></canvas> <br>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 
 <button class="button clipboard" onclick="screenshotText()" style="font-size:18pt;" id="copybutton" data-i18n="copy-url">Copy Results URL</button><br>
 <button class="button" onclick="location.href='https://politicaltests.github.io/6foundations.html';" style="background-color: #2196f3;">Back</button> <br>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 
 <script>
@@ -238,7 +240,7 @@ This is much less accurate than the values and axes since it is just an estimati
 	      borderColor: ["#b03a2e", "#1e8449", "#6c3483", "#1f618d", "#af601a", "#b7950b"],
 	      data: [carepercent, fairpercent, loyalpercent, authpercent, sancpercent, libpercent],
 	      BorderWidth: 2,
-	      offset: 5,
+	      offset: 4,
 	      hoverOffset: 30,
 	    }]
 	  };
@@ -262,7 +264,7 @@ This is much less accurate than the values and axes since it is just an estimati
 		    display: true,
 		    position: "top",
 		    text: "A comparison of your moral values:",
-		    font:{ size:24, weight: 'bold' }
+		    font:{ size: 24, weight: 'bold' }
 		}, 
 		legend: { 
 		    labels:{ font:{ size:15, weight: 'bold' }}

@@ -185,6 +185,13 @@ This is much less accurate than the values and axes since it is just an estimati
     document.getElementById("authority-label").innerHTML = authscore  + " / 30"
     document.getElementById("sanctity-label").innerHTML  = sancscore  + " / 30"
     document.getElementById("liberty-label").innerHTML   = libscore   + " / 30"
+	
+    carepercent = (carescore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
+    fairpercent = (fairscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
+    loyalpercent = (loyalscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
+    authpercent = (authscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
+    sancpercent = (sancscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
+    libpercent = (libscore / (carescore + fairscore + loyalscore + authscore + sancscore + libscore)) * 100
 
     //Ideologies      
     ideology = ""
@@ -232,7 +239,7 @@ This is much less accurate than the values and axes since it is just an estimati
 	  	"#1e7145"
 	      ],
 	      borderColor: "#fff",
-	      data: [care, fairness, loyalty, authority, sanctity, liberty],
+	      data: [carepercent, fairpercent, loyalpercent, authpercent, sancpercent, libpercent],
 	      hoverBorderColor: "#fff",
 	      hoverBorderWidth: 3,
 	      hoverOffset: 20,
@@ -240,8 +247,8 @@ This is much less accurate than the values and axes since it is just an estimati
 	  };
 	
 	var ctx = document.getElementById("donutChart");
-	ctx.width  = 600;
-	ctx.height = 600;
+	ctx.width  = 500;
+	ctx.height = 500;
 	
 	var donutChart = new Chart(ctx, {
 	  type: 'doughnut',
@@ -251,25 +258,24 @@ This is much less accurate than the values and axes since it is just an estimati
 	    responsive: true,
 	    maintainAspectRatio: true,
 	    position: "bottom",
-	    showAllTooltips: true,
-		  
-	    title: {
-	      display: true,
-	      fontSize: 20,
-	      text: "Click on the legend to hide specific values.",
-	    },  
+	    showAllTooltips: true, 
 		
 	    plugins: {
+		title: {
+		    display: true,
+		    fontSize: 30,
+		    position: "bottom",
+		    text: "Click on the legend to hide specific values.",
+		}, 
 		legend: { 
-		    labels:{ fontSize:30 }
+		    labels:{ font:{ size:24 }}
 		},
 		tooltip: {
-		    enabled: true,
-		    labels:{ fontSize:20 },
+		    enabled: false
 		},
 		datalabels: {
 		    color: '#fff',
-		    font:{ size: 14, family: '"Montserrat", sans-serif', weight: 'bold'},
+		    font:{ size: 30, family: '"Montserrat", sans-serif', weight: 'bold'},
 		}
 	    }
 	  }

@@ -10,7 +10,7 @@
 </head>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
 
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -263,17 +263,13 @@ This is much less accurate than the values and axes since it is just an estimati
 		    enabled: false,
 		    labels:{ fontSize:20 },
 		},
-		datalabels: {
- 		    color: '#fff',
- 		    anchor: 'end',
- 		    align: 'start',
- 		    offset: -10,
- 		    borderWidth: 2,
- 		    borderColor: '#fff',
- 		    borderRadius: 25,
- 		    font: { weight: 'bold', size: '20'},
- 		    formatter: (value) => { return value + ' %'; }
-	        }
+		labels: {
+    		    render: 'percentage',
+		    fontColor: '#fff',
+		    fontSize: 30,
+    		    fontFamily: '"Montserrat", sans-serif',
+	    	    precision: 1
+  		}
 	    }
 	  }
 	});

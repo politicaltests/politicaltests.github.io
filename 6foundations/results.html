@@ -69,15 +69,20 @@
 	
 </div><br>
 
-<div class="element">
+<div class="element"> 
   <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="ideologyLink()" style="color: #2222DD;text-decoration: underline"></span></h2> 
   <p class="ideodesc"><span class="weight-300" id="ideodesc-label"></span></h3>
 </div>
 <br>
 </div>
-	
+
 <div class="element">
-	
+<canvas id="donutChart"></canvas><br>
+<canvas id="radarChart"></canvas><br>
+</div> <br><br>
+
+
+<div class="element">	
 <h2>What's the "Closest Match" mean?</h2>
 <p>In addition to matching you to the six moral foundations, the quiz also attempts to match you to a political ideology. 
 This is much less accurate than the values and axes since it is just an estimation based on correlations between people's moral and political beliefs, so don't take it too seriously.</p><br>
@@ -88,10 +93,6 @@ This is much less accurate than the values and axes since it is just an estimati
 </div>
     
 <br>
-
-<div class="element">
-<canvas id="donutChart"></canvas>
-</div> <br><br>
 
 <button class="button clipboard" onclick="screenshotText()" style="font-size:18pt;" id="copybutton" data-i18n="copy-url">Copy Results URL</button><br>
 <button class="button" onclick="location.href='https://politicaltests.github.io/6foundations.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -262,7 +263,7 @@ This is much less accurate than the values and axes since it is just an estimati
 		title: {
 		    display: true,
 		    position: "top",
-		    text: "A comparison of your moral values:",
+		    text: "Comparison between your moral values:",
 		    font:{ size: 24, weight: 'bold' }
 		}, 
 		legend: { 
@@ -274,6 +275,57 @@ This is much less accurate than the values and axes since it is just an estimati
 		datalabels: {
 		    color: ["#b03a2e", "#1e8449", "#6c3483", "#1f618d", "#af601a", "#b7950b"],
 		    font:{ size: 30, family: '"Montserrat", sans-serif', weight: 'bold'},
+		}
+	    }
+	  }
+	});
+
+	
+	//Radar
+	const data2 = {
+	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
+	    datasets: [{
+	      label: 'Your Score',
+	      backgroundColor: "rgba(102, 153, 153, 0.5)",
+	      borderColor: "#476b6b",
+	      fill: true,
+	      data: [care, fairness, loyalty, authority, sanctity, liberty]
+	    }, {
+	      label: 'Progressives',
+	      backgroundColor: "rgba(0, 204, 102, 0.3)",
+	      borderColor: "#008040",
+	      fill: true,
+	      data: [22.8, 20, 12.5, 12.6, 10.8, 18]
+	    }]
+	  };
+	
+	var ctx = document.getElementById("radarChart");
+	ctx.width  = 550;
+	ctx.height = 550;
+	
+	var radarChart = new Chart(ctx, {
+	  type: 'radar',
+	  data: data2,
+		
+	  options: {
+	    responsive: true,
+	    maintainAspectRatio: true,
+	    position: "bottom",
+	    showAllTooltips: true, 
+	        
+	    elements: {
+		line: { borderWidth: 3 }
+	    },
+		  
+	    plugins: {
+		title: {
+		    display: true,
+		    position: "top",
+		    text: "Comparison with major political groups:",
+		    font:{ size: 24, weight: 'bold' }
+		}, 
+		legend: { 
+		    labels:{ font:{ size:15, weight: 'bold' }}
 		}
 	    }
 	  }

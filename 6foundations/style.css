@@ -172,8 +172,8 @@ div.bar {
 div.text-wrapper {
     font-family: 'Montserrat', sans-serif;
     font-size: 36pt;
+    font-weight: bold;
     line-height: 36pt;
-    color: #222222;
     display: inline-block;
 }
 span.weight-300 {

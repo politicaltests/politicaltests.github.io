@@ -217,6 +217,17 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
+	var donutLabels = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
+	var donutData = [care, fairness, loyalty, authority, sanctity, liberty];
+	var donutColors = [
+	  "#b91d47",
+	  "#00aba9",
+	  "#2b5797",
+	  "#e8c3b9",
+	  "#1e7145",
+	  "#1e7145"
+	];
+
 	var ctx = document.getElementById('donutChart').getContext('2d');
 	canvas.width  = 600;
 	canvas.height = 600;

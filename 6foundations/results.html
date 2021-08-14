@@ -217,9 +217,9 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-	var xValues = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
-	var yValues = [care, fairness, loyalty, authority, sanctity, liberty];
-	var barColors = [
+	var donutLabels = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
+	var donutData = [care, fairness, loyalty, authority, sanctity, liberty];
+	var donutColors = [
 	  "#b91d47",
 	  "#00aba9",
 	  "#2b5797",
@@ -228,20 +228,18 @@ This is much less accurate than the values and axes since it is just an estimati
 	  "#1e7145"
 	];
 
-	var ctx = document.getElementById("donutChart").getContext("2d");
-	ctx.canvas.width = 100;
-	ctx.canvas.height = 100; 
 	new Chart("donutChart", {
 	  type: "doughnut",
 	  data: {
-	    labels: xValues,
+	    labels: donutLabels,
 	    datasets: [{
-	      backgroundColor: barColors,
+	      backgroundColor: donutColors,
 	      borderColor: "#fff",
 	      borderWidth: 2,
-	      data: yValues,
+	      data: donutData,
 	      hoverBorderColor: "#fff",
-	      hoverBorderWidth: "5px"
+	      hoverBorderWidth: 5,
+	      hoverOffset: 10
 	    }]
 	  },
 	  options: {
@@ -250,9 +248,12 @@ This is much less accurate than the values and axes since it is just an estimati
 	    position: "bottom",
 	    title: {
 	      display: true,
+	      fontSize: 20,
 	      text: "Click on the legend to hide specific values.",
 	    },
-  	    legend:{ labels:{ fontSize:20 }},
+  	    legend:{ 
+	      labels:{ fontSize:20 }
+	    },
 	    tooltips: {
 	      enabled: false,
 	      labels:{ fontSize:20 },

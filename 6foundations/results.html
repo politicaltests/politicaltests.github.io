@@ -241,6 +241,7 @@ This is much less accurate than the values and axes since it is just an estimati
 	      borderColor: ["#b03a2e", "#1e8449", "#6c3483", "#1f618d", "#af601a", "#b7950b"],
 	      data: [carepercent, fairpercent, loyalpercent, authpercent, sancpercent, libpercent],
 	      BorderWidth: 2,
+	      Offset: 5,
 	      hoverOffset: 30,
 	    }]
 	  };
@@ -264,16 +265,16 @@ This is much less accurate than the values and axes since it is just an estimati
 		    display: true,
 		    position: "bottom",
 		    text: "Click on the legend to hide specific values.",
-		    font:{ size:15, weight: 'bold' }
+		    font:{ size:20, weight: 'bold' }
 		}, 
 		legend: { 
-		    labels:{ font:{ size:20, weight: 'bold' }}
+		    labels:{ font:{ size:15, weight: 'bold' }}
 		},
 		tooltip: {
 		    enabled: false
 		},
 		datalabels: {
-		    color: '#fff',
+		    color: ["#b03a2e", "#1e8449", "#6c3483", "#1f618d", "#af601a", "#b7950b"],
 		    font:{ size: 30, family: '"Montserrat", sans-serif', weight: 'bold'},
 		}
 	    }

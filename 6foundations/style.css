@@ -203,46 +203,53 @@ span.weight-300 {
 
 /* Values */
 div.care {
-    background-color: #807A91;
+    background-color: #e06666;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
+    color: ;
 }
 div.fairness {
-    background-color: #6AA74F;
+    background-color: #6aa84f;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
+    color: ;
 }
 div.loyalty {
-    background-color: #45818D;
+    background-color: #8e7cc3;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
+    color: ;
 }
 div.authority {
-    background-color: #6AA74F;
+    background-color: #1c4587;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
+    color: ;
 }
 div.sanctity {
-    background-color: #FFD866;
+    background-color: #de8a52;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
+    color: ;
 }
 div.liberty {
-    background-color: #6AA74F;
+    background-color: #f1c232;
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
+    color: ;
 }
 div.nocare, div.nofair, div.noloyal, div.noauth, div.nosanc, div.nolib {
     background-color: #A9A9A9;
     text-align: right;
     border-left-style: none;
     border-radius: 0px 5px 5px 0px;
+    color: #333333;
 }
 span.weight-300 {
     font-weight: 300;

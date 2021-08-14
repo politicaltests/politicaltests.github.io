@@ -217,12 +217,11 @@ This is much less accurate than the values and axes since it is just an estimati
 	
     //Donut
 
-	var canvas = document.getElementById("donutChart");
-	var ctx = canvas.getContext("2d");
-	canvas.width  = 600;
-	canvas.height = 600;
+	var ctx = document.getElementById("donutChart");
+	ctx.width  = 600;
+	ctx.height = 600;
 	
-	var canvas = new Chart("donutChart", {
+	var donutChart = new Chart(ctx, {
 	  type: 'doughnut',
 	  data: data,
 		

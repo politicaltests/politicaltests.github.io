@@ -216,7 +216,26 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-
+	const data = {
+	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
+	    datasets: [{
+	      label: 'Dataset',
+	      backgroundColor: [
+	  	"#b91d47",
+	  	"#00aba9",
+	  	"#2b5797",
+	  	"#e8c3b9",
+	  	"#1e7145",
+	  	"#1e7145"
+	      ],
+	      borderColor: "#fff",
+	      data: [care, fairness, loyalty, authority, sanctity, liberty],
+	      hoverBorderColor: "#fff",
+	      hoverBorderWidth: 3,
+	      hoverOffset: 20,
+	    }]
+	  };
+	
 	var ctx = document.getElementById("donutChart");
 	ctx.width  = 600;
 	ctx.height = 600;
@@ -257,27 +276,8 @@ This is much less accurate than the values and axes since it is just an estimati
 	  }
 	});
 	
-	const data = {
-	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
-	    datasets: [{
-	      label: 'Dataset',
-	      backgroundColor: [
-	  	"#b91d47",
-	  	"#00aba9",
-	  	"#2b5797",
-	  	"#e8c3b9",
-	  	"#1e7145",
-	  	"#1e7145"
-	      ],
-	      borderColor: "#fff",
-	      data: [care, fairness, loyalty, authority, sanctity, liberty],
-	      hoverBorderColor: "#fff",
-	      hoverBorderWidth: 3,
-	      hoverOffset: 20,
-	    }]
-	  };
+
 	
-	var donutChart = new Chart(canvas, config)
     </script>
 
 

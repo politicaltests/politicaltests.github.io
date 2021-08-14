@@ -216,53 +216,56 @@ This is much less accurate than the values and axes since it is just an estimati
     }
 	
     //Donut
-	var donutLabels = ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"];
-	var donutData = [care, fairness, loyalty, authority, sanctity, liberty];
-	var donutColors = [
-	  "#b91d47",
-	  "#00aba9",
-	  "#2b5797",
-	  "#e8c3b9",
-	  "#1e7145",
-	  "#1e7145"
-	];
 
 	var canvas = document.getElementById("donutChart");
 	var ctx = canvas.getContext("2d");
 	canvas.width  = 600;
 	canvas.height = 600;
 	
-	new Chart("donutChart", {
-	  type: "doughnut",
-	  data: {
-	    labels: donutLabels,
+	const data = {
+	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
 	    datasets: [{
-	      backgroundColor: donutColors,
+	      label: 'Dataset',
+	      backgroundColor: [
+	  	"#b91d47",
+	  	"#00aba9",
+	  	"#2b5797",
+	  	"#e8c3b9",
+	  	"#1e7145",
+	  	"#1e7145"
+	      ],
 	      borderColor: "#fff",
-	      data: donutData,
+	      data: [care, fairness, loyalty, authority, sanctity, liberty],
 	      hoverBorderColor: "#fff",
-	      hoverBorderWidth: 5,
+	      hoverBorderWidth: 3,
 	      hoverOffset: 20,
 	    }]
-	  },
+	  };
+	
+	const config = {
+  	      type: 'doughnut',
+  	      data: data,
+		
 	  options: {
 	    responsive: true,
 	    maintainAspectRatio: true,
 	    position: "bottom",
+		  
 	    title: {
 	      display: true,
 	      fontSize: 20,
 	      text: "Click on the legend to hide specific values.",
-	    },
-  	    legend:{ 
-	      labels:{ fontSize:20 }
-	    },
-	    tooltip: {
-	      enabled: false,
-	      labels:{ fontSize:20 },
-	    },
+	    },  
+		
 	    plugins: {
-	  	labels: {
+		legend: { 
+		    labels:{ fontSize:20 }
+		},
+		tooltip: {
+		    enabled: false,
+		    labels:{ fontSize:20 },
+		},
+		labels: {
 		    render: 'percentage',
 	    	    fontColor: "#fff",
 		    fontSize: 30,
@@ -271,8 +274,9 @@ This is much less accurate than the values and axes since it is just an estimati
 		    arc: false
 		}
 	    }
+		  
 	  }
-	});
+	};
     </script>
 
 

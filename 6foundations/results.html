@@ -295,7 +295,13 @@ This is much less accurate than the values and axes since it is just an estimati
 	      data: [carescore, fairscore, loyalscore, authscore, sancscore, libscore]
 	    }, {
 	      label: 'Progressives',
-	      backgroundColor: "rgba(0, 204, 102, 0.3)",
+	      backgroundColor: "rgba(0, 204, 102, 0.2)",
+	      borderColor: "#008040",
+	      fill: true,
+	      data: [22.8, 20, 12.5, 12.6, 10.8, 18]
+	    }, {
+	      label: 'Progressives',
+	      backgroundColor: "rgba(0, 204, 102, 0.2)",
 	      borderColor: "#008040",
 	      fill: true,
 	      data: [22.8, 20, 12.5, 12.6, 10.8, 18]
@@ -315,7 +321,7 @@ This is much less accurate than the values and axes since it is just an estimati
 	    maintainAspectRatio: true,
 	    position: "bottom",
 	    showAllTooltips: true, 
-	    scales: { ticks: { display: false }},
+	    scales: { ticks: { display: false, maxTicksLimit: 3 }},
 	        
 	    elements: {
 		line: { borderWidth: 3 }

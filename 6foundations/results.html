@@ -323,7 +323,16 @@ This is much less accurate than the values and axes since it is just an estimati
 	    responsive: true,
 	    maintainAspectRatio: true,
 		  
-	  elements: { point: { radius: 5, hoverRadius: 10, font:{ size: 24, weight: 'bold' } } },
+	  elements: { 
+	    point: { 
+		radius: 5, 
+		hoverRadius: 10, 
+		borderJoinStyle: 'round' 
+	     },
+	    line: {
+		tension: 10
+	    }
+	  },
 		  
 	    plugins: {
 		title: {
@@ -334,7 +343,8 @@ This is much less accurate than the values and axes since it is just an estimati
 		}, 
 		legend: { 
 		    labels:{ font:{ size:15, weight: 'bold' }}
-		}
+		},
+	        datalabels: { display: false }
 	    }
 	  }
 	});

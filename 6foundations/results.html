@@ -323,16 +323,16 @@ This is much less accurate than the values and axes since it is just an estimati
 	    responsive: true,
 	    maintainAspectRatio: true,
 		  
-	  elements: { 
-	    point: { 
-		radius: 5, 
-		hoverRadius: 10, 
-		borderJoinStyle: 'round' 
-	     },
-	    line: {
-		tension: 10
-	    }
-	  },
+	    elements: { 
+		point: { 
+		    radius: 5, 
+		    hoverRadius: 10, 
+		    borderJoinStyle: 'round' 
+		},
+		line: {
+		    tension: 3
+		}
+	    },
 		  
 	    plugins: {
 		title: {
@@ -340,9 +340,16 @@ This is much less accurate than the values and axes since it is just an estimati
 		    position: "top",
 		    text: "Comparison with major political groups:",
 		    font:{ size: 24, weight: 'bold' }
-		}, 
+		},
+		subtitle: {
+		    display: true,
+		    position: "bottom",
+		    text: "Click on the legend to hide specific lines.",
+		    font:{ size: 14 }
+		},
 		legend: { 
-		    labels:{ font:{ size:15, weight: 'bold' }}
+		    labels: { font: { size:15, weight: 'bold' }},
+		    boxHeight: 8
 		},
 	        datalabels: { display: false }
 	    }

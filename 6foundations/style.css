@@ -29,6 +29,9 @@ div.element {
     overflow: auto; 
     white-space: nowrap; 
     max-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 a {
     color: #2222DD;
@@ -195,8 +198,9 @@ span.weight-300 {
     margin: auto;
 }
 div.donutDiv {
-    display: inline-block;
-    width: 50%;
+ /*   display: inline-block;
+    width: 50%;*/
+    flex-basis: calc(50%);
 }
 #radarChart {
     /* margin-left: auto;
@@ -207,9 +211,10 @@ div.donutDiv {
     margin: auto;
 }
 div.radarDiv {
-   /* float: right;*/
+   /* float: right;
     display: inline-block;
-    width: 50%;
+    width: 50%;*/
+    flex-basis: calc(50%);
 }
 
 /* Values */
@@ -358,7 +363,8 @@ p.tool {
       max-height: none;
   },
   .donutDiv, .radarDiv {
-     /* clear: both;*/
+     /* clear: both;
       display: block;
-      width: 100%;
+      width: 100%;*/
+      flex-basis: calc(100%);
   }

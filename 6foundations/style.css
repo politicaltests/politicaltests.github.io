@@ -225,7 +225,7 @@ div.care {
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: #b03a2e; !important
+    color: #b03a2e; 
 }
 div.fairness {
     background-color: #6aa84f;
@@ -246,7 +246,7 @@ div.authority {
     text-align: left;
     border-radius: 5px 0px 0px 5px;
     margin-left: 8px;
-    color: #1f618d;
+    color: #255bb1;
 }
 div.sanctity {
     background-color: #de8a52;

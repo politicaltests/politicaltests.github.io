@@ -291,22 +291,18 @@ This is much less accurate than the values and axes since it is just an estimati
 	      label: 'Your Score',
 	      backgroundColor: "rgba(102, 153, 153, 0.5)",
 	      borderColor: "#476b6b",
-	      fill: true,
 	      data: [carescore, fairscore, loyalscore, authscore, sancscore, libscore]
 	    }, {
 	      label: 'Progressivism',
 	      borderColor: "#008040",
-	      fill: false,
 	      data: [22.8, 22, 13, 12.6, 8, 15]
 	    }, {
 	      label: 'Conservatism',
 	      borderColor: "#1f618d",
-	      fill: false,
 	      data: [18, 16, 18.8, 19.5, 18, 22.5]
 	    }, {
 	      label: 'Libertarianism',
 	      borderColor: "#d4ac0d",
-	      fill: false,
 	      data: [16, 16, 11.5, 8, 10, 25.5]
 	    }]
 	  };
@@ -330,7 +326,8 @@ This is much less accurate than the values and axes since it is just an estimati
 		    borderJoinStyle: 'round' 
 		},
 		line: {
-		    tension: 0.15
+		    tension: 0.15,
+	      	    fill: false,
 		}
 	    },
 		  

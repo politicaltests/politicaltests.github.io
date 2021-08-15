@@ -316,19 +316,12 @@ This is much less accurate than the values and axes since it is just an estimati
 	ctx.height = 600;
 	
 	var radarChart = new Chart(ctx, {
-	  type: 'radar',
+	  type: 'line',
 	  data: data2,
 		
 	  options: {
 	    responsive: true,
 	    maintainAspectRatio: true,
-	    position: "bottom",
-	    scales: { ticks: { display: false, maxTicksLimit: 3 }},
-	        
-	    elements: {
-		line: { borderWidth: 3 },
-		point: { labels: { display: false }}
-	    },
 		  
 	    plugins: {
 		title: {

@@ -352,7 +352,7 @@ p.tool {
 }
 
 @media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  ChartDiv {
+  #ChartDiv {
       overflow: visible;
       max-height: none;
   },

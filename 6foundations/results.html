@@ -289,19 +289,22 @@ This is much less accurate than the values and axes since it is just an estimati
 	    labels: ["Care", "Fairness", "Loyalty", "Authority", "Sanctity", "Liberty"],
 	    datasets: [{
 	      label: 'Your Score',
-	      backgroundColor: "rgba(102, 153, 153, 0.5)",
+	      backgroundColor: "#476b6b",
 	      borderColor: "#476b6b",
 	      data: [carescore, fairscore, loyalscore, authscore, sancscore, libscore]
 	    }, {
 	      label: 'Progressivism',
+	      backgroundColor: "#008040",
 	      borderColor: "#008040",
 	      data: [22.8, 22, 13, 12.6, 8, 15]
 	    }, {
 	      label: 'Conservatism',
+	      backgroundColor: "#1f618d",
 	      borderColor: "#1f618d",
 	      data: [18, 16, 18.8, 19.5, 18, 22.5]
 	    }, {
 	      label: 'Libertarianism',
+	      backgroundColor: "#d4ac0d",
 	      borderColor: "#d4ac0d",
 	      data: [16, 16, 11.5, 8, 10, 25.5]
 	    }]
@@ -326,7 +329,6 @@ This is much less accurate than the values and axes since it is just an estimati
 		    borderJoinStyle: 'round' 
 		},
 		line: {
-		    tension: 0.15,
 	      	    fill: false,
 		}
 	    },
@@ -346,7 +348,6 @@ This is much less accurate than the values and axes since it is just an estimati
 		},
 		legend: { 
 		    labels: { font: { size:15, weight: 'bold' }},
-		    boxHeight: 8
 		},
 	        datalabels: { display: false }
 	    }

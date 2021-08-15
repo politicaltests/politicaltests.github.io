@@ -294,17 +294,20 @@ This is much less accurate than the values and axes since it is just an estimati
 	      fill: true,
 	      data: [carescore, fairscore, loyalscore, authscore, sancscore, libscore]
 	    }, {
-	      label: 'Progressives',
-	      backgroundColor: "rgba(0, 204, 102, 0.2)",
+	      label: 'Progressivism',
 	      borderColor: "#008040",
-	      fill: true,
-	      data: [22.8, 20, 12.5, 12.6, 10.8, 18]
+	      fill: false,
+	      data: [22.8, 22, 13, 12.6, 8, 15]
 	    }, {
-	      label: 'Progressives',
-	      backgroundColor: "rgba(0, 204, 102, 0.2)",
-	      borderColor: "#008040",
-	      fill: true,
-	      data: [22.8, 20, 12.5, 12.6, 10.8, 18]
+	      label: 'Conservatism',
+	      borderColor: "#1f618d",
+	      fill: false,
+	      data: [18, 16, 18.8, 19.5, 18, 22.5]
+	    }, {
+	      label: 'Libertarianism',
+	      borderColor: "#d4ac0d",
+	      fill: false,
+	      data: [16, 16, 11.5, 8, 10, 25.5]
 	    }]
 	  };
 	
@@ -320,7 +323,6 @@ This is much less accurate than the values and axes since it is just an estimati
 	    responsive: true,
 	    maintainAspectRatio: true,
 	    position: "bottom",
-	    showAllTooltips: true, 
 	    scales: { ticks: { display: false, maxTicksLimit: 3 }},
 	        
 	    elements: {

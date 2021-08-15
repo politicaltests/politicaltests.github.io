@@ -195,7 +195,7 @@ span.weight-300 {
     margin: auto;
 }
 div.donutDiv {
-    float: left;
+    display: inline-block;
     width: 50%;
 }
 #radarChart {
@@ -207,7 +207,8 @@ div.donutDiv {
     margin: auto;
 }
 div.radarDiv {
-    float: right;
+   /* float: right;*/
+    display: inline-block;
     width: 50%;
 }
 
@@ -356,7 +357,8 @@ p.tool {
       overflow: visible;
       max-height: none;
   },
-  .donutDiv , .radarDiv {
-      clear: both;
+  .donutDiv, .radarDiv {
+     /* clear: both;*/
+      display: block;
       width: 100%;
   }

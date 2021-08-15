@@ -25,15 +25,6 @@ div.element {
     border-radius: 16px;
     margin: auto;
 }
-#ChartDiv {
-    overflow: auto; 
-    white-space: nowrap; 
-    max-height: 600px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
 a {
     color: #2222DD;
 }
@@ -201,7 +192,7 @@ span.weight-300 {
 div.donutDiv {
  /*   display: inline-block;
     width: 50%;*/
-    flex-basis: calc(50%);
+    flex-basis: 50%;
 }
 #radarChart {
     /* margin-left: auto;
@@ -215,7 +206,17 @@ div.radarDiv {
    /* float: right;
     display: inline-block;
     width: 50%;*/
-    flex-basis: calc(50%);
+    flex-basis: 50%;
+}
+
+#ChartDiv {
+    overflow: auto; 
+    white-space: nowrap; 
+    max-height: 650px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 /* Values */

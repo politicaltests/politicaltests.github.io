@@ -30,6 +30,7 @@ div.element {
     white-space: nowrap; 
     max-height: 600px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
 }

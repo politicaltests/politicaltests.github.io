@@ -367,5 +367,6 @@ p.tool {
      /* clear: both;
       display: block;
       width: 100%;*/
-      flex-basis: calc(100%);
+      flex-basis: 100%;
+      margin: auto;
   }

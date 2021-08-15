@@ -275,6 +275,12 @@ This is much less accurate than the values and axes since it is just an estimati
 		datalabels: {
 		    color: ["#b03a2e", "#1e8449", "#6c3483", "#1f618d", "#af601a", "#b7950b"],
 		    font:{ size: 30, family: '"Montserrat", sans-serif', weight: 'bold'},
+			
+		    formatter: (value, ctx) => { let datasets = ctx.chart.data.datasets; 
+		    if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+		    let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+                    let percentage = Math.round((value / sum) * 100) + '%';
+           	    return percentage; } else { return percentage; },
 		}
 	    }
 	  }

@@ -35,7 +35,7 @@ questions = [
 { "question": "I care about the standards of decency and purity.", "effect": {
   "authority": 0, "sanctity": 5, "liberty": 0 }},
 
-{ "question": "I am concerned about whether or not someone did something disgusting.", "effect": {
+{ "question": "Disgusting acts should be banned by the government.", "effect": {
   "authority": 0, "sanctity": 5, "liberty": 0 }},
   
 //Liberty

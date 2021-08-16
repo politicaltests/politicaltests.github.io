@@ -19,7 +19,7 @@ questions = [
   "care": 5, "fairness": 0, "loyalty": 0 }},
     
 //Fairness
-{ "question": "The level of economic inequality in the world", "effect": {
+{ "question": "Whether or not someone acted unfairly", "effect": {
   "care": 0, "fairness": 5, "loyalty": 0 }},
 
 { "question": "The rule of law", "effect": {

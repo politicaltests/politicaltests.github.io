@@ -15,7 +15,7 @@ questions = [
 { "question": "Men and women each have different roles to play in society.", "effect": {
   "authority": 5, "sanctity": 0, "liberty": 0 }},
   
-{ "question": "Without tradition, society deteriorates.", "effect": {
+{ "question": "The act of disrespecting a leader is morally wrong.", "effect": {
   "authority": 5, "sanctity": 0, "liberty": 0 }},
   
   

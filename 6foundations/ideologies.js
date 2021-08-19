@@ -1,9 +1,14 @@
 ideologies = [
 
-//Totalitarianism
+//Center-Left
 { "name": "Progressivism",
- "link": "https://www.reddit.com/",
- "desc": "Progressivism is a political philosophy in support of social reform.arguing that progress is being stifled by vast economic inequality between the rich and the poor;"
- "stats": { "care": 20, "fairness": 85, "loyalty": 90, "authority": 10, "sanctity": 50, "liberty": 50 }},
+ "link": "https://en.wikipedia.org/wiki/Progressivism",
+ "desc": "Progressivism is a political philosophy in support of social reform. It argues that progress is being stifled by vast economic inequality and violent conflict between the privileged and unprivileged. It stresses the need for measures that addresses these problems."
+ "stats": { "care": 75, "fairness": 75, "loyalty": 42, "authority": 40, "sanctity": 25, "liberty": 62 }},
+ 
+ { "name": "Progressivism",
+ "link": "https://en.wikipedia.org/wiki/Progressivism",
+ "desc": "Progressivism is a political philosophy in support of social reform. It argues that progress is being stifled by vast economic inequality and violent conflict between the privileged and unprivileged. It stresses the need for measures that addresses these problems."
+ "stats": { "care": 75, "fairness": 75, "loyalty": 42, "authority": 40, "sanctity": 25, "liberty": 62 }}
 
 ];

@@ -267,7 +267,7 @@ div.nocare, div.nofair, div.noloyal, div.noauth, div.nosanc, div.nolib {
     text-align: right;
     border-left-style: none;
     border-radius: 0px 5px 5px 0px;
-    color: #333333;
+    color: rgba(0, 0, 0, 0);
 }
 span.weight-300 {
     font-weight: 300;

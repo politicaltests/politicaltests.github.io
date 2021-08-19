@@ -12,7 +12,7 @@ ideologies = [
  "stats": { "care": 60, "fairness": 60, "loyalty": 62, "authority": 65, "sanctity": 60, "liberty": 75 }},
  
  { "name": "Right-Libertarianism",
- "link": "https://en.wikipedia.org/wiki/Conservatism",
+ "link": "https://en.wikipedia.org/wiki/Right-libertarianism",
  "desc": "Right-Libertarianism is a political philosophy and movement that upholds liberty as a core principle. Right-Libertarians seek to maximize autonomy and political freedom, emphasizing free association, free markets, individualism and voluntary association.",
  "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 42, "sanctity": 30, "liberty": 85 }},
 

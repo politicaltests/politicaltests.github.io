@@ -40,7 +40,7 @@ questions = [
   
 //Liberty
 
-{ "question": "Individuals should be able to do whatever they want with each other, even if it makes me uncomfortable.", "effect": {
+{ "question": "The existence of a central authority (i.e. the government) is unnecessary.", "effect": {
   "authority": 0, "sanctity": 0, "liberty": 5 }},
   
 { "question": "Liberty is more important than security.", "effect": {

@@ -70,7 +70,8 @@
 
 <div class="element"> 
   <h2>Closest Match: <span class="weight-300" id="ideology-label" onclick="ideologyLink()" style="color: #2222DD;text-decoration: underline;cursor: pointer"></span></h2> 
-  <p class="ideodesc"><span class="weight-300" id="ideodesc-label"></span></h3>
+  <p class="ideodesc"><span class="weight-300" id="ideodesc-label"></span></p><br>
+  <p class="ideonext"><b>Next Matches:</b><span class="weight-300" id="ideonext-label"></span></p>
 </div>
 <br>
 </div>
@@ -210,13 +211,15 @@ This is much less accurate than the values and axes since it is just an estimati
             ideology = ideologies[i].name
 	    ideolink = ideologies[i].link
             ideodesc = ideologies[i].desc
+	    ideonext = ideologies[i].next
             ideodist = dist
         }
     }
 	
     document.getElementById("ideology-label").innerHTML = ideology
     document.getElementById("ideodesc-label").innerHTML = ideodesc
-	
+    document.getElementById("ideonext-label").innerHTML = ideonext
+
     function ideologyLink() {
   	window.open(ideolink);
     }

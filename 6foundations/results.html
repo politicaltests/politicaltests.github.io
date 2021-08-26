@@ -92,7 +92,7 @@
 <input id="sctyinput" placeholder="Societal / Prog-Con Axis">
 	
 <br><br>
-<button class="small_button" style="float: left; font-size: 14px;" onclick="convertScores()">Convert</button>
+<button class="small_button" style="float: left; font-size: 14px;" onclick="convertScores()" id="convertBtn">Convert</button>
 <br><br>
 </div>
 	
@@ -245,7 +245,8 @@ This is called an estimate because the connection between the moral values and t
 	document.getElementById("econinput").value = document.getElementById("econinput").value * 10
 	document.getElementById("diplinput").value = document.getElementById("diplinput").value * 10
 	document.getElementById("civilinput").value = document.getElementById("civilinput").value * 10
-	document.getElementById("sctyinput").value = document.getElementById("esctynput").value * 10
+	document.getElementById("sctyinput").value = document.getElementById("sctyinput").value * 10
+ 	document.getElementById("convertBtn").disabled = true; 
     }
 	    
     //Donut

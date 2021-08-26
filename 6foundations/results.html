@@ -86,13 +86,13 @@
 <p>Insert your <a href="https://8values.github.io/">8values</a> scores here to calculate the correlation between your moral values and your political values.</p>
 <p>If you wish to insert your <a href="https://sapplyvalues.github.io/">SapplyValues</a> scores instead, insert your scores, and then click on the "Convert" button. Ignore the second text box.</p><br>
 
-<input type="text" placeholder="Economic / Left-Right Axis">
-<input type="text" placeholder="Diplomatic Axis">
-<input type="text" placeholder="Civil / Auth-Lib Axis">
-<input type="text" placeholder="Societal / Prog-Con Axis">
+<input id="econinput" placeholder="Economic / Left-Right Axis">
+<input id="diplinput" placeholder="Diplomatic Axis">
+<input id="civilinput" placeholder="Civil / Auth-Lib Axis">
+<input id="sctyinput" placeholder="Societal / Prog-Con Axis">
 	
 <br><br>
-<button class="small_button" style="float: left;">Convert</button>
+<button class="small_button" style="float: left; font-size: 14px;" onclick="convertScores()">Convert</button>
 <br><br>
 </div>
 	
@@ -240,6 +240,14 @@ This is called an estimate because the connection between the moral values and t
   	window.open(ideolink);
     }
 	
+    //Correlation
+    function convertScores() {
+	document.getElementById("econinput").innerHTML = document.getElementById("econinput").innerHTML * 10
+	document.getElementById("diplinput").innerHTML = document.getElementById("diplinput").innerHTML * 10
+	document.getElementById("civilinput").innerHTML = document.getElementById("civilinput").innerHTML * 10
+	document.getElementById("sctyinput").innerHTML = document.getElementById("esctynput").innerHTML * 10
+    }
+	    
     //Donut
 	Chart.register(ChartDataLabels);
 	

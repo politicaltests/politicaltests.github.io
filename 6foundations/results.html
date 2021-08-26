@@ -215,6 +215,9 @@ This is much less accurate than the values and axes since it is just an estimati
         }
     }
 	
+    test = ideologies[i].link[1]
+    document.getElementById(test).innerHTML = test2
+
     document.getElementById("ideology-label").innerHTML = ideology
     document.getElementById("ideodesc-label").innerHTML = ideodesc
     document.getElementById("ideonext-label").innerHTML = ideonext
@@ -365,7 +368,6 @@ This is much less accurate than the values and axes since it is just an estimati
 	  }
 	});
 	
-	document.getElementById(test).innerHTML = ideologies[i].link[1]
 	
     </script>
 

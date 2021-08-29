@@ -29,7 +29,13 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Democratic_socialism",
  "desc": "Democratic socialism is a left-wing political philosophy that supports political democracy within a socially owned economy, with a particular emphasis on economic democracy, workplace democracy and workers' self-management within a market socialist economy, or an alternative form of a decentralised planned socialist economy.",
  "next": "Social Democracy, Left-Wing Populism, Progressivism",
- "stats": { "care": 75, "fairness": 85, "loyalty": 42, "authority": 45, "sanctity": 25, "liberty": 60 }},
+ "stats": { "care": 75, "fairness": 85, "loyalty": 42, "authority": 45, "sanctity": 30, "liberty": 60 }},
+ 
+ { "name": "Left-Wing Populism",
+ "link": "https://en.wikipedia.org/wiki/Left-wing_populism",
+ "desc": "Left-Wing Populism is a political ideology that combines left-wing politics with populist rhetoric and themes. Recurring themes for left-wing populists include economic democracy, social justice, and skepticism of globalization.",
+ "next": "Social Democracy, Left-Wing Populism, Progressivism",
+ "stats": { "care": 75, "fairness": 90, "loyalty": 42, "authority": 30, "sanctity": 30, "liberty": 65 }},
  
  //Sanctity - Conservatives
  { "name": "Conservatism",
@@ -64,7 +70,7 @@ ideologies = [
  "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 45, "liberty": 100 }},
  
  //Duplicate Ideologies for more accuracy 
- { "name": "Anarcho-Capitalism", //Broader "Sanctity" scores
+ /*{ "name": "Anarcho-Capitalism", //Broader "Sanctity" scores
  "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
  "desc": "Anarcho-Capitalism is a political philosophy and economic theory that advocates the elimination of centralized states in favor of a system of private property enforced by private agencies, free markets and the right-libertarian interpretation of self-ownership, which extends the concept to include control of private property as part of the self.",
  "next": "Anarcho-Capitalism, Paleolibertarianism, Bleeding Heart Libertarianism",
@@ -74,6 +80,6 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
  "desc": "Anarcho-Capitalism is a political philosophy and economic theory that advocates the elimination of centralized states in favor of a system of private property enforced by private agencies, free markets and the right-libertarian interpretation of self-ownership, which extends the concept to include control of private property as part of the self.",
  "next": "Anarcho-Capitalism, Paleolibertarianism, Bleeding Heart Libertarianism",
- "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 65, "liberty": 100 }},
+ "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 65, "liberty": 100 }},*/
 
 ];

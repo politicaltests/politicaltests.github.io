@@ -70,7 +70,7 @@ ideologies = [
  "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 45, "liberty": 100 }},
  
  //Duplicate Ideologies for more accuracy 
- /*{ "name": "Anarcho-Capitalism", //Broader "Sanctity" scores
+ { "name": "Anarcho-Capitalism", //Broader "Sanctity" scores
  "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
  "desc": "Anarcho-Capitalism is a political philosophy and economic theory that advocates the elimination of centralized states in favor of a system of private property enforced by private agencies, free markets and the right-libertarian interpretation of self-ownership, which extends the concept to include control of private property as part of the self.",
  "next": "Anarcho-Capitalism, Paleolibertarianism, Bleeding Heart Libertarianism",
@@ -80,6 +80,6 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
  "desc": "Anarcho-Capitalism is a political philosophy and economic theory that advocates the elimination of centralized states in favor of a system of private property enforced by private agencies, free markets and the right-libertarian interpretation of self-ownership, which extends the concept to include control of private property as part of the self.",
  "next": "Anarcho-Capitalism, Paleolibertarianism, Bleeding Heart Libertarianism",
- "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 65, "liberty": 100 }},*/
+ "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 65, "liberty": 100 }},
 
 ];

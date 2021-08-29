@@ -12,7 +12,7 @@ questions = [
 { "question": "The most important thing for children to learn is to accept discipline.", "effect": {
   "authority": 5, "sanctity": 0, "liberty": 0 }},
   
-{ "question": "Men and women each have different roles to play in society.", "effect": {
+{ "question": "A strong government is required for a safe society.", "effect": {
   "authority": 5, "sanctity": 0, "liberty": 0 }},
   
 { "question": "The act of disrespecting a leader is morally wrong.", "effect": {

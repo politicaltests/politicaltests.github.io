@@ -43,6 +43,12 @@ ideologies = [
  "next": "Marxism-Leninism, Left-Wing Populism, Democratic Socialism",
  "stats": { "care": 40, "fairness": 95, "loyalty": 42, "authority": 70, "sanctity": 30, "liberty": 30 }},
  
+ { "name": "Marxism-Leninism",
+ "link": "https://en.wikipedia.org/wiki/Marxism%E2%80%93Leninism",
+ "desc": "Marxist–Leninists support proletarian internationalism and socialist democracy, and oppose anarchism, fascism, imperialism, and liberal democracy. Marxism–Leninism holds that a two-stage communist revolution is needed to replace capitalism.",
+ "next": "State Socialism, State Socialism, National Bolshevism",
+ "stats": { "care": 40, "fairness": 95, "loyalty": 42, "authority": 70, "sanctity": 30, "liberty": 30 }},
+ 
  //Sanctity - Conservatives
  { "name": "Conservatism",
  "link": "https://en.wikipedia.org/wiki/Conservatism",

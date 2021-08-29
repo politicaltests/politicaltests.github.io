@@ -10,32 +10,38 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Social_democracy",
  "desc": "Social Democracy advocates for economic and social interventions to promote social justice within the framework of a liberal-democratic polity and a capitalist-oriented mixed economy.",
  "next": "Democratic Socialism, Christian Democracy, Left-Wing Populism",
- "stats": { "care": 75, "fairness": 85, "loyalty": 42, "authority": 45, "sanctity": 25, "liberty": 55 }},
+ "stats": { "care": 75, "fairness": 80, "loyalty": 42, "authority": 45, "sanctity": 25, "liberty": 55 }},
  
  { "name": "Christian Democracy",
  "link": "https://en.wikipedia.org/wiki/Christian_democracy",
  "desc": "Christian democracy is a political ideology based on modern democratic ideas, socialist ethics, and traditional Christian values. It tends to be Center-Left in terms of economic and foreign policy, but tends to be Center-Right in terms of social issues.",
  "next": "Social Democracy, Progressive Conservatism, Left-Wing Populism",
- "stats": { "care": 75, "fairness": 85, "loyalty": 42, "authority": 50, "sanctity": 70, "liberty": 50 }},
+ "stats": { "care": 75, "fairness": 80, "loyalty": 42, "authority": 50, "sanctity": 70, "liberty": 50 }},
  
  { "name": "Progressive Conservatism",
  "link": "https://en.wikipedia.org/wiki/Progressive_conservatism",
  "desc": "Progressive conservatism is a political ideology which combines conservative and progressive policies. It believes that social reform and progression in areas such as science, economics, education, technology and medicine were necessary to improve human living conditions, but also supports the preservation of tradition.",
  "next": "Christian Democracy, Conservatism, Progressivism",
- "stats": { "care": 70, "fairness": 75, "loyalty": 42, "authority": 50, "sanctity": 65, "liberty": 75 }},
+ "stats": { "care": 70, "fairness": 70, "loyalty": 42, "authority": 50, "sanctity": 65, "liberty": 75 }},
  
  //Fair - Socialists
  { "name": "Democratic Socialism",
  "link": "https://en.wikipedia.org/wiki/Democratic_socialism",
  "desc": "Democratic socialism is a left-wing political philosophy that supports political democracy within a socially owned economy, with a particular emphasis on economic democracy, workplace democracy and workers' self-management within a market socialist economy, or an alternative form of a decentralised planned socialist economy.",
  "next": "Social Democracy, Left-Wing Populism, Progressivism",
- "stats": { "care": 75, "fairness": 85, "loyalty": 42, "authority": 45, "sanctity": 30, "liberty": 60 }},
+ "stats": { "care": 70, "fairness": 85, "loyalty": 42, "authority": 45, "sanctity": 30, "liberty": 60 }},
  
  { "name": "Left-Wing Populism",
  "link": "https://en.wikipedia.org/wiki/Left-wing_populism",
  "desc": "Left-Wing Populism is a political ideology that combines left-wing politics with populist rhetoric and themes. Recurring themes for left-wing populists include economic democracy, social justice, and skepticism of globalization.",
  "next": "Social Democracy, Left-Wing Populism, Progressivism",
- "stats": { "care": 75, "fairness": 90, "loyalty": 42, "authority": 30, "sanctity": 30, "liberty": 65 }},
+ "stats": { "care": 60, "fairness": 85, "loyalty": 42, "authority": 30, "sanctity": 30, "liberty": 65 }},
+ 
+ { "name": "State Socialism",
+ "link": "https://en.wikipedia.org/wiki/State_socialism",
+ "desc": "State socialism is a political and economic ideology within the socialist movement advocating state ownership of the means of production, either as a temporary measure or as a characteristic of socialism in the transition from the capitalist to the socialist mode of production or communist society.",
+ "next": "Marxism-Leninism, Left-Wing Populism, Democratic Socialism",
+ "stats": { "care": 40, "fairness": 95, "loyalty": 42, "authority": 70, "sanctity": 30, "liberty": 30 }},
  
  //Sanctity - Conservatives
  { "name": "Conservatism",

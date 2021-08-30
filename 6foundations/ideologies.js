@@ -1,5 +1,5 @@
 ideologies = [
- //Care - Progressives
+ //Care Oriented
  { "name": "Progressivism",
  "link": "https://en.wikipedia.org/wiki/Progressivism",
  "desc": "Progressivism is a political philosophy in support of social reform. It argues that progress is being stifled by vast economic inequality and violent conflict between the privileged and unprivileged. It stresses the need for measures that addresses these problems.",
@@ -22,9 +22,9 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Progressive_conservatism",
  "desc": "Progressive conservatism is a political ideology which combines conservative and progressive policies. It believes that social reform and progression in areas such as science, economics, education, technology and medicine were necessary to improve human living conditions, but also supports the preservation of tradition.",
  "next": "Christian Democracy, Conservatism, Progressivism",
- "stats": { "care": 55, "fairness": 50, "loyalty": 22, "authority": 40, "sanctity": 50, "liberty": 55 }},
+ "stats": { "care": 55, "fairness": 50, "loyalty": 22, "authority": 40, "sanctity": 50, "liberty": 45 }},
  
- //Fair - Socialists
+ //Fairness Oriented
  { "name": "Democratic Socialism",
  "link": "https://en.wikipedia.org/wiki/Democratic_socialism",
  "desc": "Democratic socialism is a left-wing political philosophy that supports political democracy within a socially owned economy, with a particular emphasis on economic democracy, workplace democracy and workers' self-management within a market socialist economy, or an alternative form of a decentralised planned socialist economy.",
@@ -53,16 +53,22 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Stalinism",
  "desc": "Stalinism is the means of governing and policies which were implemented in the Soviet Union from 1927 to 1953 by Joseph Stalin. It included the creation of a one-party totalitarian police state; rapid industrialization; the theory of socialism in one country, and the collectivization of agriculture.",
  "next": "Marxism-Leninism, State Socialism, National Bolshevism",
- "stats": { "care": 20, "fairness": 80, "loyalty": 70, "authority": 80, "sanctity": 40, "liberty": 0 }},
+ "stats": { "care": 20, "fairness": 80, "loyalty": 60, "authority": 80, "sanctity": 40, "liberty": 0 }},
  
- //Sanctity - Conservatives
+ { "name": "National Bolshevism",
+ "link": "https://en.wikipedia.org/wiki/Stalinism",
+ "desc": "National Bolshevism advocates for a Bolshevik-inspired system of governance, which includes a socialist economy and a strong centralised state, in combination with extreme nationalism and support for traditional values, borrowing some elements and aesthetics from fascism.",
+ "next": "Marxism-Leninism, State Socialism, Fascism",
+ "stats": { "care": 20, "fairness": 80, "loyalty": 80, "authority": 80, "sanctity": 80, "liberty": 0 }},
+ 
+ //Sanctity Oriented
  { "name": "Conservatism",
  "link": "https://en.wikipedia.org/wiki/Conservatism",
  "desc": "Conservatism is a cultural, social, and political philosophy which seeks to promote and to preserve traditional social institutions. n Western culture, conservatives seek to preserve a range of institutions such as organized religion, parliamentary government, and property rights.",
  "next": "Neoconservatism, Right-Wing Populism, Fiscal Conservatism",
  "stats": { "care": 40, "fairness": 40, "loyalty": 52, "authority": 50, "sanctity": 60, "liberty": 60 }},
  
- //Liberty - Right-Libertarians
+ //Liberty Oriented
  { "name": "Right-Libertarianism",
  "link": "https://en.wikipedia.org/wiki/Right-libertarianism",
  "desc": "Right-Libertarianism is a political philosophy and movement that upholds liberty as a core principle. Right-Libertarians seek to maximize autonomy and political freedom, emphasizing free association, free markets, individualism and voluntary association.",

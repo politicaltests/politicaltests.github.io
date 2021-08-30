@@ -217,12 +217,12 @@ This is called an estimate because the connection between the moral values and t
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.care - care), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.fairness - fairness), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.loyalty - loyalty), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.authority - authority), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.sanctity - sanctity), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.liberty - liberty), 2) 
+        dist += Math.pow((Math.abs(ideologies[i].stats.care      - care      + 20)), 2.0)
+        dist += Math.pow((Math.abs(ideologies[i].stats.fairness  - fairness  + 20)), 1.5)
+        dist += Math.pow((Math.abs(ideologies[i].stats.loyalty   - loyalty   + 20)), 1.5)
+        dist += Math.pow((Math.abs(ideologies[i].stats.authority - authority + 20)), 2.0)
+        dist += Math.pow((Math.abs(ideologies[i].stats.sanctity  - sanctity  + 20)), 1.5)
+        dist += Math.pow((Math.abs(ideologies[i].stats.liberty   - liberty   + 20)), 2.0) 
 	    
         if (dist < ideodist) {
             ideology = ideologies[i].name

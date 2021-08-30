@@ -4,7 +4,7 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Progressivism",
  "desc": "Progressivism is a political philosophy in support of social reform. It argues that progress is being stifled by vast economic inequality and violent conflict between the privileged and unprivileged. It stresses the need for measures that addresses these problems.",
  "next": "Social Democracy, Left-Wing Populism, Liberalism",
- "stats": { "care": 75, "fairness": 75, "loyalty": 42, "authority": 40, "sanctity": 25, "liberty": 62 }},
+ "stats": { "care": 85, "fairness": 75, "loyalty": 42, "authority": 40, "sanctity": 25, "liberty": 62 }},
  
  { "name": "Social Democracy",
  "link": "https://en.wikipedia.org/wiki/Social_democracy",
@@ -22,32 +22,38 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Progressive_conservatism",
  "desc": "Progressive conservatism is a political ideology which combines conservative and progressive policies. It believes that social reform and progression in areas such as science, economics, education, technology and medicine were necessary to improve human living conditions, but also supports the preservation of tradition.",
  "next": "Christian Democracy, Conservatism, Progressivism",
- "stats": { "care": 70, "fairness": 70, "loyalty": 42, "authority": 50, "sanctity": 65, "liberty": 75 }},
+ "stats": { "care": 75, "fairness": 70, "loyalty": 42, "authority": 50, "sanctity": 65, "liberty": 75 }},
  
  //Fair - Socialists
  { "name": "Democratic Socialism",
  "link": "https://en.wikipedia.org/wiki/Democratic_socialism",
  "desc": "Democratic socialism is a left-wing political philosophy that supports political democracy within a socially owned economy, with a particular emphasis on economic democracy, workplace democracy and workers' self-management within a market socialist economy, or an alternative form of a decentralised planned socialist economy.",
  "next": "Social Democracy, Left-Wing Populism, Progressivism",
- "stats": { "care": 70, "fairness": 85, "loyalty": 42, "authority": 45, "sanctity": 30, "liberty": 60 }},
+ "stats": { "care": 75, "fairness": 85, "loyalty": 42, "authority": 45, "sanctity": 30, "liberty": 60 }},
  
  { "name": "Left-Wing Populism",
  "link": "https://en.wikipedia.org/wiki/Left-wing_populism",
  "desc": "Left-Wing Populism is a political ideology that combines left-wing politics with populist rhetoric and themes. Recurring themes for left-wing populists include economic democracy, social justice, and skepticism of globalization.",
  "next": "Social Democracy, Left-Wing Populism, Progressivism",
- "stats": { "care": 60, "fairness": 85, "loyalty": 42, "authority": 30, "sanctity": 30, "liberty": 65 }},
+ "stats": { "care": 70, "fairness": 85, "loyalty": 42, "authority": 30, "sanctity": 30, "liberty": 65 }},
  
  { "name": "State Socialism",
  "link": "https://en.wikipedia.org/wiki/State_socialism",
  "desc": "State socialism is a political and economic ideology within the socialist movement advocating state ownership of the means of production, either as a temporary measure or as a characteristic of socialism in the transition from the capitalist to the socialist mode of production or communist society.",
  "next": "Marxism-Leninism, Left-Wing Populism, Democratic Socialism",
- "stats": { "care": 40, "fairness": 95, "loyalty": 42, "authority": 70, "sanctity": 30, "liberty": 30 }},
+ "stats": { "care": 65, "fairness": 95, "loyalty": 42, "authority": 70, "sanctity": 40, "liberty": 30 }},
  
  { "name": "Marxism-Leninism",
- "link": "https://en.wikipedia.org/wiki/Marxism%E2%80%93Leninism",
+ "link": "https://en.wikipedia.org/wiki/Marxism-Leninism",
  "desc": "Marxist–Leninists support proletarian internationalism and socialist democracy, and oppose anarchism, fascism, imperialism, and liberal democracy. Marxism–Leninism holds that a two-stage communist revolution is needed to replace capitalism.",
- "next": "State Socialism, State Socialism, National Bolshevism",
- "stats": { "care": 40, "fairness": 95, "loyalty": 42, "authority": 70, "sanctity": 30, "liberty": 30 }},
+ "next": "State Socialism, Stalinism, National Bolshevism",
+ "stats": { "care": 60, "fairness": 100, "loyalty": 50, "authority": 85, "sanctity": 50, "liberty": 20 }},
+ 
+ { "name": "Stalinism",
+ "link": "https://en.wikipedia.org/wiki/Stalinism",
+ "desc": "Stalinism is the means of governing and policies which were implemented in the Soviet Union from 1927 to 1953 by Joseph Stalin. It included the creation of a one-party totalitarian police state; rapid industrialization; the theory of socialism in one country, and the collectivization of agriculture.",
+ "next": "Marxism-Leninism, State Socialism, National Bolshevism",
+ "stats": { "care": 40, "fairness": 100, "loyalty": 70, "authority": 85, "sanctity": 60, "liberty": 20 }},
  
  //Sanctity - Conservatives
  { "name": "Conservatism",
@@ -92,6 +98,6 @@ ideologies = [
  "link": "https://en.wikipedia.org/wiki/Anarcho-capitalism",
  "desc": "Anarcho-Capitalism is a political philosophy and economic theory that advocates the elimination of centralized states in favor of a system of private property enforced by private agencies, free markets and the right-libertarian interpretation of self-ownership, which extends the concept to include control of private property as part of the self.",
  "next": "Anarcho-Capitalism, Paleolibertarianism, Bleeding Heart Libertarianism",
- "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 65, "liberty": 100 }},
+ "stats": { "care": 55, "fairness": 62, "loyalty": 43, "authority": 35, "sanctity": 70, "liberty": 100 }},
 
 ];

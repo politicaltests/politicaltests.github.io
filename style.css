@@ -215,6 +215,7 @@ div.gallery img {
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0px 0px;
+  margin-bottom: -4px;
 }
 
 div.desc {
@@ -222,6 +223,10 @@ div.desc {
   text-align: center;
   font-family: 'Roboto', sans-serif;  
   border-top: 2px solid #bbb;
+}
+
+div.desc:hover {
+  border-top: 2px solid #777;
 }
 
 img.indexicon {

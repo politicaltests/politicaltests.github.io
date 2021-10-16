@@ -216,8 +216,13 @@ div.gallery img {
   height: auto;
   border-radius: 10px 10px 0px 0px;
   margin-bottom: -4px;
-  max-height: 300px;
+  height: 300px;
   object-fit: cover;
+  transition: transform .2s;
+}
+
+div.gallery img:hover {
+  object-fit: contain;
 }
 
 div.desc {

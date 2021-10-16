@@ -208,7 +208,7 @@ div.gallery {
 
 div.gallery:hover {
   border: 2px solid #777;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 div.gallery img {

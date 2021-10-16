@@ -196,14 +196,18 @@ canvas {
 /* Gallery on index */
 div.gallery {
   margin: 5px;
-  border: 2px solid #ccc;
+  border: 2px solid #bbb;
+  border-radius: 5px;
   float: left;
   width: 30%;
+  height: 50%;
   display: block;
+  background-color: #ddd;
 }
 
 div.gallery:hover {
   border: 2px solid #777;
+  transform: scale(1.2);
 }
 
 div.gallery img {

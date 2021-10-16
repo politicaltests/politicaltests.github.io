@@ -197,18 +197,18 @@ canvas {
 div.gallery {
   margin: 5px;
   border: 2px solid #bbb;
-  border-radius: 5px;
+  border-radius: 10px;
   float: left;
   width: 30%;
   height: 50%;
   display: block;
-  background-color: #ddd;
+  background-color: #eee;
   transition: transform .2s;
 }
 
 div.gallery:hover {
   border: 2px solid #777;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 div.gallery img {
@@ -219,8 +219,10 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;  
+  border-top: 2px solid #bbb;
 }
+
 img.indexicon {
     height: 10px;
 }

@@ -203,6 +203,7 @@ div.gallery {
   height: 50%;
   display: block;
   background-color: #ddd;
+  transition: transform .2s;
 }
 
 div.gallery:hover {

@@ -214,6 +214,7 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 10px 10px 0px 0px;
 }
 
 div.desc {

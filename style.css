@@ -200,7 +200,7 @@ div.gallery {
   border-radius: 10px;
   float: left;
   width: 30%;
-  height: 50%;
+  height: 450px;
   display: block;
   background-color: #eee;
   transition: transform .2s;
@@ -216,6 +216,8 @@ div.gallery img {
   height: auto;
   border-radius: 10px 10px 0px 0px;
   margin-bottom: -4px;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 div.desc {

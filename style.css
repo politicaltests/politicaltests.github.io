@@ -234,7 +234,7 @@ div.title {
 }
 
 div.desc {
-  padding-bottom: 15px;
+  padding: 0px 15px 15px 15px;
   text-align: center;
   font-family: 'Roboto', sans-serif;  
 }

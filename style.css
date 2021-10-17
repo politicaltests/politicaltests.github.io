@@ -226,14 +226,20 @@ div.gallery img:hover {
   object-fit: contain;
 }
 
-div.desc, div.title {
+div.title {
   padding: 15px;
   text-align: center;
   font-family: 'Roboto', sans-serif;  
   border-top: 2px solid #bbb;
 }
 
-div.desc:hover {
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;  
+}
+
+div.title:hover {
   border-top: 2px solid #777;
 }
 

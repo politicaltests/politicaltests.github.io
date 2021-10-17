@@ -237,6 +237,7 @@ div.desc {
   padding: 0px 15px 15px 15px;
   text-align: center;
   font-family: 'Roboto', sans-serif;  
+  margin-top: -10px;
 }
 
 div.title:hover {

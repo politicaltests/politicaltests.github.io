@@ -321,7 +321,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 
 /* Mobile View */
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
     div.desc { display: none; }
 }
     

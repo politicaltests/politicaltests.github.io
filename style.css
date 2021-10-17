@@ -226,7 +226,7 @@ div.gallery img:hover {
   object-fit: contain;
 }
 
-div.desc {
+div.desc, div.title {
   padding: 15px;
   text-align: center;
   font-family: 'Roboto', sans-serif;  
@@ -312,3 +312,5 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+

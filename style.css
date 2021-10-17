@@ -227,7 +227,6 @@ div.gallery img:hover {
 }
 
 div.title {
-  padding: 15px;
   text-align: center;
   font-family: 'Roboto', sans-serif;  
   border-top: 2px solid #bbb;
@@ -320,3 +319,8 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 
+/* Mobile View */
+@media only screen and (max-width: 768px) {
+    div.desc { display: none; }
+}
+    

@@ -204,7 +204,7 @@ div.gallery {
   display: block;
   background-color: #eee;
   transition: transform .2s;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 div.gallery:hover {

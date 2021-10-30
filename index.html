@@ -41,9 +41,12 @@
   
 <div id="tests">
   <div style="display:block;"> <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="title"> Sort by name </button> 
-  <button class="sort" data-sort="material-icons"> Sort by status </button> </div>
-  <button class="sort" data-sort="date"> Sort by date created </button> </div>
+    <button class="sort" onclick="ShowHideSort()"><b>SORT BY:</b></button> 
+  <div id="testbtns">
+    <button class="sort" data-sort="title"> Name </button> 
+    <button class="sort" data-sort="material-icons"> Status </button> </div>
+    <button class="sort" data-sort="date"> Date Created </button> </div>
+  </div>
   
 <ul class="list">
   
@@ -156,4 +159,10 @@
   };
 
   var userList = new List('tests', options);
+  
+  function ShowHideSort() {
+    var x = document.getElementById("testbtns");
+      if (x.style.display === "none") { x.style.display = "block"; } 
+      else { x.style.display = "none"; }
+  }
 </script>

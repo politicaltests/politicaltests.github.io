@@ -192,13 +192,13 @@ canvas {
     margin-left: auto;
     margin-right: auto;
 }
-.material-icons {
+
+/* Gallery on index */
+.gallery .material-icons {
     display: inline-block;
     font-size: 13px;
 }
 
-
-/* Gallery on index */
 .gallery {
   margin: 5px;
   border: 2px solid #bbb;

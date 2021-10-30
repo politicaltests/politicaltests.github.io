@@ -237,12 +237,7 @@ canvas {
   font-family: 'Roboto', sans-serif;  
   border-top: 2px solid #bbb;
   padding-top: 15px;
-  display: inline-block;
-}
-
-.titlediv {
   display: block;
-  margin: auto;
 }
 
 .desc {

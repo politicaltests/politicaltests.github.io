@@ -246,7 +246,14 @@ canvas {
 
 .subtitle {
   font-family: 'Roboto', sans-serif;  
-  font-color: #777
+  font-color: #777;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date {
+  display: inline-block;
 }
 
 .desc {

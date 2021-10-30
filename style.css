@@ -271,10 +271,10 @@ input.search {
   text-decoration: none;
   background-color: #2196f3;
   height: 30px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sort:hover {
-  text-decoration: none;
   background-color: DarkGray;
 }
 
@@ -286,6 +286,7 @@ input.search {
   border-bottom: 5px solid transparent;
   content: "";
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sort.asc:after {
@@ -296,8 +297,9 @@ input.search {
   border-top: 5px solid #fff;
   content:"";
   position: relative;
-  top:13px;
+  top: 13px;
   right:-5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .sort.desc:after {
@@ -310,6 +312,7 @@ input.search {
   position: relative;
   top:-10px;
   right:-5px;
+  font-family: 'Montserrat', sans-serif;
 } 
 
 /* Menu Bar */

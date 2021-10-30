@@ -192,6 +192,10 @@ canvas {
     margin-left: auto;
     margin-right: auto;
 }
+.material-icons {
+    display: inline-block;
+}
+
 
 /* Gallery on index */
 .gallery {
@@ -232,6 +236,8 @@ canvas {
   font-family: 'Roboto', sans-serif;  
   border-top: 2px solid #bbb;
   padding-top: 15px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .desc {

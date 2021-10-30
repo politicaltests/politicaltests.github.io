@@ -194,7 +194,7 @@ canvas {
 }
 .material-icons {
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 
@@ -247,14 +247,14 @@ canvas {
 .subtitle {
   font-family: 'Roboto', sans-serif;  
   color: #777;
-  font-size: 12px;
+  font-size: 13px;
   display: block;
   text-align: center;
 }
 
 .date {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .desc {

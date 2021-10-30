@@ -246,7 +246,8 @@ canvas {
 
 .subtitle {
   font-family: 'Roboto', sans-serif;  
-  font-color: #777;
+  color: #777;
+  font-size: 12px;
   display: block;
   margin-left: auto;
   margin-right: auto;

@@ -31,7 +31,7 @@
   <h2>Welcome. Enter a test to begin. </h2>
     <p> This website links to all my tests, in order to make it easier to access my tests. It also helps me reduce the number of accounts needed if I were to create more tests in the future.</p>
       <br>
-    <div style="display:none;"><p> <b>Icons:</b> </p>
+   <div style="display:none;"><p> <b>Icons:</b> </p>
     <p> <b><span class="material-icons">star</span>: </b>Actively Maintained</p>
     <p> <b><span class="material-icons">star_half</span>: </b>Rarely Maintained</p>
     <p> <b><span class="material-icons">star_outline</span>: </b>Abandoned</p>
@@ -158,10 +158,13 @@
   };
 
   var userList = new List('tests', options);
+</script>
+<script>
   
   function ShowHideSort() {
     var x = document.getElementById("testbtns");
       if (x.style.display === "none") { x.style.display = "block"; } 
       else { x.style.display = "none"; }
   }
+  
 </script>

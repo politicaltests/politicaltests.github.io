@@ -242,6 +242,7 @@ canvas {
 
 .titlediv {
   display: block;
+  margin: auto;
 }
 
 .desc {

@@ -194,7 +194,7 @@ canvas {
 }
 .material-icons {
     display: inline-block;
-    font-size: 16pt;
+    font-size: 12px;
 }
 
 
@@ -249,12 +249,12 @@ canvas {
   color: #777;
   font-size: 12px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .date {
   display: inline-block;
+  font-size: 12px;
 }
 
 .desc {

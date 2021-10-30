@@ -236,7 +236,7 @@ canvas {
   font-family: 'Roboto', sans-serif;  
   border-top: 2px solid #bbb;
   padding-top: 15px;
-  display: inline-block;
+  display: block; /* */
 }
 
 .desc {

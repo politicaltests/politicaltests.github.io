@@ -194,7 +194,7 @@ canvas {
 }
 
 /* Gallery on index */
-div.gallery {
+.gallery {
   margin: 5px;
   border: 2px solid #bbb;
   border-radius: 10px;
@@ -207,13 +207,13 @@ div.gallery {
   overflow: hidden;
 }
 
-div.gallery:hover {
+.gallery:hover {
   border: 2px solid #777;
   transform: scale(1.05);
   cursor: pointer;
 }
 
-div.gallery img {
+.gallery img {
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0px 0px;
@@ -223,24 +223,24 @@ div.gallery img {
   transition: transform .2s;
 }
 
-div.gallery img:hover {
+.gallery img:hover {
   object-fit: contain;
 }
 
-div.title {
+.title {
   text-align: center;
   font-family: 'Roboto', sans-serif;  
   border-top: 2px solid #bbb;
   padding-top: 15px;
 }
 
-div.desc {
+.desc {
   padding: 0px 15px 15px 15px;
   text-align: center;
   font-family: 'Roboto', sans-serif;  
 }
 
-div.title:hover {
+.title:hover {
   border-top: 2px solid #777;
 }
 

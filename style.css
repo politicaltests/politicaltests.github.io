@@ -391,9 +391,9 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Mobile View */
 @media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    div.desc    { display: none; }
-    div.gallery { height: 375px; }
-    div.title   { font-size: 24px; }
+    .desc    { display: none; }
+    .gallery { height: 375px; }
+    .title   { font-size: 24px; }
     p.btndesc   { display: none; }
 }
     

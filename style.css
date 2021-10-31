@@ -279,7 +279,8 @@ input.search {
   border-radius: 5px;
   padding: 7px 14px;
   margin-bottom: 10px;
-  background-color: #eee; 
+  background-color: #eee;
+  display: inline-block;
 }
 
 .sort {

@@ -224,6 +224,16 @@ canvas {
     margin-right: auto;
 }
 
+.parallax {
+  background-image: url("grayarrows.png");
+  background-color: #636363;
+  min-height: 100vmin; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Gallery on index */
 .gallery .material-icons {
     display: inline-block;

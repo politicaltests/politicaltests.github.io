@@ -472,6 +472,6 @@ li a:hover, .dropdown:hover .dropbtn {
     .sortbtnlist      { display: none; }
     p.btndesc         { display: none; }
     div.headerimg     { height: 50vmin; }
-    div.headertextdiv { padding-top: 12.5vmin; position: static; }
+    div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none;}
 }
     

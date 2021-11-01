@@ -471,7 +471,7 @@ li a:hover, .dropdown:hover .dropbtn {
     .title            { font-size: 24px; }
     .sortbtnlist      { display: none; }
     p.btndesc         { display: none; }
-    div.headerimg     { height: 50vmin; }
-    div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none;}
+    div.headerimg     { height: 50vmin; height: 35vmin; min-height: none; }
+    div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none; }
 }
     

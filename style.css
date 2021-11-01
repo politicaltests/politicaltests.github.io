@@ -473,6 +473,7 @@ li a:hover, .dropdown:hover .dropbtn {
     p.btndesc         { display: none; }
     div.headerimg     { height: 50vmin; height: 35vmin; min-height: 0; }
     div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none; }
+    .headertext       { display: none; }
     .navbar           { display: none; }
 }
     

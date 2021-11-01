@@ -235,7 +235,7 @@ div.headerimg {
   background-color: #636363;
   min-height: calc(100vmin - 50px); 
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -1,13 +1,13 @@
-html {
+body {
     background-color: #bbbbbb;
     padding: 0px;
 }
 
-body {
+div.main {
     width: 80%;
     min-height: calc(100vh - 4em);
     margin: 0 auto;
-    /* padding: 2em;*/
+    padding: 2em;
     background-color: #dddddd;
     border-color: #eeeeee;
     border-left-style: solid;

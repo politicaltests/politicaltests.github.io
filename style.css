@@ -7,7 +7,7 @@ body {
     width: 80%;
     min-height: calc(100vh - 4em);
     margin: 0 auto;
-    padding: 2em;
+    /* padding: 2em;*/
     background-color: #dddddd;
     border-color: #eeeeee;
     border-left-style: solid;
@@ -233,7 +233,7 @@ canvas {
 div.headerimg {
   background-image: url("grayarrows.png");
   background-color: #636363;
-  min-height: 90vmin; 
+  min-height: calc(100vmin - 50px); 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -402,7 +402,7 @@ input.search {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  height: 10vmin;
+  height: 50px
 }
 
 li {

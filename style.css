@@ -466,10 +466,12 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Mobile View */
 @media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    .desc    { display: none; }
-    .gallery { height: 375px; }
-    .title   { font-size: 24px; }
-    .sortbtnlist { display: none; }
-    p.btndesc   { display: none; }
+    .desc             { display: none; }
+    .gallery          { height: 375px; }
+    .title            { font-size: 24px; }
+    .sortbtnlist      { display: none; }
+    p.btndesc         { display: none; }
+    div.headerimg     { height: 50vmin; }
+    div.headertextdiv { padding-top: 12.5vmin; position: static; }
 }
     

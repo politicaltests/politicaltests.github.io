@@ -471,9 +471,10 @@ li a:hover, .dropdown:hover .dropbtn {
     .title            { font-size: 24px; }
     .sortbtnlist      { display: none; }
     p.btndesc         { display: none; }
-    div.headerimg     { height: 50vmin; height: 35vmin; min-height: 0; }
+    div.headerimg     { height: 50vmin; height: 35vmin; min-height: 0; width: 80%; border-color: #eeeeee; 
+                        border-style: none solid none solid; border-width: 20px; }
     div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none; }
-    h3.headertext       { display: none; }
+    h3.headertext     { display: none; }
     .navbar           { display: none; }
 }
     

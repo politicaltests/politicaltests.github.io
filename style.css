@@ -402,6 +402,7 @@ input.search {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  height: 10vmin;
 }
 
 li {

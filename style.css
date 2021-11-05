@@ -41,7 +41,7 @@ p.value-description {
 p.question {
     margin: 16pt auto;
     color: #333333;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     width: 70%;
     min-width: 500pt;
@@ -59,7 +59,7 @@ p.question {
 
 h1 {
     color: #222222;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 72pt;
     text-align: center;
     line-height: 72pt;
@@ -69,7 +69,7 @@ h1 {
 
 h2 {
     color: #333333;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 36pt;
     line-height: 36pt;
     margin-top: 12pt;
@@ -83,7 +83,7 @@ body.__i18n-ko h2 {
 
 h3 {
     color: #333333;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18pt;
     line-height: 18pt;
     margin-top: 12pt;
@@ -91,6 +91,7 @@ h3 {
 }
 
 .headertext {
+    font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +99,7 @@ h3 {
 }
 
 dt {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 dd {
@@ -119,7 +120,7 @@ img.center {
 
 .button {
     background-color: #2196f3;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     border: none;
     border-radius: 8pt;
     color: white;
@@ -140,7 +141,7 @@ img.center {
 
 .button1 {
     background-color: ForestGreen;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     border: none;
     border-radius: 8pt;
     color: white;
@@ -163,7 +164,7 @@ img.center {
 
 .small_button, .small_button_off {
     background-color: #333;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     border: none;
     border-radius: 8pt;
     color: white;
@@ -210,7 +211,7 @@ div.bar {
 }
 
 div.text-wrapper {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 36pt;
     line-height: 36pt;
     color: #dddddd;
@@ -350,7 +351,7 @@ input.search {
   text-decoration: none;
   background-color: #2196f3;
   height: 30px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .sort:hover {
@@ -365,7 +366,7 @@ input.search {
   border-bottom: 5px solid transparent;
   content: "";
   position: relative;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .sort.asc:after {
@@ -378,7 +379,7 @@ input.search {
   position: relative;
   top: 13px;
   right:-5px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .sort.desc:after {
@@ -391,7 +392,7 @@ input.search {
   position: relative;
   top:-10px;
   right:-5px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 } 
 
 /* Menu Bar */
@@ -428,7 +429,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .active {
   background-color: #4CAF50;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .dropdown {

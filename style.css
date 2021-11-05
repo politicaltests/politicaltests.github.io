@@ -65,6 +65,7 @@ h1 {
     line-height: 72pt;
     margin-top: 0pt;
     margin-bottom: 0pt;
+    letter-spacing: -1px;
 }
 
 h2 {
@@ -74,6 +75,7 @@ h2 {
     line-height: 36pt;
     margin-top: 12pt;
     margin-bottom: 0pt;
+    letter-spacing: -1px;
 }
 
 body.__i18n-ko h2 {

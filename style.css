@@ -252,7 +252,9 @@ div.headertextdiv {
   transform: translate(-50%, -50%);
 }
 
-
+.icondef {
+  display: none;
+}
 /* Gallery on index */
 .gallery .material-icons {
     display: inline-block;

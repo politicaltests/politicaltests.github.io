@@ -63,7 +63,7 @@
     
   <br>
     
-  <p style="color: #777; font-weight: bolder; font-size: 12px" onclick="expandDesc()"><b>Expand / Hide</b></p>
+  <p style="color: #777; font-weight: bolder; font-size: 14px" onclick="expandDesc()"><b>Expand / Hide</b></p>
   <!-- </div> -->
 
   <br><br>
@@ -197,10 +197,10 @@
   
   function expandDesc() {
     var x = document.getElementById("icondef");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
+    if (x.style.display === "none") {
       x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
 } 
 </script>

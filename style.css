@@ -252,9 +252,6 @@ div.headertextdiv {
   transform: translate(-50%, -50%);
 }
 
-.icondef {
-  display: none;
-}
 
 /* Gallery on index */
 .gallery .material-icons {
@@ -263,50 +260,54 @@ div.headertextdiv {
 }
 
 .gallery {
-  margin: 15px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0);
-  border-radius: 20px;
+  margin: 5px;
+  border: 2px solid #bbb;
+  border-radius: 10px;
   float: left;
   width: 30%;
   height: 470px;
   display: block;
+  background-color: #eee;
+  transition: transform .2s;
   overflow: hidden;
-  transition: border-color ease 0.2s, border-radius ease 0.2s;
 }
 
 .gallery:hover {
-  border-color: #bbb;
+  border: 2px solid #777;
+  transform: scale(1.05);
   cursor: pointer;
-  border-radius: 10px;
 }
 
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: -4px;
   height: 300px;
   object-fit: cover;
-  transition: border-radius ease 0.2s;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: transform .2s;
 }
 
 .gallery img:hover {
-  border-radius: 10px;
+  object-fit: contain;
 }
 
 .title {
   font-size: 18px;
   text-align: center;
   font-family: 'Roboto', sans-serif;  
+  border-top: 2px solid #bbb;
   padding-top: 15px;
   display: block;
 }
 
+.title:hover {
+  border-top: 2px solid #777;
+}
+
 .subtitle {
   font-family: 'Roboto', sans-serif;  
-  color: #555;
+  color: #777;
   font-size: 13px;
   display: block;
   text-align: center;
@@ -322,7 +323,6 @@ div.headertextdiv {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  color: #777
 }
 
 img.indexicon {
@@ -342,7 +342,6 @@ input.search {
   margin-bottom: 10px;
   background-color: #eee;
   display: inline-block;
-  width: 70%
 }
 
 .sort {
@@ -397,10 +396,6 @@ input.search {
   right:-5px;
   font-family: 'Source Sans Pro', sans-serif;
 } 
-
-div.topbtns {
-  display: block;
-}
 
 /* Menu Bar */
 .navbar {
@@ -475,9 +470,9 @@ li a:hover, .dropdown:hover .dropbtn {
 /* Mobile View */
 @media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .desc             { display: none; }
-    .gallery          { height: 375px; }
+    .gallery          { height: 375px; margin: 10px}
     .title            { font-size: 24px; }
-    .topbtns          { display: none !important; }
+    .sortbtnlist      { display: none !important; }
     p.btndesc         { display: none; }
     div.headerimg     { height: 50vmin; height: 35vmin; min-height: 0; width: 100%;
                         border-style: none solid none solid; border-width: 0px; }

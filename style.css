@@ -260,20 +260,18 @@ div.headertextdiv {
 }
 
 .gallery {
-  margin: 5px;
-  border: 2px solid #bbb;
+  margin: 15px;
   border-radius: 10px;
   float: left;
   width: 30%;
   height: 470px;
   display: block;
-  background-color: #eee;
   transition: transform .2s;
   overflow: hidden;
 }
 
 .gallery:hover {
-  border: 2px solid #777;
+  border: 2px solid #bbb;
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -281,15 +279,15 @@ div.headertextdiv {
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0px 0px;
-  margin-bottom: -4px;
+  border-radius: 10px;
   height: 300px;
   object-fit: cover;
-  transition: transform .2s;
+  transition: border-radius ease 0.5s;
 }
 
 .gallery img:hover {
   object-fit: contain;
+  border-radius: 22px;
 }
 
 .title {

@@ -306,7 +306,7 @@ div.headertextdiv {
 
 .subtitle {
   font-family: 'Roboto', sans-serif;  
-  color: #777;
+  color: #555;
   font-size: 13px;
   display: block;
   text-align: center;
@@ -322,6 +322,7 @@ div.headertextdiv {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
+  color: #777
 }
 
 img.indexicon {

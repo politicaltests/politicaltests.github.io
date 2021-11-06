@@ -340,6 +340,7 @@ input.search {
   margin-bottom: 10px;
   background-color: #eee;
   display: inline-block;
+  width: 70%
 }
 
 .sort {
@@ -394,6 +395,10 @@ input.search {
   right:-5px;
   font-family: 'Source Sans Pro', sans-serif;
 } 
+
+div.topbtns {
+  display: block;
+}
 
 /* Menu Bar */
 .navbar {
@@ -470,7 +475,7 @@ li a:hover, .dropdown:hover .dropbtn {
     .desc             { display: none; }
     .gallery          { height: 375px; }
     .title            { font-size: 24px; }
-    .sortbtnlist      { display: none !important; }
+    .topbtns          { display: none !important; }
     p.btndesc         { display: none; }
     div.headerimg     { height: 50vmin; height: 35vmin; min-height: 0; width: 100%;
                         border-style: none solid none solid; border-width: 0px; }

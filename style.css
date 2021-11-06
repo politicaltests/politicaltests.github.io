@@ -261,6 +261,7 @@ div.headertextdiv {
 
 .gallery {
   margin: 15px;
+  border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 10px;
   float: left;
   width: 30%;
@@ -284,7 +285,6 @@ div.headertextdiv {
 }
 
 .gallery img:hover {
-  object-fit: contain;
   border-radius: 22px;
 }
 
@@ -294,10 +294,6 @@ div.headertextdiv {
   font-family: 'Roboto', sans-serif;  
   padding-top: 15px;
   display: block;
-}
-
-.title:hover {
-  border-top: 2px solid #777;
 }
 
 .subtitle {

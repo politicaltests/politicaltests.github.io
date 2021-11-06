@@ -55,12 +55,14 @@
   
   <br>
   
-  <div><p> <b>Subtitle Icons:</b> </p>
+  <div id="icondef"><p><b>Subtitle Icons:</b></p>
     <p> <b><span class="material-icons">star</span>: </b>Actively Maintained</p>
     <p> <b><span class="material-icons">star_half</span>: </b>Rarely Maintained</p>
     <p> <b><span class="material-icons">star_outline</span>: </b>Abandoned</p>
     <p> <b><span class="material-icons">tune</span>: </b>Work in Progress</p>
   </div>
+    
+  <p style="color: #777" onclick="expandDesc()"><b>Expand / Hide</b></p>
   <!-- </div> -->
 
   <br><br>
@@ -187,4 +189,13 @@
   };
 
   var userList = new List('tests', options);
+  
+  function expandDesc() {
+    var x = document.getElementById("icondef");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+} 
 </script>

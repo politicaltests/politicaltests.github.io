@@ -480,7 +480,7 @@ li a:hover, .dropdown:hover .dropbtn {
     .topbtns          { display: none !important; }
     p.btndesc         { display: none; }
     div.headerimg     { height: 50vmin; height: 35vmin; min-height: 0; width: 80%; border-style: none solid none solid; 
-                        border-color: #eeeeee;  border-width: 20px; }
+                        border-color: #eeeeee;  border-width: 20px; margin: auto; }
     div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none; }
     h3.headertext     { display: none; }
     .navbar           { display: none; }

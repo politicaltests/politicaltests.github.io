@@ -470,7 +470,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .grid-item:hover {
-  background-color: #CFD8DC;
+  background-color: #ECEFF1;
 }
   
 .grid-item .title, .grid-item .desc {

@@ -249,9 +249,9 @@ div.headertextdiv {
 }
 
 .gallery:hover {
-  border-color: #bbb;
   cursor: pointer;
   border-radius: 10px;
+  background-color: #ECEFF1;
 }
 
 .gallery img {
@@ -267,7 +267,6 @@ div.headertextdiv {
 
 .gallery img:hover {
   border-radius: 10px;
-  background-color: #ECEFF1;
 }
 
 .title {

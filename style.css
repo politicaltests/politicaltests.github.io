@@ -484,6 +484,7 @@ li a:hover, .dropdown:hover .dropbtn {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
+  color: #0D47A1
 }
 
 .grid-item .title {

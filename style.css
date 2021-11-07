@@ -428,6 +428,7 @@ li a, .dropbtn{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   vertical-align: middle;
+  display: inline-flex;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -438,6 +439,7 @@ li a:hover, .dropdown:hover .dropbtn {
 .active {
   background-color: #4CAF50;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
 }
 
 .dropdown {

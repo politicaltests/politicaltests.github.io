@@ -8,19 +8,14 @@ div.main {
     width: 80%;
     min-height: calc(100vh - 4em);
     margin: 0 auto;
-    padding: 2em;
-    background-color: #dddddd;
+    background-color: #e5e8e8;
     border-color: #eeeeee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.element {
-    width: 85%;
-    padding: 16pt;
-    background-color: #EEEEEE;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 16px;
-    margin: auto;
+    background-color: #cdd1d4;
+    padding: 40px
 }
 
 p {
@@ -458,8 +453,8 @@ li a:hover, .dropdown:hover .dropbtn {
   border: 2px solid #888;
   border-radius: 22px;
   background-color: #f5f5f5;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
   cursor: pointer;
 }
 

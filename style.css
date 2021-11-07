@@ -485,7 +485,7 @@ li a:hover, .dropdown:hover .dropbtn {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
-  color: #0D47A1
+  color: #3b4252;
 }
 
 .grid-item .title {
@@ -507,14 +507,15 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Mobile View */
 @media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    .desc             { display: none; }
-    .gallery          { height: 375px; margin: 5px; }
-    .title            { font-size: 24px; }
-    .topbtns          { display: none !important; }
-    p.btndesc         { display: none; }
-    div.headerimg     { height: 35vmin; min-height: 0; width: 86.5%; box shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                        margin-left: auto; margin-right: auto; }
-    div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none; }
-    h3.headertext     { display: none; }
-    .navbar           { display: none; }
+    .desc                      { display: none; }
+    .gallery                   { height: 375px; margin: 5px; }
+    .title                     { font-size: 24px; }
+    .topbtns                   { display: none !important; }
+    p.btndesc                  { display: none; }
+    div.headerimg              { height: 35vmin; min-height: 0; width: 86.5%; box shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                 margin-left: auto; margin-right: auto; }
+    div.headertextdiv          { padding-top: 12.5vmin; position: static; transform: none; }
+    h3.headertext              { display: none; }
+    .navbar                    { display: none; }
+    .grid-item .material-icons {  color: #0D47A1; }
 }

@@ -453,15 +453,16 @@ li a:hover, .dropdown:hover .dropbtn {
 
 /* Other Tests Grid */
 .grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  border-radius: 24px;
+  display: flex;
+  flex-wrap: wrap;  
   border: 2px solid #666;
 }
 
 .grid-item {
   border: 2px solid #666;
   padding: 20px;
+  width: 50%;
+  flex: 1 1 40%;
 }
 
 .grid-item:hover {

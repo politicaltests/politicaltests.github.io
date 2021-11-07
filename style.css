@@ -460,6 +460,7 @@ li a:hover, .dropdown:hover .dropbtn {
   background-color: #f5f5f5;
   margin-left: 60px;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .grid-item {

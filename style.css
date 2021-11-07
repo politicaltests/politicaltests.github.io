@@ -468,7 +468,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .grid-item:hover {
-  background-color: DarkGray;
+  background-color: #90A4AE;
 }
   
 .grid-item .title, .grid-item .desc {
@@ -483,7 +483,13 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .grid-item .title {
   font-weight: bold;
-  font-size: 20px
+  font-size: 20px;
+  color: #0D47A1;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.grid-item .desc {
+  color: #90A4AE;
 }
 
 /* Mobile View */

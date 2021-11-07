@@ -467,8 +467,6 @@ li a:hover, .dropdown:hover .dropbtn {
   padding: 20px;
   width: 50%;
   flex: 1 1 40%;
-  max-width: 90%;
-  vertical-align: middle;
 }
 
 .grid-item:hover {
@@ -501,6 +499,8 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .grid-item .gridtext {
   display: inline-block;
+  max-width: 90%;
+  vertical-align: middle;
 }
 
 /* Mobile View */

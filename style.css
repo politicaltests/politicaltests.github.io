@@ -458,8 +458,8 @@ li a:hover, .dropdown:hover .dropbtn {
   border: 2px solid #666;
   border-radius: 22px;
   background-color: #fff;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .grid-item {
@@ -470,7 +470,7 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 .grid-item:hover {
-  background-color: #90A4AE;
+  background-color: #CFD8DC;
 }
   
 .grid-item .title, .grid-item .desc {

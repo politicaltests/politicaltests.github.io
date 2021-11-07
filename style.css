@@ -8,6 +8,7 @@ div.main {
     width: 80%;
     min-height: calc(100vh - 4em);
     margin: 0 auto;
+    padding: 30px
     background-color: #e5e8e8;
     border-color: #eeeeee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -15,8 +16,7 @@ div.main {
 
 div.element {
     background-color: #cdd1d4;
-    padding: 40px;
-    margin: 40px;
+    padding: 30px;
     border-radius: 20px;
 }
 

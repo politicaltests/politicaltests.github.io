@@ -456,6 +456,8 @@ li a:hover, .dropdown:hover .dropbtn {
   display: flex;
   flex-wrap: wrap;  
   border: 2px solid #666;
+  border-radius: 22px;
+  background-color: #fff;
 }
 
 .grid-item {

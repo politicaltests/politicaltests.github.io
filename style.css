@@ -140,29 +140,6 @@ img.center {
   background-color: DarkGray;
 }
 
-.button1 {
-    background-color: ForestGreen;
-    font-family: 'Source Sans Pro', sans-serif;
-    border: none;
-    border-radius: 8pt;
-    color: white;
-    padding: 8pt;
-    width: 50%;
-    min-width: 500pt;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 24pt;
-    margin: -2px auto;
-    cursor: pointer;
-}
-
-.button1:hover {
-    background-color: Gray;
-    border: 2px;
-    border-color: Black;
-}
-
 .small_button, .small_button_off {
     background-color: #333;
     font-family: 'Source Sans Pro', sans-serif;
@@ -475,6 +452,30 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 /* Other Tests Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 24px;
+  border: 2px solid #666;
+}
+
+.grid-item {
+  border: 2px solid #666;
+  padding: 20px;
+}
+
+.grid-item:hover {
+  background-color: DarkGray;
+}
+  
+.grid-item .title, .grid-item .desc {
+  text-align: left;
+  color: #2196f3
+}
+
+.grid-item .material-icons {
+  font-size: 24px;
+}
 
 /* Mobile View */
 @media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {

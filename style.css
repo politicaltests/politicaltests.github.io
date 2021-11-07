@@ -8,8 +8,8 @@ div.main {
     width: 80%;
     min-height: calc(100vh - 4em);
     margin: 0 auto;
-    padding: 30px
-    background-color: #e5e8e8;
+    padding: 30px;
+    background-color: #eaecee;
     border-color: #eeeeee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

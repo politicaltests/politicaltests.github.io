@@ -458,6 +458,8 @@ li a:hover, .dropdown:hover .dropbtn {
   border: 2px solid #666;
   border-radius: 22px;
   background-color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .grid-item {

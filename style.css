@@ -471,7 +471,8 @@ li a:hover, .dropdown:hover .dropbtn {
   
 .grid-item .title, .grid-item .desc {
   text-align: left;
-  color: #2196f3
+  color: #2196f3;
+  padding: 0px;
 }
 
 .grid-item .material-icons {

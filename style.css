@@ -481,6 +481,11 @@ li a:hover, .dropdown:hover .dropbtn {
   font-size: 24px;
 }
 
+.grid-item .title {
+  font-weight: bold;
+  font-size: 20px
+}
+
 /* Mobile View */
 @media only screen and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .desc             { display: none; }

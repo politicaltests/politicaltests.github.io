@@ -15,7 +15,9 @@ div.main {
 
 div.element {
     background-color: #cdd1d4;
-    padding: 40px
+    padding: 40px;
+    margin: 40px;
+    border-radius: 20px;
 }
 
 p {

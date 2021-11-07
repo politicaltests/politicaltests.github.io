@@ -11,9 +11,7 @@ div.main {
     padding: 2em;
     background-color: #dddddd;
     border-color: #eeeeee;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.element {
@@ -479,8 +477,8 @@ li a:hover, .dropdown:hover .dropbtn {
     .title            { font-size: 24px; }
     .topbtns          { display: none !important; }
     p.btndesc         { display: none; }
-    div.headerimg     { height: 35vmin; min-height: 0; width: 86.5%; border-style: none solid none solid; 
-                        border-color: #eeeeee;  border-width: 20px; margin-left: auto; margin-right: auto; }
+    div.headerimg     { height: 35vmin; min-height: 0; width: 86.5%; box shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        margin-left: auto; margin-right: auto; }
     div.headertextdiv { padding-top: 12.5vmin; position: static; transform: none; }
     h3.headertext     { display: none; }
     .navbar           { display: none; }

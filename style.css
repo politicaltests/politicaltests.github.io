@@ -211,7 +211,7 @@ canvas {
 div.headerimg {
   background-image: url("grayarrows.png");
   background-color: #636363;
-  min-height: calc(100vmin - 50px); 
+  min-height: calc(100vh - 50px); 
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;

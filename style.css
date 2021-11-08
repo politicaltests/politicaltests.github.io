@@ -498,7 +498,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 .grid-item .gridtext {
   display: inline-block;
-  max-width: 85%;
+  max-width: 80%;
   vertical-align: middle;
 }
 

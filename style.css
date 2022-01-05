@@ -209,7 +209,7 @@ canvas {
 }
 
 div.headerimg {
-  background-image: url("arrows.png"); /* grayarrows.png */
+  background-image: url("grayarrows.png"); /* grayarrows.png */
   background-color: #636363;
   min-height: calc(100vh - 50px); 
   background-attachment: fixed;

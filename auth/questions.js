@@ -131,9 +131,6 @@ questions = [
     { "question": "If a person is acting very suspiciously, it's safer to punish or re-educate that person.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "A person can only be punished if he is rightfully proven to have broken the law.", "effect":{
-    "olig": 0, "civil": 0, "elit": 0, "preve": 10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
-  
     { "question": "Waiting for a person to commit a crime is immoral.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 10, "diver": 0, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
     
@@ -154,9 +151,6 @@ questions = [
     { "question": "Diversity is important and good.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
-    { "question": "I believe in the seperation of church and state.", "effect":{
-    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
-  
     { "question": "I believe in the freedom of religion and the freedom of thought.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 10, "ruleund": 0, "bestsuit": 0, "disun": 0 }},
   
@@ -175,7 +169,7 @@ questions = [
   
     { "question": "Religion and Government are interconnected.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": -10, "bestsuit": 0, "disun": 0 }},
-  
+
 //[6] Irreligion (Rule-Under)
     { "question": "All religions are false.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
@@ -190,7 +184,11 @@ questions = [
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
   
     { "question": "I support Anti-Theism.", "effect":{
+    "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},   
+    
+    { "question": "I believe in the seperation of church and state.", "effect":{
     "olig": 0, "civil": 0, "elit": 0, "preve": 0, "diver": 0, "ruleund": 10, "bestsuit": 0, "disun": 0 }},
+  
     
 //[7] Hereditary
     { "question": "A good ruler deserves to let his realtives suceed him in leadership.", "effect":{

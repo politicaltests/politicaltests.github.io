@@ -75,7 +75,7 @@ questions =  [
     {"id": 72, "question": "Children should always listen to their parents.", "effects": {"pat": 1}},
     {"id": 73, "question": "Having a minimum age for a job is crucial.", "effects": {"pat": 1}},
     {"id": 74, "question": "Older people often have more experience and knowledge.", "effects": {"pat": 1}},
-    {"id": 75, "question": "If a child voluntary chooses to work, they should be allowed to work.", "effects": {"pat": 1}},
+    {"id": 75, "question": "If a child voluntarily chooses to work, they should be allowed to work.", "effects": {"pat": 1}},
     {"id": 76, "question": "Young people are currently too excluded from many things.", "effects": {"pat": 1}},
     {"id": 77, "question": "Society doesn't need to be organized.", "effects": {"unru": 1}},
     {"id": 78, "question": "The current law system is too strict and absolute.", "effects": {"unru": 1}},

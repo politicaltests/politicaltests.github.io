@@ -4,7 +4,7 @@ questions =  [
     {"id": 2, "question": "Capitalism is the most successful and beneficial economic system yet.", "effects": {"cap": 1}},
     {"id": 3, "question": "The means of production should belong to the workers.", "effects": {"cap": -1}},
     {"id": 4, "question": "Basic utilities like roads and electricity should be publicly owned.", "effects": {"cap": -1, "ptax": 1}},
-    {"id": 5, "question": "A community should suffer the gains and loss toghether.", "effects": {"cap": -1}},
+    {"id": 5, "question": "A community should suffer gains and loss together.", "effects": {"cap": -1}},
     {"id": 6, "question": "A strong and large government is the best for society.", "effects": {"auth": 1}},
     {"id": 7, "question": "Even when protesting an authoritarian government, violence cannot be accepted.", "effects": {"auth": 1}},
     {"id": 8, "question": "Law and Order is more important than freedom and liberty.", "effects": {"auth": 1}},    

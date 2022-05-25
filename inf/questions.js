@@ -82,7 +82,7 @@ questions =  [
     {"id": 79, "question": "Without an organized system, society will be messy and chaotic.", "effects": {"unru": -1}},
     {"id": 80, "question": "Being organized is a positive trait.", "effects": {"unru": -1}},
     {"id": 81, "question": "Everybody should stay disciplined in most cases.", "effects": {"unru": -1}},
-    {"id": 82, "question": "I have done many wrong things in th past.", "effects": {"imp": 1}},
+    {"id": 82, "question": "I have done many wrong things in the past.", "effects": {"imp": 1}},
     {"id": 83, "question": "I have broken the law before.", "effects": {"imp": 1}},
     {"id": 84, "question": "I am not perfect.", "effects": {"imp": 1}},
     {"id": 85, "question": "I am seen as a selfless and kind person by other people.", "effects": {"imp": -1}},

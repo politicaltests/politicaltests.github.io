@@ -442,7 +442,7 @@ questions =
             "Economic globalism caused more negative impacts than positive ones."
         ],
         [//-1
-            "The world must cooperate toghether in terms of economics.",
+            "The world must cooperate together in terms of economics.",
             "Trade is often beneficial to both parties.",
             "Global economic cooperation will generally lead to positive outcomes."
         ],

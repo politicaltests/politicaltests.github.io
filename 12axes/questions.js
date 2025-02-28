@@ -485,7 +485,7 @@ questions =
         ],
         [//-1
             "Technology must be slowed down to protect the environment.",
-            "Regulations on idustries must be implemented to protect the environment.",
+            "Regulations on industries must be implemented to protect the environment.",
             "Technology is making people lose jobs, which is ultimately harmful for humanity."
         ],
         [//-2
